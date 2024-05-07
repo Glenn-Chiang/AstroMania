@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a7f4919f42b8fcd4cb465e32a75a8a0b
+guid: d83f2b36519e7834eb4f78efa947a6ec
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,7 +97,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638507154653399958
+  platformSettingsDirtyTick: 638507154609962977
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -121,18 +121,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: asteroid_3
+  - name: asteroid_4
     originalName: 
-    pivot: {x: 0.4, y: 0.6666667}
+    pivot: {x: 0.47826087, y: 0.53846157}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 20
-      height: 18
-    spriteID: b6ca46d782e932c49ab657329704489d
+      width: 23
+      height: 26
+    spriteID: 2e772ee0ec979a04592af292477a812e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -144,20 +144,20 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 100314831
-    name: asteroid_3
+    guid: -934618512
+    name: asteroid_4
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: asteroid_3
+    - name: asteroid_4
       frameIndex: 0
       cellRect:
-        x: 8
-        y: 4
-        width: 20
-        height: 18
-      spriteId: b6ca46d782e932c49ab657329704489d
+        x: 5
+        y: 2
+        width: 23
+        height: 26
+      spriteId: 2e772ee0ec979a04592af292477a812e
     linkedCells: []
     parentIndex: -1
   platformSettings:
