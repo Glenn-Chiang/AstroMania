@@ -8,6 +8,11 @@ public class EnergyManager : ResourceManager
     public override float MaxValue => maxEnergy;
     public override float Value => energy;
 
+    private void Start()
+    {
+        energy = maxEnergy;
+    }
+
     public bool ConsumeEnergy(float energyToConsume)
     {
         if (energy < energyToConsume)
