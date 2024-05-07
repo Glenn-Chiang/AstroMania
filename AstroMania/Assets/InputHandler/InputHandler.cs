@@ -25,7 +25,7 @@ public class InputHandler : MonoBehaviour
 
         if (Input.GetButtonDown("Fire1"))
         {
-            player.EquippedWeapon.Fire();
+            player.EquippedWeapon.HandleFire();
         }
     }
 }
