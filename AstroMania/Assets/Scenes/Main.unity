@@ -284,9 +284,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 3707969859058120801, guid: 41a0a0cf94691fd4e8345631a2620ec3, type: 3}
-      propertyPath: moveSpeed
-      value: 5
+    - target: {fileID: 4683577282744098206, guid: 41a0a0cf94691fd4e8345631a2620ec3, type: 3}
+      propertyPath: <EquippedWeapon>k__BackingField
+      value: 
+      objectReference: {fileID: 1555157746175756689}
+    - target: {fileID: 6475096878959724659, guid: 41a0a0cf94691fd4e8345631a2620ec3, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8857050073455270553, guid: 41a0a0cf94691fd4e8345631a2620ec3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -333,6 +337,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41a0a0cf94691fd4e8345631a2620ec3, type: 3}
+--- !u!114 &1555157746175756689 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 123025829374783713, guid: 41a0a0cf94691fd4e8345631a2620ec3, type: 3}
+  m_PrefabInstance: {fileID: 1555157746175756688}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74356bc13e2ea62448e38529bf7cfd1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

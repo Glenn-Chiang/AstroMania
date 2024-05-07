@@ -17,5 +17,10 @@ public class InputHandler : MonoBehaviour
 
         var cursorPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         player.Aiming.Aim(cursorPos);
+
+        if (Input.GetButtonDown("Fire1"))
+        {
+            player.EquippedWeapon.Fire();
+        }
     }
 }

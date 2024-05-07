@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d51b03a4cebefd44aa0665b75d78527b
+guid: 544f32880a891fd4489e56a2bea22818
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,7 +97,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638506743276050984
+  platformSettingsDirtyTick: 638506747101799400
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -121,18 +121,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: scifi_ship
+  - name: laser_gun
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 9
+    pivot: {x: 0, y: 0.5}
+    alignment: 4
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 12
-      height: 12
-    spriteID: b84815aa947796a4fb64294e3ea437ec
+      width: 6
+      height: 3
+    spriteID: 49102a1030e6dd540bd071d4bfb24719
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -144,20 +144,20 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 616935011
-    name: scifi_ship
+    guid: 323876056
+    name: laser_gun
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: scifi_ship
+    - name: laser_gun
       frameIndex: 0
       cellRect:
-        x: 2
-        y: 2
-        width: 12
-        height: 12
-      spriteId: b84815aa947796a4fb64294e3ea437ec
+        x: 5
+        y: 6
+        width: 6
+        height: 3
+      spriteId: 49102a1030e6dd540bd071d4bfb24719
     linkedCells: []
     parentIndex: -1
   platformSettings:
