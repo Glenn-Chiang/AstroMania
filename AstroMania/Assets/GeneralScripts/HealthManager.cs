@@ -1,14 +1,23 @@
 using System;
 using UnityEngine;
 
-public class HealthManager : MonoBehaviour, IDamageable
+public class HealthManager : ResourceManager, IDamageable
 {
-    private float maxHealth;
+    [SerializeField] private float maxHealth;
     private float health;
+
+    public override float MaxValue => maxHealth;
+    public override float Value => health;
+
 
     float IDamageable.HitPoints => health;
 
     public event EventHandler OnDeath;
+
+    private void Start()
+    {
+        health = maxHealth;
+    }
 
     public void TakeDamage(float damage)
     {
