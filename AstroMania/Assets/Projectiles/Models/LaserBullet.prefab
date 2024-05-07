@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5181656368540647935}
   - component: {fileID: 8723970527414513309}
   - component: {fileID: 2153957329439887613}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: LaserBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -171,3 +171,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a784e3e6bed052458bc74bdd7912131, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 0

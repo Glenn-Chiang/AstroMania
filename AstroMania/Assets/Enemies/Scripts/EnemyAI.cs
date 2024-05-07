@@ -11,7 +11,7 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private float attackInterval = 1f;
     private float attackTimer;
 
-    private float minDistance = 5f; // Enemy will not try to get closer than this distance to player
+    [SerializeField] private float minDistance = 5f; // Enemy will not try to get closer than this distance to player
 
     private enum State
     {

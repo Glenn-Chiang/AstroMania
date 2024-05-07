@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class ResourceBar : MonoBehaviour
 {
-    [SerializeField] private ResourceManager resourceManager;
+    [SerializeField] protected ResourceManager resourceManager;
     [SerializeField] private Slider slider;
 
     private void Update()
