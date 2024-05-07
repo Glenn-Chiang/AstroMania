@@ -15,6 +15,6 @@ public class Movement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.MovePosition(rb.position + moveDir * moveSpeed * Time.deltaTime);
+        rb.MovePosition(rb.position + moveSpeed * Time.deltaTime * moveDir);
     }
 }

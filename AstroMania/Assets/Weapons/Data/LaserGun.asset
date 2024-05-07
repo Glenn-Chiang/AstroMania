@@ -19,4 +19,4 @@ MonoBehaviour:
   <FireRate>k__BackingField: 0.5
   <FirePower>k__BackingField: 20
   <AmmoCost>k__BackingField: 5
-  <ProjectilePrefab>k__BackingField: {fileID: 0}
+  <ProjectilePrefab>k__BackingField: {fileID: 3985364689995716846, guid: aac73596288a4374e92408dcc33f5d29, type: 3}
