@@ -14,5 +14,8 @@ public class InputHandler : MonoBehaviour
         var moveX = Input.GetAxisRaw("Horizontal");
         var moveY = Input.GetAxisRaw("Vertical");
         player.Movement.SetMoveDir(moveX, moveY);
+
+        var cursorPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        player.Aiming.Aim(cursorPos);
     }
 }
