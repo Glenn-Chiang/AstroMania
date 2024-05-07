@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class EnemyAI : MonoBehaviour
@@ -5,6 +6,7 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private Movement movement;
     [SerializeField] private Roaming roaming;
     [SerializeField] private WeaponManager weaponManager;
+    [SerializeField] private HealthManager healthManager;
 
     [SerializeField] private float attackInterval = 1f;
     private float attackTimer;
@@ -20,14 +22,30 @@ public class EnemyAI : MonoBehaviour
 
     private GameObject target;
 
+    private void Start()
+    {
+        healthManager.OnDeath += HandleDeath;
+    }
+
+    private void HandleDeath(object sender, EventArgs e)
+    {
+        Destroy(gameObject);
+    }
+
     private void Update()
     {
         switch (state)
         {
             case State.Idle:
+                roaming.Roam();
                 break;
             case State.Aggro:
                 TrackTarget();
+
+                if (Vector2.Distance(transform.position, target.transform.position) > minDistance)
+                {
+                    movement.MoveTowards(target.transform.position);
+                }
 
                 attackTimer -= Time.deltaTime;
                 if (attackTimer <= 0)
@@ -40,23 +58,6 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
-    private void FixedUpdate()
-    {
-        switch (state)
-        {
-            case State.Idle:
-                roaming.Roam();
-                break;
-            case State.Aggro:
-                if (Vector2.Distance(transform.position, target.transform.position) > minDistance)
-                {
-                    movement.MoveTowards(target.transform.position);
-                }
-
-                break;
-        }
-    }
-    
     private void TrackTarget()
     {
         movement.LookAt(target.transform.position);

@@ -26,7 +26,7 @@ public class Roaming : MonoBehaviour
         if (isWaiting) return;
 
         movement.MoveTowards(destination);
-        if (Vector2.Distance(transform.position, destination) <= destinationThreshold)
+        if (Vector2.Distance(transform.position, destination) < destinationThreshold)
         {
             StartCoroutine(Wait());
             destination = GetRoamDestination();

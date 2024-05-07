@@ -13,13 +13,13 @@ public class InputHandler : MonoBehaviour
     {
         var moveX = Input.GetAxisRaw("Horizontal");
         var moveY = Input.GetAxisRaw("Vertical");
-        player.Movement.SetMoveDir(moveX, moveY);
+        player.Movement.SetMoveDir(new Vector2(moveX, moveY));
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
             player.Movement.Dash();
         }
-
+        
         var cursorPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         player.Movement.LookAt(cursorPos);
 
@@ -32,6 +32,10 @@ public class InputHandler : MonoBehaviour
         {
             player.WeaponManager.SelectWeapon(number - 1);
         }
+    }
+
+    private void FixedUpdate()
+    {
     }
 
     private bool GetNumberInput(out int number)
