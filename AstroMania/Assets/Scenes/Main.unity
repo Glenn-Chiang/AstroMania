@@ -724,6 +724,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3968869921899384567, guid: 41a0a0cf94691fd4e8345631a2620ec3, type: 3}
+      propertyPath: weapons.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3968869921899384567, guid: 41a0a0cf94691fd4e8345631a2620ec3, type: 3}
+      propertyPath: weapons.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: 6c603752af046724eb12b211ed8b0a74, type: 2}
     - target: {fileID: 7419207094389121070, guid: 41a0a0cf94691fd4e8345631a2620ec3, type: 3}
       propertyPath: moveSpeed
       value: 5
