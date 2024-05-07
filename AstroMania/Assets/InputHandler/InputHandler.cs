@@ -15,6 +15,11 @@ public class InputHandler : MonoBehaviour
         var moveY = Input.GetAxisRaw("Vertical");
         player.Movement.SetMoveDir(moveX, moveY);
 
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            player.Movement.Dash();
+        }
+
         var cursorPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         player.Aiming.Aim(cursorPos);
 

@@ -4,17 +4,23 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    [SerializeField] private Rigidbody2D rb;
+    [SerializeField] protected Rigidbody2D rb;
     [SerializeField] private float moveSpeed;
-    private Vector2 moveDir;
+    protected Vector2 moveDir;
 
     public void SetMoveDir(float x, float y)
     {
         moveDir = new Vector2(x, y).normalized;
     }
 
-    private void FixedUpdate()
+    public void Move()
     {
         rb.MovePosition(rb.position + moveSpeed * Time.deltaTime * moveDir);
+
+    }
+
+    protected virtual void FixedUpdate()
+    {
+        Move();
     }
 }

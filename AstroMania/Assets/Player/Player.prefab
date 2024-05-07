@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 6799369211268817351}
   - component: {fileID: 3754005871900104070}
   - component: {fileID: 1994209157110820262}
-  - component: {fileID: 3707969859058120801}
   - component: {fileID: 4683577282744098206}
   - component: {fileID: 1184218977701216792}
+  - component: {fileID: 7419207094389121070}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -162,20 +162,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.75, y: 0.75}
   m_EdgeRadius: 0
---- !u!114 &3707969859058120801
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 753743145778282374}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23be5bcca65e7494fbd1c3dd9bd6eb06, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: 3754005871900104070}
-  moveSpeed: 5
 --- !u!114 &4683577282744098206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -188,7 +174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34e69e1df36a8ea4e8af87c179f4bc82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Movement>k__BackingField: {fileID: 3707969859058120801}
+  <Movement>k__BackingField: {fileID: 7419207094389121070}
   <Aiming>k__BackingField: {fileID: 1184218977701216792}
   <EquippedWeapon>k__BackingField: {fileID: 123025829374783713}
 --- !u!114 &1184218977701216792
@@ -203,6 +189,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 046efca8c45d2ce4192a0b4af16e2f80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7419207094389121070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753743145778282374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d349ad2a516e764cb76bbec6542d1c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 3754005871900104070}
+  moveSpeed: 5
+  dashSpeed: 20
+  dashDuration: 0.2
+  dashCooldown: 0.75
 --- !u!1 &1733269783233455005
 GameObject:
   m_ObjectHideFlags: 0
