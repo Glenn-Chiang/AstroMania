@@ -46,7 +46,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   entities:
   - <Element>k__BackingField: {fileID: 1635709200835908047, guid: 6465373a90b7fcb469712d2e00d7c653, type: 3}
-    <Weight>k__BackingField: 1
+    <Weight>k__BackingField: 0.3
+  - <Element>k__BackingField: {fileID: 1635709200835908047, guid: 297ea5a2a34e29940bd16173fca8580a, type: 3}
+    <Weight>k__BackingField: 0.35
+  - <Element>k__BackingField: {fileID: 1635709200835908047, guid: f187c7720b6eeaf4cba99fa9278c24e5, type: 3}
+    <Weight>k__BackingField: 0.35
   spawnCount: 400
   minX: -100
   maxX: 100

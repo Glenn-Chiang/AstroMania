@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5189903021291475167}
   - component: {fileID: 3479103727150010372}
   m_Layer: 0
-  m_Name: Rock
+  m_Name: Rock3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 925904077074368926, guid: 98d162c75247356418f5f4ea599e1905, type: 3}
+  m_Sprite: {fileID: 8198416180040502285, guid: a7f4919f42b8fcd4cb465e32a75a8a0b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -122,8 +122,8 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.47368422, y: 0.5}
-    oldSize: {x: 2.375, y: 2}
+    pivot: {x: 0.4, y: -0.22222222}
+    oldSize: {x: 2.5, y: 2.25}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -131,15 +131,16 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.50362825, y: 1.042478}
-      - {x: -0.955631, y: 0.6686766}
-      - {x: -1.1504867, y: 0.26818588}
-      - {x: -1.1589825, y: -0.3021681}
-      - {x: -0.5630975, y: -1.0594691}
-      - {x: 0.7560619, y: -1.0169911}
-      - {x: 1.2839823, y: -0.3361504}
-      - {x: 1.3179646, y: 0.3786284}
-      - {x: 0.5436727, y: 1.059469}
+    - - {x: 0.71219826, y: 2.799646}
+      - {x: -0.115768194, y: 2.7920256}
+      - {x: -1.0666163, y: 2.1980374}
+      - {x: -1.0558474, y: 1.2435864}
+      - {x: -0.84773445, y: 0.6808152}
+      - {x: -0.33305764, y: 0.45304337}
+      - {x: 0.9311899, y: 0.42344475}
+      - {x: 1.547583, y: 0.86163044}
+      - {x: 1.549135, y: 2.157789}
+      - {x: 1.3001515, y: 2.4930518}
   m_UseDelaunayMesh: 0
 --- !u!50 &5189903021291475167
 Rigidbody2D:

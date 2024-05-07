@@ -20,18 +20,16 @@ public abstract class Spawner : MonoBehaviour
         }
     }
 
-    public void SpawnEntity(GameObject entity)
-    {
-        var spawnPosition = GetSpawnPosition();
-        Instantiate(entity, spawnPosition, Quaternion.identity);
-    }
-
-
     public void SpawnRandomEntity()
     {
         var spawnPosition = GetSpawnPosition();
         var entity = RandomUtils.WeightedRandomSelect(entities);
-        Instantiate(entity, spawnPosition, Quaternion.identity);
+        Instantiate(entity, spawnPosition, RandomRotation());
+    }
+
+    private Quaternion RandomRotation()
+    {
+        return Quaternion.Euler(0, 0, Random.Range(0, 360));
     }
 
     protected abstract Vector2 GetSpawnPosition();
