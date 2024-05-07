@@ -19,6 +19,7 @@ public class WeaponController : MonoBehaviour
         var projectile = Instantiate(weaponData.Projectile, firePoint.position, firePoint.rotation);
         var projectileRb = projectile.GetComponent<Rigidbody2D>();
         projectileRb.AddForce(weaponData.FirePower * firePoint.right, ForceMode2D.Impulse);
+        projectile.damage = weaponData.Damage;
     }
 
     private IEnumerator CoolDown()
