@@ -33,7 +33,7 @@ public class PlayerMovement : Movement
     {
         if (!isDashing)
         {
-            Move();
+            MoveTo(moveDir);
         }
     }
 }

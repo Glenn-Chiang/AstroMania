@@ -21,7 +21,7 @@ public class InputHandler : MonoBehaviour
         }
 
         var cursorPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        player.Aiming.Aim(cursorPos);
+        player.Movement.LookAt(cursorPos);
 
         if (Input.GetButtonDown("Fire1"))
         {
