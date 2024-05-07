@@ -9,7 +9,7 @@ public class WeaponData : ScriptableObject
     [field: SerializeField] public float Damage { get; private set; }
     [field: SerializeField] public float FireRate { get; private set; }
     [field: SerializeField] public float FirePower { get; private set; }
-    [field: SerializeField] public float AmmoCost { get; private set; }
+    [field: SerializeField] public float EnergyCost { get; private set; }
     [field: SerializeField] public WeaponController Controller { get; private set; }
     [field: SerializeField] public ProjectileController Projectile { get; private set; }
 

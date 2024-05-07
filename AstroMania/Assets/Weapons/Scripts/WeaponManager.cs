@@ -10,6 +10,8 @@ public class WeaponManager : MonoBehaviour
     public WeaponData SelectedWeapon => weapons[selectedIndex];
     private WeaponController equippedWeapon;
 
+    [SerializeField] private EnergyManager energyManager;
+
     private void Awake()
     {
         EquipWeapon();
@@ -17,7 +19,7 @@ public class WeaponManager : MonoBehaviour
 
     public void FireWeapon()
     {
-        if (equippedWeapon != null)
+        if (equippedWeapon != null && (energyManager == null || energyManager.ConsumeEnergy(SelectedWeapon.EnergyCost)))
         {
             equippedWeapon.HandleFire();
         }

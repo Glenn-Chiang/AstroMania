@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 7419207094389121070}
   - component: {fileID: 3968869921899384567}
   - component: {fileID: 1557464832560917483}
+  - component: {fileID: 211932211201157776}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -178,6 +179,7 @@ MonoBehaviour:
   <Movement>k__BackingField: {fileID: 7419207094389121070}
   <WeaponManager>k__BackingField: {fileID: 3968869921899384567}
   healthManager: {fileID: 1557464832560917483}
+  energyManager: {fileID: 0}
 --- !u!114 &7419207094389121070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -211,6 +213,7 @@ MonoBehaviour:
   weapons:
   - {fileID: 11400000, guid: 463ba19706e9a954a91391552d6b8be3, type: 2}
   - {fileID: 11400000, guid: 8fe20eb6b1a412248bfb1f6535f67dc6, type: 2}
+  energyManager: {fileID: 211932211201157776}
 --- !u!114 &1557464832560917483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -223,6 +226,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7a982003282ec64b8663b2369c88a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 100
+--- !u!114 &211932211201157776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753743145778282374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0285d252c366ff348a99077b53816644, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxEnergy: 400
 --- !u!1 &1733269783233455005
 GameObject:
   m_ObjectHideFlags: 0
