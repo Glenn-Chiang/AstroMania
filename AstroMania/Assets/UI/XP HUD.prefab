@@ -213,7 +213,7 @@ GameObject:
   - component: {fileID: 3203455822502813887}
   - component: {fileID: 7686855082898350721}
   m_Layer: 5
-  m_Name: LevelDisplay
+  m_Name: LevelText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -456,6 +456,8 @@ GameObject:
   - component: {fileID: 7132820952771461909}
   - component: {fileID: 1964969801852320069}
   - component: {fileID: 4416010980584590977}
+  - component: {fileID: 5545305387703355029}
+  - component: {fileID: 8550928567646665148}
   m_Layer: 5
   m_Name: XP HUD
   m_TagString: Untagged
@@ -522,3 +524,31 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &5545305387703355029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8312815171277470465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b7c755be35255d4ba5f5fa52d2c77ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resourceManager: {fileID: 0}
+  slider: {fileID: 3616210016871279055}
+--- !u!114 &8550928567646665148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8312815171277470465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41c31d0235bd5cb438005753f7710e1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xpManager: {fileID: 0}
+  levelText: {fileID: 7686855082898350721}

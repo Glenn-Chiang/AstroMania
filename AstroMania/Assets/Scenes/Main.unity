@@ -966,10 +966,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 4683577282744098206, guid: 41a0a0cf94691fd4e8345631a2620ec3, type: 3}
-      propertyPath: energyManager
-      value: 
-      objectReference: {fileID: 1523486486}
     - target: {fileID: 8857050073455270553, guid: 41a0a0cf94691fd4e8345631a2620ec3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1035,6 +1031,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0285d252c366ff348a99077b53816644, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1523486487 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5794111128145611694, guid: 41a0a0cf94691fd4e8345631a2620ec3, type: 3}
+  m_PrefabInstance: {fileID: 1523486484}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a8d35c18f67034abcc9965187583b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1877132774 stripped
@@ -1149,14 +1156,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 358502488}
     m_Modifications:
-    - target: {fileID: 3616210016871279055, guid: ac89f5613fedaba46bd47451a06ca745, type: 3}
-      propertyPath: m_TargetGraphic
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 4267072174864732777, guid: ac89f5613fedaba46bd47451a06ca745, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5545305387703355029, guid: ac89f5613fedaba46bd47451a06ca745, type: 3}
+      propertyPath: resourceManager
+      value: 
+      objectReference: {fileID: 1523486487}
     - target: {fileID: 7132820952771461909, guid: ac89f5613fedaba46bd47451a06ca745, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1241,6 +1248,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: XP HUD
       objectReference: {fileID: 0}
+    - target: {fileID: 8550928567646665148, guid: ac89f5613fedaba46bd47451a06ca745, type: 3}
+      propertyPath: xpManager
+      value: 
+      objectReference: {fileID: 1523486487}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
