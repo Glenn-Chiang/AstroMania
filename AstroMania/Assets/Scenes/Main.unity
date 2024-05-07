@@ -220,6 +220,10 @@ PrefabInstance:
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 2371596982206851992, guid: 06c740073f6e0be488b2cb6b1c7108cf, type: 3}
+      propertyPath: m_BodyType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2371596982206851992, guid: 06c740073f6e0be488b2cb6b1c7108cf, type: 3}
       propertyPath: m_Interpolate
       value: 0
       objectReference: {fileID: 0}
