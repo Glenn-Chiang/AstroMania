@@ -17,9 +17,12 @@ public class XPManager : ResourceManager
     {
         if (CurrentLevelXp + xpReward >= xpPerLevel)
         {
+            totalXp += xpReward;
             LevelUp();
+        } else
+        {
+            totalXp += xpReward;
         }
-        totalXp += xpReward;
     }
 
     private void LevelUp()

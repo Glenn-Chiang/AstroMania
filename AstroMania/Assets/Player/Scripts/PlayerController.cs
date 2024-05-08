@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour, ICharacter
@@ -29,7 +30,20 @@ public class PlayerController : MonoBehaviour, ICharacter
 
     private void Start()
     {
-        EnemyAI.OnEnemyDeath += HandleEnemyDeath;       
+        xpManager.OnLevelUp += HandleLevelUp;
+        healthManager.OnDeath += HandleDeath;
+
+        EnemyAI.OnEnemyDeath += HandleEnemyDeath;   
+    }
+
+    private void HandleLevelUp(object sender, LevelUpEventArgs e)
+    {
+        healthManager.HealToFull();
+    }
+
+    private void HandleDeath(object sender, EventArgs e)
+    {
+        Debug.Log("Player died");
     }
 
     private void HandleEnemyDeath(object sender, EnemyDeathEventArgs e)
