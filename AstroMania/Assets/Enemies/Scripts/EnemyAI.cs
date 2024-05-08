@@ -7,6 +7,7 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private Roaming roaming;
     [SerializeField] private WeaponManager weaponManager;
     [SerializeField] private HealthManager healthManager;
+    [SerializeField] private OrbDropper xpDropper;
 
     [SerializeField] private float attackInterval = 1f;
     private float attackTimer;
@@ -30,6 +31,7 @@ public class EnemyAI : MonoBehaviour
     private void HandleDeath(object sender, EventArgs e)
     {
         Destroy(gameObject);
+        xpDropper.DropOrbs(5);
     }
 
     private void Update()

@@ -2,7 +2,7 @@ using UnityEngine;
 
 public abstract class OrbController : MonoBehaviour
 {
-    [SerializeField] private float moveSpeed = 20f;
+    [SerializeField] private float moveSpeed = 15f;
     protected OrbMagnet target; // Orb will move toward this target
 
     public void AttractTo(OrbMagnet magnet)
@@ -32,13 +32,14 @@ public abstract class OrbController : MonoBehaviour
         transform.position = Vector2.MoveTowards(transform.position, target.transform.position, moveSpeed * Time.deltaTime);
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.TryGetComponent<OrbMagnet>(out var target))
+        Destroy(gameObject);
+        if (collision.collider.GetComponentInChildren<OrbMagnet>() != null)
         {
             EvokeEffect();
             Destroy(gameObject);
-        }
+        }   
     }
 
     protected abstract void EvokeEffect();

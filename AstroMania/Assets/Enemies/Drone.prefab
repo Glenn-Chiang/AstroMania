@@ -48,6 +48,7 @@ GameObject:
   - component: {fileID: 4372755983408478146}
   - component: {fileID: 4656005358509597324}
   - component: {fileID: 4098429489217318975}
+  - component: {fileID: -2028445173981856312}
   m_Layer: 6
   m_Name: Drone
   m_TagString: Untagged
@@ -258,6 +259,7 @@ MonoBehaviour:
   roaming: {fileID: 4130686693555329234}
   weaponManager: {fileID: 4372755983408478146}
   healthManager: {fileID: 4098429489217318975}
+  xpDropper: {fileID: -2028445173981856312}
   attackInterval: 1
   minDistance: 5
 --- !u!114 &4098429489217318975
@@ -273,6 +275,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 50
+--- !u!114 &-2028445173981856312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8920851708171242474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d448f01a7f2ac034597c70ce4218fa95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  orb: {fileID: -203785345038803335, guid: 7ef32dc5d83002d4fab82b9108d6cd34, type: 3}
 --- !u!1 &9129804258386740636
 GameObject:
   m_ObjectHideFlags: 0
