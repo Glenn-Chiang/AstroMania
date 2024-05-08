@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 911823638460635932}
   - component: {fileID: 1234614061671989617}
   - component: {fileID: -275521608503157693}
+  - component: {fileID: -5905082785737305955}
   m_Layer: 0
   m_Name: HealthCell
   m_TagString: Untagged
@@ -146,3 +147,30 @@ MonoBehaviour:
   hitPoints: 40
   obj: {fileID: 8545005320542161402, guid: f2d0299f0f6f7414394a6c7ab505c8c3, type: 3}
   count: 5
+--- !u!50 &-5905082785737305955
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4852294399675846799}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 10
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

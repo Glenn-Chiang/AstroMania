@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 15
-  healAmount: 1
+  healAmount: 5
 --- !u!58 &8524905547972525191
 CircleCollider2D:
   m_ObjectHideFlags: 0

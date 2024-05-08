@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 928386555645953309}
   - component: {fileID: 3014456393213362411}
   - component: {fileID: 5189903021291475167}
-  - component: {fileID: 3479103727150010372}
+  - component: {fileID: 2161716328698087020}
   m_Layer: 0
   m_Name: Rock4
   m_TagString: Untagged
@@ -168,7 +168,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &3479103727150010372
+--- !u!114 &2161716328698087020
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -177,7 +177,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1635709200835908047}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 247883743b9ede746a7599e61855da18, type: 3}
+  m_Script: {fileID: 11500000, guid: d448f01a7f2ac034597c70ce4218fa95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   hitPoints: 50
+  obj: {fileID: 1113693568401335511, guid: 85f5ceeeb8188a24ab8ecf762f7fd570, type: 3}
+  count: 1

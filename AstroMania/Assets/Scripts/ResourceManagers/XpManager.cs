@@ -1,4 +1,5 @@
 using System;
+using UnityEngine;
 
 public class XPManager : ResourceManager
 {
@@ -24,6 +25,7 @@ public class XPManager : ResourceManager
     private void LevelUp()
     {
         OnLevelUp?.Invoke(this, new LevelUpEventArgs(Level));
+        Debug.Log("Level up");
     }
 }
 
