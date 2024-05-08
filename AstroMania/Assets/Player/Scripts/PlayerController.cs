@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     
     [SerializeField] private HealthManager healthManager;
     [SerializeField] private EnergyManager energyManager;
+    [SerializeField] private XPManager xpManager;
 
     private void Awake()
     {
@@ -17,6 +18,16 @@ public class PlayerController : MonoBehaviour
             return;
         }
         Instance = this;
+    }
 
+    private void Start()
+    {
+        EnemyAI.OnEnemyDeath += HandleEnemyDeath;       
+    }
+
+    private void HandleEnemyDeath(object sender, EnemyDeathEventArgs e)
+    {
+        var enemyData = e.enemyData;
+        xpManager.AddXp(enemyData.XpReward);
     }
 }

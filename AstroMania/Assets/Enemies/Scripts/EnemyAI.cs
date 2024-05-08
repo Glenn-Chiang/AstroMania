@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class EnemyAI : MonoBehaviour
 {
+    [SerializeField] private EnemyData enemyData;
+
     [SerializeField] private Movement movement;
     [SerializeField] private Roaming roaming;
     [SerializeField] private WeaponManager weaponManager;
@@ -10,8 +12,9 @@ public class EnemyAI : MonoBehaviour
 
     [SerializeField] private float attackInterval = 1f;
     private float attackTimer;
-
     [SerializeField] private float minDistance = 5f; // Enemy will not try to get closer than this distance to player
+
+    public static event EventHandler<EnemyDeathEventArgs> OnEnemyDeath;
 
     private enum State
     {
@@ -27,10 +30,6 @@ public class EnemyAI : MonoBehaviour
         healthManager.OnDeath += HandleDeath;
     }
 
-    private void HandleDeath(object sender, EventArgs e)
-    {
-        Destroy(gameObject);
-    }
 
     private void Update()
     {
@@ -73,5 +72,19 @@ public class EnemyAI : MonoBehaviour
     {
         state = State.Idle;
         target = null;   
+    }
+    private void HandleDeath(object sender, EventArgs e)
+    {
+        Destroy(gameObject);
+        OnEnemyDeath?.Invoke(this, new EnemyDeathEventArgs(enemyData));
+    }
+}
+
+public class EnemyDeathEventArgs : EventArgs
+{
+    public readonly EnemyData enemyData;
+    public EnemyDeathEventArgs(EnemyData enemyData)
+    {
+        this.enemyData = enemyData;
     }
 }

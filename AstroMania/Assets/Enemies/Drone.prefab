@@ -254,6 +254,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7bc77bc75889974a98990516d9e4083, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyData: {fileID: 11400000, guid: 7eac9994be8bc294e83d43fc8ee0915f, type: 2}
   movement: {fileID: 3334555284455806673}
   roaming: {fileID: 4130686693555329234}
   weaponManager: {fileID: 4372755983408478146}

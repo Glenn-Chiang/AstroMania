@@ -182,6 +182,7 @@ MonoBehaviour:
   <WeaponManager>k__BackingField: {fileID: 3968869921899384567}
   healthManager: {fileID: 1557464832560917483}
   energyManager: {fileID: 211932211201157776}
+  xpManager: {fileID: 5794111128145611694}
 --- !u!114 &7419207094389121070
 MonoBehaviour:
   m_ObjectHideFlags: 0
