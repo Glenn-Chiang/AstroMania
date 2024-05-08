@@ -9,7 +9,7 @@ public class WeaponMenu : MonoBehaviour
 
     [SerializeField] private List<MenuSlot> menuSlots;
 
-    private void Start()
+    private void OnEnable()
     {
         for (int i = 0; i < weapons.Count; i++)
         {
@@ -21,13 +21,24 @@ public class WeaponMenu : MonoBehaviour
 
             if (InstalledWeapons.Contains(weapon))
             {
-                // Already installed this weapon
                 slot.Button.gameObject.SetActive(false);
             }
             else
             {
                 slot.Button.gameObject.SetActive(true);
+                slot.Button.onClick.AddListener(() => OnClickInstall(slot, weapon));
             }
         }
+    }
+
+    private void OnClickInstall(MenuSlot slot, WeaponData weapon)
+    {
+        weaponManager.AddWeapon(weapon);
+        Close();
+    }
+
+    private void Close()
+    {
+        gameObject.SetActive(false);
     }
 }

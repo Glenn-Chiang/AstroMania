@@ -37,6 +37,14 @@ public class WeaponManager : MonoBehaviour
         EquipWeapon();
     }
 
+    public void AddWeapon(WeaponData weapon)
+    {
+        if (!weapons.Contains(weapon))
+        {
+            weapons.Add(weapon);
+        }
+    }
+
     private void EquipWeapon()
     {
         equippedWeapon = Instantiate(SelectedWeapon.Controller, weaponSlot);
