@@ -1,16 +1,17 @@
 using System;
 using UnityEngine;
 
-public class EnemyAI : MonoBehaviour
+public class EnemyAI : MonoBehaviour, ICharacter
 {
     [SerializeField] private EnemyData enemyData;
+    CharacterData ICharacter.CharacterData => enemyData;
+    public CharacterStats Stats => new(enemyData);
 
     [SerializeField] private Movement movement;
     [SerializeField] private Roaming roaming;
     [SerializeField] private WeaponManager weaponManager;
     [SerializeField] private HealthManager healthManager;
 
-    [SerializeField] private float attackInterval = 1f;
     private float attackTimer;
     [SerializeField] private float minDistance = 5f; // Enemy will not try to get closer than this distance to player
 
@@ -50,7 +51,7 @@ public class EnemyAI : MonoBehaviour
                 if (attackTimer <= 0)
                 {
                     weaponManager.FireWeapon();
-                    attackTimer = attackInterval;
+                    attackTimer = enemyData.AttackInterval;
                 }
 
                 break;

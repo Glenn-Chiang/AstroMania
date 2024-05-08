@@ -2,15 +2,18 @@ using UnityEngine;
 
 public class EnergyManager : ResourceManager
 {
-    [SerializeField] private float maxEnergy;
+    [SerializeField] private PlayerController player;
+
+    private float MaxEnergy => player.Stats.maxEnergy.Value;
     private float energy;
 
-    public override float MaxValue => maxEnergy;
+    public override float MaxValue => MaxEnergy;
     public override float Value => energy;
 
     private void Start()
     {
-        energy = maxEnergy;
+        player = GetComponent<PlayerController>();
+        energy = MaxEnergy;
     }
 
     public bool ConsumeEnergy(float energyToConsume)
@@ -26,6 +29,6 @@ public class EnergyManager : ResourceManager
 
     public void AddEnergy(float energyAdded)
     {
-        energy += Mathf.Min(energyAdded, maxEnergy - energy);
+        energy += Mathf.Min(energyAdded, MaxEnergy - energy);
     }
 }

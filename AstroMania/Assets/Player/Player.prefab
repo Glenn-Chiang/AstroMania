@@ -178,6 +178,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34e69e1df36a8ea4e8af87c179f4bc82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  characterData: {fileID: 11400000, guid: 139ded925dedbb24c904e0d450a38061, type: 2}
   <Movement>k__BackingField: {fileID: 7419207094389121070}
   <WeaponManager>k__BackingField: {fileID: 3968869921899384567}
   healthManager: {fileID: 1557464832560917483}
@@ -196,7 +197,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 3754005871900104070}
-  moveSpeed: 5
   dashSpeed: 20
   dashDuration: 0.2
   dashCooldown: 0.75
@@ -230,7 +230,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7a982003282ec64b8663b2369c88a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
 --- !u!114 &211932211201157776
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -243,7 +242,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0285d252c366ff348a99077b53816644, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxEnergy: 400
+  player: {fileID: 0}
 --- !u!114 &5794111128145611694
 MonoBehaviour:
   m_ObjectHideFlags: 0

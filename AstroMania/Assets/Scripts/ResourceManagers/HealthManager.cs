@@ -3,10 +3,12 @@ using UnityEngine;
 
 public class HealthManager : ResourceManager, IDamageable
 {
-    [SerializeField] private float maxHealth;
+    [SerializeField] private ICharacter character;
+
+    private float MaxHealth => character.Stats.maxHealth.Value;
     private float health;
 
-    public override float MaxValue => maxHealth;
+    public override float MaxValue => MaxHealth;
     public override float Value => health;
 
 
@@ -16,7 +18,8 @@ public class HealthManager : ResourceManager, IDamageable
 
     private void Start()
     {
-        health = maxHealth;
+        character = GetComponent<ICharacter>();
+        health = MaxHealth;
     }
 
     public void TakeDamage(float damage)
@@ -34,12 +37,12 @@ public class HealthManager : ResourceManager, IDamageable
 
     public void Heal(float _health)
     {
-        health += Math.Min(_health, maxHealth - health); // prevent overhealing
+        health += Math.Min(_health, MaxHealth - health); // prevent overhealing
     }
 
     public void HealToFull()
     {
-        health = maxHealth;
+        health = MaxHealth;
     }
 
     private void Die()
