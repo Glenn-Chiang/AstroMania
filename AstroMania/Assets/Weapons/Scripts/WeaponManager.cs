@@ -6,6 +6,8 @@ public class WeaponManager : MonoBehaviour
     [SerializeField] Transform weaponSlot;
 
     [SerializeField] private List<WeaponData> weapons; // Weapon prefabs
+    public List<WeaponData> Weapons => weapons;
+
     private int selectedIndex = 0;
     public WeaponData SelectedWeapon => weapons[selectedIndex];
     private WeaponController equippedWeapon;

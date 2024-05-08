@@ -15,4 +15,7 @@ MonoBehaviour:
   <Name>k__BackingField: Drone
   <Description>k__BackingField: Standard enemy ship
   <Sprite>k__BackingField: {fileID: -5639378249072877798, guid: 36686fb93bd6ec64ea9ac80d6872c6b4, type: 3}
+  <MaxHealth>k__BackingField: 50
+  <MoveSpeed>k__BackingField: 4
   <XpReward>k__BackingField: 10
+  <AttackInterval>k__BackingField: 1
