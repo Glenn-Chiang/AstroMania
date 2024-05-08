@@ -8,6 +8,7 @@ public class WeaponMenu : MonoBehaviour
     private List<WeaponData> InstalledWeapons => weaponManager.Weapons;
 
     [SerializeField] private List<MenuSlot> menuSlots;
+    [SerializeField] private DisplayController displayController;
 
     private void OnEnable()
     {
@@ -34,11 +35,6 @@ public class WeaponMenu : MonoBehaviour
     private void OnClickInstall(MenuSlot slot, WeaponData weapon)
     {
         weaponManager.AddWeapon(weapon);
-        Close();
-    }
-
-    private void Close()
-    {
-        gameObject.SetActive(false);
+        displayController.Close();
     }
 }
