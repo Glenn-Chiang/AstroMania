@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class DestructibleObject : MonoBehaviour, IDamageable
@@ -16,7 +14,7 @@ public class DestructibleObject : MonoBehaviour, IDamageable
         }
     }
 
-    public void OnDestroyed()
+    public virtual void OnDestroyed()
     {
         Destroy(gameObject);
     }
