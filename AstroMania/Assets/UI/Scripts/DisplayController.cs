@@ -4,7 +4,7 @@ using UnityEngine;
 public class DisplayController : MonoBehaviour
 {
     [SerializeField] private XPManager xpManager;
-    [SerializeField] private GameObject weaponMenu;
+    [SerializeField] private GameObject levelUpMenu;
 
     private void Start()
     {
@@ -19,12 +19,12 @@ public class DisplayController : MonoBehaviour
     public void ShowMenu()
     {
         Time.timeScale = 0f;
-        weaponMenu.SetActive(true);
+        levelUpMenu.SetActive(true);
     }
 
     public void Close()
     {
-        weaponMenu.SetActive(false);
+        levelUpMenu.SetActive(false);
         Time.timeScale = 1f;
     }
 }
