@@ -12,12 +12,12 @@ GameObject:
   - component: {fileID: 6799369211268817351}
   - component: {fileID: 3754005871900104070}
   - component: {fileID: 1994209157110820262}
-  - component: {fileID: 4683577282744098206}
   - component: {fileID: 7419207094389121070}
   - component: {fileID: 3968869921899384567}
   - component: {fileID: 1557464832560917483}
   - component: {fileID: 211932211201157776}
   - component: {fileID: 5794111128145611694}
+  - component: {fileID: 8096083153583554206}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -166,24 +166,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.75, y: 0.75}
   m_EdgeRadius: 0
---- !u!114 &4683577282744098206
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 753743145778282374}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34e69e1df36a8ea4e8af87c179f4bc82, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterData: {fileID: 11400000, guid: 139ded925dedbb24c904e0d450a38061, type: 2}
-  <Movement>k__BackingField: {fileID: 7419207094389121070}
-  <WeaponManager>k__BackingField: {fileID: 3968869921899384567}
-  healthManager: {fileID: 1557464832560917483}
-  energyManager: {fileID: 211932211201157776}
-  xpManager: {fileID: 5794111128145611694}
 --- !u!114 &7419207094389121070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -255,6 +237,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a8d35c18f67034abcc9965187583b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xpPerLevel: 100
+--- !u!114 &8096083153583554206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753743145778282374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34e69e1df36a8ea4e8af87c179f4bc82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterData: {fileID: 11400000, guid: 7f7a9adabf7267344a69d91d259191b8, type: 2}
+  <Movement>k__BackingField: {fileID: 7419207094389121070}
+  <WeaponManager>k__BackingField: {fileID: 3968869921899384567}
+  healthManager: {fileID: 1557464832560917483}
+  energyManager: {fileID: 211932211201157776}
+  xpManager: {fileID: 5794111128145611694}
 --- !u!1 &1733269783233455005
 GameObject:
   m_ObjectHideFlags: 0
