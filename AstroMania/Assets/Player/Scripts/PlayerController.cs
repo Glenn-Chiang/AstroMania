@@ -39,7 +39,8 @@ public class PlayerController : MonoBehaviour, ICharacter
     private void HandleLevelUp(object sender, LevelUpEventArgs e)
     {
         Stats.Upgrade();
-        healthManager.HealToFull();
+        healthManager.Replenish();
+        energyManager.Replenish();
     }
 
     private void HandleDeath(object sender, EventArgs e)

@@ -15,7 +15,7 @@ MonoBehaviour:
   <Name>k__BackingField: Machine Gun
   <Description>k__BackingField: Very fast fire rate
   <Sprite>k__BackingField: {fileID: 804378266085674949, guid: e41ce9de4491bc3479e3029e77596ace, type: 3}
-  <Damage>k__BackingField: 10
+  <Damage>k__BackingField: 8
   <FireRate>k__BackingField: 0.05
   <FirePower>k__BackingField: 20
   <EnergyCost>k__BackingField: 1

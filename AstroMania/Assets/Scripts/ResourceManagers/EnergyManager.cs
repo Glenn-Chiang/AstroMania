@@ -8,7 +8,7 @@ public class EnergyManager : ResourceManager
     private float energy;
 
     public override float MaxValue => MaxEnergy;
-    public override float Value => energy;
+    public override float Value { get => energy; protected set { energy = value; } }
 
     private void Start()
     {

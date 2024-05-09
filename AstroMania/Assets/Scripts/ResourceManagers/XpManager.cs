@@ -9,7 +9,7 @@ public class XPManager : ResourceManager
     public float CurrentLevelXp => totalXp % xpPerLevel; // XP earned at current level
 
     public override float MaxValue => xpPerLevel;
-    public override float Value => CurrentLevelXp;
+    public override float Value { get => CurrentLevelXp; protected set {  } }
 
     public event EventHandler<LevelUpEventArgs> OnLevelUp;
 

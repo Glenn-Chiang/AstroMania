@@ -748,10 +748,6 @@ PrefabInstance:
       propertyPath: weapons.Array.data[1]
       value: 
       objectReference: {fileID: 11400000, guid: 6c603752af046724eb12b211ed8b0a74, type: 2}
-    - target: {fileID: 4683577282744098206, guid: 41a0a0cf94691fd4e8345631a2620ec3, type: 3}
-      propertyPath: characterData
-      value: 
-      objectReference: {fileID: 11400000, guid: 139ded925dedbb24c904e0d450a38061, type: 2}
     - target: {fileID: 5794111128145611694, guid: 41a0a0cf94691fd4e8345631a2620ec3, type: 3}
       propertyPath: xpPerLevel
       value: 100
@@ -1284,6 +1280,14 @@ PrefabInstance:
     - target: {fileID: 729972324745750525, guid: c95c5dc3193d2f44bb072720773e6233, type: 3}
       propertyPath: m_Name
       value: CellSpawner
+      objectReference: {fileID: 0}
+    - target: {fileID: 1902919154554905500, guid: c95c5dc3193d2f44bb072720773e6233, type: 3}
+      propertyPath: entities.Array.data[0].<Weight>k__BackingField
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1902919154554905500, guid: c95c5dc3193d2f44bb072720773e6233, type: 3}
+      propertyPath: entities.Array.data[1].<Weight>k__BackingField
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7273554971252452028, guid: c95c5dc3193d2f44bb072720773e6233, type: 3}
       propertyPath: m_LocalPosition.x
