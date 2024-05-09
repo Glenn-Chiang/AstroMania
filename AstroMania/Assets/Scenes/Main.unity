@@ -751,22 +751,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 753743145778282374, guid: 41a0a0cf94691fd4e8345631a2620ec3, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3968869921899384567, guid: 41a0a0cf94691fd4e8345631a2620ec3, type: 3}
-      propertyPath: weapons.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3968869921899384567, guid: 41a0a0cf94691fd4e8345631a2620ec3, type: 3}
-      propertyPath: weapons.Array.data[1]
-      value: 
-      objectReference: {fileID: 11400000, guid: 6c603752af046724eb12b211ed8b0a74, type: 2}
-    - target: {fileID: 5794111128145611694, guid: 41a0a0cf94691fd4e8345631a2620ec3, type: 3}
-      propertyPath: xpPerLevel
-      value: 100
-      objectReference: {fileID: 0}
     - target: {fileID: 8857050073455270553, guid: 41a0a0cf94691fd4e8345631a2620ec3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

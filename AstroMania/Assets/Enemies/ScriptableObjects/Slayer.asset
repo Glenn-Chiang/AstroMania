@@ -17,7 +17,7 @@ MonoBehaviour:
   <Sprite>k__BackingField: {fileID: 8846507863177730235, guid: d4b8e6c6ff40e1e489798458f4a74fd1, type: 3}
   <MaxHealth>k__BackingField:
     <Levels>k__BackingField:
-    - 100
+    - 120
   <MoveSpeed>k__BackingField:
     <Levels>k__BackingField:
     - 2.5

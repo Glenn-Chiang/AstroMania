@@ -17,6 +17,8 @@ public class EnemyAI : MonoBehaviour, ICharacter
 
     public static event EventHandler<EnemyDeathEventArgs> OnEnemyDeath;
 
+    [SerializeField] private DeathEffect deathEffect;
+
     private enum State
     {
         Idle, Aggro
@@ -84,6 +86,7 @@ public class EnemyAI : MonoBehaviour, ICharacter
     private void HandleDeath(object sender, EventArgs e)
     {
         Destroy(gameObject);
+        deathEffect.Effect();
         OnEnemyDeath?.Invoke(this, new EnemyDeathEventArgs(enemyData));
     }
 }

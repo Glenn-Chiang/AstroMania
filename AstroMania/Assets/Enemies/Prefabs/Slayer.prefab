@@ -48,6 +48,7 @@ GameObject:
   - component: {fileID: 4372755983408478146}
   - component: {fileID: 4656005358509597324}
   - component: {fileID: 4098429489217318975}
+  - component: {fileID: 6624251957727437475}
   m_Layer: 6
   m_Name: Slayer
   m_TagString: Untagged
@@ -249,6 +250,7 @@ MonoBehaviour:
   weaponManager: {fileID: 4372755983408478146}
   healthManager: {fileID: 4098429489217318975}
   minDistance: 2
+  deathEffect: {fileID: 6624251957727437475}
 --- !u!114 &4098429489217318975
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -261,6 +263,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7a982003282ec64b8663b2369c88a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6624251957727437475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8920851708171242474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07d9c6bdfcdcacd48af3772898aab692, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosion: {fileID: 1113693568401335511, guid: 889ff4b69713ca144ab7579ab1f45125, type: 3}
 --- !u!1 &9129804258386740636
 GameObject:
   m_ObjectHideFlags: 0
