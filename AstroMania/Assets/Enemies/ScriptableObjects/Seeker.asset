@@ -27,5 +27,5 @@ MonoBehaviour:
   <FireRateBonus>k__BackingField:
     <Levels>k__BackingField:
     - 1
-  <XpReward>k__BackingField: 15
-  <AttackInterval>k__BackingField: 0.5
+  <XpReward>k__BackingField: 10
+  <AttackInterval>k__BackingField: 0.8

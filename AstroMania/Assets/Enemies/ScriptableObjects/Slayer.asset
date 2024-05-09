@@ -17,7 +17,7 @@ MonoBehaviour:
   <Sprite>k__BackingField: {fileID: 8846507863177730235, guid: d4b8e6c6ff40e1e489798458f4a74fd1, type: 3}
   <MaxHealth>k__BackingField:
     <Levels>k__BackingField:
-    - 120
+    - 100
   <MoveSpeed>k__BackingField:
     <Levels>k__BackingField:
     - 2.5
@@ -27,5 +27,5 @@ MonoBehaviour:
   <FireRateBonus>k__BackingField:
     <Levels>k__BackingField:
     - 1
-  <XpReward>k__BackingField: 20
+  <XpReward>k__BackingField: 15
   <AttackInterval>k__BackingField: 0.5

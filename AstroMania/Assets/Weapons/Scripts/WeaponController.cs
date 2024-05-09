@@ -3,12 +3,12 @@ using UnityEngine;
 
 public class WeaponController : MonoBehaviour
 {
-    [SerializeField] private Transform firePoint;
-    [SerializeField] private WeaponData weaponData;
+    [SerializeField] protected Transform firePoint;
+    [SerializeField] protected WeaponData weaponData;
     private bool canFire = true;
 
-    public Stat damageBonus;
-    public Stat fireRateBonus;
+    [HideInInspector] public Stat damageBonus;
+    [HideInInspector] public Stat fireRateBonus;
 
     public void HandleFire()
     {
@@ -17,7 +17,12 @@ public class WeaponController : MonoBehaviour
         StartCoroutine(CoolDown());
     }
 
-    private void Fire()
+    protected virtual void Fire()
+    {
+        Fire(firePoint);
+    }
+
+    protected virtual void Fire(Transform firePoint)
     {
         var projectile = Instantiate(weaponData.Projectile, firePoint.position, firePoint.rotation);
         var projectileRb = projectile.GetComponent<Rigidbody2D>();
