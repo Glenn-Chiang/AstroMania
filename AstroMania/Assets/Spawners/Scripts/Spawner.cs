@@ -5,11 +5,11 @@ public abstract class Spawner : MonoBehaviour
 {
     [SerializeField] private List<WeightedElement<GameObject>> entities;
 
-    [SerializeField] private int spawnCount;
+    [SerializeField] private int initialSpawnCount;
 
     private void Awake()
     {
-        SpawnRandomEntities(spawnCount);
+        SpawnRandomEntities(initialSpawnCount);
     }
 
     public void SpawnRandomEntities(int count)

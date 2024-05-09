@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5098639345516106762}
   - component: {fileID: 5544089719255625571}
+  - component: {fileID: 7577490239597732933}
   m_Layer: 0
   m_Name: EnemySpawner
   m_TagString: Untagged
@@ -46,9 +47,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   entities:
   - <Element>k__BackingField: {fileID: 8920851708171242474, guid: 06c740073f6e0be488b2cb6b1c7108cf, type: 3}
-    <Weight>k__BackingField: 1
-  spawnCount: 200
+    <Weight>k__BackingField: 0.5
+  - <Element>k__BackingField: {fileID: 8920851708171242474, guid: 81bcbfe3762240f4fb28149a7e386292, type: 3}
+    <Weight>k__BackingField: 0.3
+  - <Element>k__BackingField: {fileID: 8920851708171242474, guid: 91e88293ae543d14695f0a37e6a8c884, type: 3}
+    <Weight>k__BackingField: 0.2
+  initialSpawnCount: 0
   minX: -100
   maxX: 100
-  MinY: -100
-  MaxY: 100
+  minY: -100
+  maxY: 100
+--- !u!114 &7577490239597732933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1619361761653730657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5a749ef84d34bf4d9551fb35cd0f891, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawner: {fileID: 5544089719255625571}
+  spawnInterval: 10
+  batchSize: 5
