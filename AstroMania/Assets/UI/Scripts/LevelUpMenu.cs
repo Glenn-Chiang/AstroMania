@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class LevelUpMenu : MonoBehaviour
 {
     [SerializeField] private List<MenuButton> menuButtons;
-    private GameObject activeMenu;
 
     private void Start()
     {
@@ -15,7 +14,6 @@ public class LevelUpMenu : MonoBehaviour
             menuButton.button.onClick.AddListener(() =>
             {
                 menuButton.menu.SetActive(true);
-                activeMenu = menuButton.menu;
                 gameObject.SetActive(false);
             });
         }

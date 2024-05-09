@@ -10,22 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8c98e144595eac24aabceaf91ceae027, type: 3}
-  m_Name: Drone
+  m_Name: Seeker
   m_EditorClassIdentifier: 
-  <Name>k__BackingField: Drone
-  <Description>k__BackingField: Standard enemy ship
-  <Sprite>k__BackingField: {fileID: 2325457460697817858, guid: 36686fb93bd6ec64ea9ac80d6872c6b4, type: 3}
+  <Name>k__BackingField: Seeker
+  <Description>k__BackingField: Fast and highly aggressive enemy
+  <Sprite>k__BackingField: {fileID: -630209765417944230, guid: f019cc60142627e44bcb50a14801ede1, type: 3}
   <MaxHealth>k__BackingField:
     <Levels>k__BackingField:
     - 50
   <MoveSpeed>k__BackingField:
     <Levels>k__BackingField:
-    - 4
+    - 6
   <DamageBonus>k__BackingField:
     <Levels>k__BackingField:
     - 1
   <FireRateBonus>k__BackingField:
     <Levels>k__BackingField:
     - 1
-  <XpReward>k__BackingField: 10
-  <AttackInterval>k__BackingField: 1
+  <XpReward>k__BackingField: 15
+  <AttackInterval>k__BackingField: 0.5

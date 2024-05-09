@@ -35,6 +35,7 @@ public class WeaponMenu : MonoBehaviour
     private void OnClickInstall(MenuSlot slot, WeaponData weapon)
     {
         weaponManager.AddWeapon(weapon);
+        gameObject.SetActive(false);
         displayController.Close();
     }
 }

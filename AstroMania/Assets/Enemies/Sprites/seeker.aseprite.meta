@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 36686fb93bd6ec64ea9ac80d6872c6b4
+guid: f019cc60142627e44bcb50a14801ede1
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,7 +97,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638506896161463614
+  platformSettingsDirtyTick: 638508582183377591
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -121,18 +121,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: red_scifi_ship
+  - name: seeker
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.53846157, y: 0.53846157}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 12
-      height: 12
-    spriteID: 90e37e039195e6c4d97acdcd9c5c9395
+      width: 13
+      height: 13
+    spriteID: c89b4b18fa9014e4f809ffe863e8ae54
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -144,20 +144,20 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 1957383343
-    name: red_scifi_ship
+    guid: -1678001961
+    name: seeker
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: red_scifi_ship
+    - name: seeker
       frameIndex: 0
       cellRect:
-        x: 2
-        y: 2
-        width: 12
-        height: 12
-      spriteId: 90e37e039195e6c4d97acdcd9c5c9395
+        x: 1
+        y: 1
+        width: 13
+        height: 13
+      spriteId: c89b4b18fa9014e4f809ffe863e8ae54
     linkedCells: []
     parentIndex: -1
   platformSettings:

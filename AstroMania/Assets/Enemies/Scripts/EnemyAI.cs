@@ -25,6 +25,7 @@ public class EnemyAI : MonoBehaviour, ICharacter
     private State state = State.Idle;
 
     private GameObject target;
+    private Vector2 TargetPos => target.GetComponent<Rigidbody2D>().position;
 
     private void Start()
     {
@@ -37,30 +38,36 @@ public class EnemyAI : MonoBehaviour, ICharacter
         switch (state)
         {
             case State.Idle:
-                roaming.Roam();
+                
                 break;
             case State.Aggro:
-                TrackTarget();
-
-                if (Vector2.Distance(transform.position, target.transform.position) > minDistance)
-                {
-                    movement.MoveTowards(target.transform.position);
-                }
-
+                movement.LookAt(TargetPos);
+               
                 attackTimer -= Time.deltaTime;
                 if (attackTimer <= 0)
                 {
                     weaponManager.FireWeapon();
                     attackTimer = enemyData.AttackInterval;
                 }
-
                 break;
         }
     }
 
-    private void TrackTarget()
+    private void FixedUpdate()
     {
-        movement.LookAt(target.transform.position);
+        switch (state)
+        {
+            case State.Idle:
+                roaming.Roam();
+                break;
+            case State.Aggro:
+                if (Vector2.Distance(transform.position, TargetPos) > minDistance)
+                {
+                    movement.MoveTowards(TargetPos);
+                }
+               
+                break;
+        }
     }
 
     public void StartAggro(GameObject target)

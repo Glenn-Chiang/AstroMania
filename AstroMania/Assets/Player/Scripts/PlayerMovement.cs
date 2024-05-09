@@ -29,11 +29,11 @@ public class PlayerMovement : Movement
         canDash = true;
     }
 
-    public override void Move()
+    private void FixedUpdate()
     {
         if (!isDashing)
         {
-            base.Move();
+            Move(moveDir);
         }
     }
 }

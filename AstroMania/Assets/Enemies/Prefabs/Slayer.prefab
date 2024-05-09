@@ -41,15 +41,15 @@ GameObject:
   m_Component:
   - component: {fileID: 8831732412960897608}
   - component: {fileID: 6616834573215859703}
-  - component: {fileID: 8984300726943549592}
   - component: {fileID: -6639659225725800936}
+  - component: {fileID: 759618601040209609}
   - component: {fileID: 3334555284455806673}
   - component: {fileID: 4130686693555329234}
   - component: {fileID: 4372755983408478146}
   - component: {fileID: 4656005358509597324}
   - component: {fileID: 4098429489217318975}
   m_Layer: 6
-  m_Name: Drone
+  m_Name: Slayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -114,19 +114,46 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -5639378249072877798, guid: 36686fb93bd6ec64ea9ac80d6872c6b4, type: 3}
+  m_Sprite: {fileID: 8846507863177730235, guid: d4b8e6c6ff40e1e489798458f4a74fd1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 0.75}
+  m_Size: {x: 0.8125, y: 0.8125}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &8984300726943549592
-BoxCollider2D:
+--- !u!50 &-6639659225725800936
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8920851708171242474}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!70 &759618601040209609
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -158,45 +185,8 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.75, y: 0.75}
-    newSize: {x: 1, y: 0.75}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.75, y: 0.75}
-  m_EdgeRadius: 0
---- !u!50 &-6639659225725800936
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8920851708171242474}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Size: {x: 1.2, y: 1.6}
+  m_Direction: 0
 --- !u!114 &3334555284455806673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -210,7 +200,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: -6639659225725800936}
-  moveSpeed: 4
 --- !u!114 &4130686693555329234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,7 +229,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponSlot: {fileID: 7868179834547568626}
   weapons:
-  - {fileID: 11400000, guid: 087b739ab12b9ba4eb10decda0374966, type: 2}
+  - {fileID: 11400000, guid: fe9ba7e20d2eb4447a60a62227cbfe8e, type: 2}
   energyManager: {fileID: 0}
 --- !u!114 &4656005358509597324
 MonoBehaviour:
@@ -254,13 +243,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7bc77bc75889974a98990516d9e4083, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyData: {fileID: 11400000, guid: 7eac9994be8bc294e83d43fc8ee0915f, type: 2}
+  enemyData: {fileID: 11400000, guid: 9749ad0324f50db4dbf24971ab42eefd, type: 2}
   movement: {fileID: 3334555284455806673}
   roaming: {fileID: 4130686693555329234}
   weaponManager: {fileID: 4372755983408478146}
   healthManager: {fileID: 4098429489217318975}
-  attackInterval: 1
-  minDistance: 5
+  minDistance: 2
 --- !u!114 &4098429489217318975
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -273,7 +261,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7a982003282ec64b8663b2369c88a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 50
 --- !u!1 &9129804258386740636
 GameObject:
   m_ObjectHideFlags: 0
@@ -341,7 +328,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 10
+  m_Radius: 20
 --- !u!114 &2343387832971445851
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -433,11 +420,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4663090046638828150, guid: 5b895fdc99cb1eb4d9f0383cd765de98, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 0.005
       objectReference: {fileID: 0}
     - target: {fileID: 4663090046638828150, guid: 5b895fdc99cb1eb4d9f0383cd765de98, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -0.288
       objectReference: {fileID: 0}
     - target: {fileID: 4663090046638828150, guid: 5b895fdc99cb1eb4d9f0383cd765de98, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

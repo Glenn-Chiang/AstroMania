@@ -15,7 +15,7 @@ public class Movement : MonoBehaviour
 
     public void LookAt(Vector3 lookPos)
     {
-        var lookDir = (lookPos - transform.position).normalized;
+        var lookDir = lookPos - transform.position;
         float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg;
         transform.eulerAngles = new Vector3(0, 0, angle);
     }
@@ -25,18 +25,13 @@ public class Movement : MonoBehaviour
         this.moveDir = moveDir.normalized;
     }
 
-    private void FixedUpdate()
+    public void Move(Vector2 moveDir)
     {
-        Move();
-    }
-
-    public virtual void Move()
-    {
-        rb.MovePosition(rb.position + MoveSpeed * Time.deltaTime * moveDir);
+        rb.MovePosition(rb.position + MoveSpeed * Time.deltaTime * moveDir.normalized);
     }
     public void MoveTowards(Vector2 destination)
     {
         LookAt(destination);
-        SetMoveDir(destination - rb.position);
+        Move(destination - rb.position);
     }
 }
