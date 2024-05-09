@@ -16,6 +16,8 @@ public class PlayerController : MonoBehaviour, ICharacter
     [SerializeField] private EnergyManager energyManager;
     [SerializeField] private XPManager xpManager;
 
+    public event EventHandler OnGameOver;
+
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -46,6 +48,8 @@ public class PlayerController : MonoBehaviour, ICharacter
     private void HandleDeath(object sender, EventArgs e)
     {
         Debug.Log("Player died");
+        Destroy(gameObject);
+        OnGameOver?.Invoke(this, EventArgs.Empty);
     }
 
     private void HandleEnemyDeath(object sender, EnemyDeathEventArgs e)

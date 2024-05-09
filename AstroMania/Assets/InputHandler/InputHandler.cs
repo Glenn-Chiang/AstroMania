@@ -1,16 +1,26 @@
+using System;
 using UnityEngine;
 
 public class InputHandler : MonoBehaviour
 {
     private PlayerController player;
+    private bool isGameOver = false;
 
     private void Start()
     {
         player = PlayerController.Instance;
+        player.OnGameOver += HandleGameOver;
+    }
+
+    private void HandleGameOver(object sender, EventArgs e)
+    {
+        isGameOver = true;
     }
 
     private void Update()
     {
+        if (isGameOver) return;
+
         var moveX = Input.GetAxisRaw("Horizontal");
         var moveY = Input.GetAxisRaw("Vertical");
         player.Movement.SetMoveDir(new Vector2(moveX, moveY));
