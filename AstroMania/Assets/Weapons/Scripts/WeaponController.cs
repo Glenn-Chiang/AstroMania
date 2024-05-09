@@ -7,6 +7,9 @@ public class WeaponController : MonoBehaviour
     [SerializeField] private WeaponData weaponData;
     private bool canFire = true;
 
+    public Stat damageBonus;
+    public Stat fireRateBonus;
+
     public void HandleFire()
     {
         if (!canFire) return;
@@ -19,13 +22,13 @@ public class WeaponController : MonoBehaviour
         var projectile = Instantiate(weaponData.Projectile, firePoint.position, firePoint.rotation);
         var projectileRb = projectile.GetComponent<Rigidbody2D>();
         projectileRb.AddForce(weaponData.FirePower * firePoint.right, ForceMode2D.Impulse);
-        projectile.damage = weaponData.Damage;
+        projectile.damage = weaponData.Damage * damageBonus.Value;
     }
 
     private IEnumerator CoolDown()
     {
         canFire = false;
-        yield return new WaitForSeconds(weaponData.FireRate);
+        yield return new WaitForSeconds(weaponData.FireRate * fireRateBonus.Value);
         canFire = true;
     }
 }
