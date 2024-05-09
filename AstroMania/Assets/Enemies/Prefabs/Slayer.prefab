@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 1851081929706521853}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.4, y: 0, z: 0}
+  m_LocalPosition: {x: 0.8, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -133,7 +133,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8920851708171242474}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -185,7 +185,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1.2, y: 1.6}
+  m_Size: {x: 2.25, y: 3}
   m_Direction: 0
 --- !u!114 &3334555284455806673
 MonoBehaviour:
@@ -420,11 +420,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4663090046638828150, guid: 5b895fdc99cb1eb4d9f0383cd765de98, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.005
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4663090046638828150, guid: 5b895fdc99cb1eb4d9f0383cd765de98, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.288
+      value: -1.4
       objectReference: {fileID: 0}
     - target: {fileID: 4663090046638828150, guid: 5b895fdc99cb1eb4d9f0383cd765de98, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -437,6 +437,10 @@ PrefabInstance:
     - target: {fileID: 4663090046638828150, guid: 5b895fdc99cb1eb4d9f0383cd765de98, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4691596706343142017, guid: 5b895fdc99cb1eb4d9f0383cd765de98, type: 3}
+      propertyPath: offset.y
+      value: -1.4
       objectReference: {fileID: 0}
     - target: {fileID: 4691596706343142017, guid: 5b895fdc99cb1eb4d9f0383cd765de98, type: 3}
       propertyPath: attachedEntity

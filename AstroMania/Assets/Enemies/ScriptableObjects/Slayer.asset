@@ -20,7 +20,7 @@ MonoBehaviour:
     - 100
   <MoveSpeed>k__BackingField:
     <Levels>k__BackingField:
-    - 5
+    - 2.5
   <DamageBonus>k__BackingField:
     <Levels>k__BackingField:
     - 1
