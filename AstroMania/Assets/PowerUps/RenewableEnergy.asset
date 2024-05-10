@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d865fa439a3fde4a8a02e5930e595d1, type: 3}
   m_Name: RenewableEnergy
   m_EditorClassIdentifier: 
-  <Name>k__BackingField: 
-  <Description>k__BackingField: 
-  proportion: 0
+  <Name>k__BackingField: Renewable Energy
+  <Description>k__BackingField: Whenever you kill an enemy, regain 5% of your max
+    energy
+  player: {fileID: 0}
+  proportion: 0.05

@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 0}
   m_Name: Lifesteal
   m_EditorClassIdentifier: Assembly-CSharp::LifeSteal
-  <Name>k__BackingField: 
-  <Description>k__BackingField: 
-  proportion: 0
+  <Name>k__BackingField: Life Steal
+  <Description>k__BackingField: Whenever you kill an enemy, heal for 10% of the enemy's
+    max health
+  player: {fileID: 0}
+  proportion: 0.1

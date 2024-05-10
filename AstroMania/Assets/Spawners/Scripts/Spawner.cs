@@ -23,7 +23,7 @@ public abstract class Spawner : MonoBehaviour
     public void SpawnRandomEntity()
     {
         var spawnPosition = GetSpawnPosition();
-        var entity = RandomUtils.WeightedRandomSelect(entities);
+        var entity = RandomUtils.WeightedSelectRandom(entities);
         Instantiate(entity, spawnPosition, RandomRotation());
     }
 

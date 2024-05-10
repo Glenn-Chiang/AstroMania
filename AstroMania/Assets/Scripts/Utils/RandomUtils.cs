@@ -5,14 +5,20 @@ using System.Linq;
 
 public static class RandomUtils
 {
-    public static T RandomSelect<T>(List<T> elements)
+    public static T SelectRandom<T>(List<T> elements)
     {
-        System.Random random = new();
-        int randomIndex = random.Next(0, elements.Count);
+        System.Random rand = new();
+        int randomIndex = rand.Next(0, elements.Count);
         return elements[randomIndex];
     }
 
-    public static T WeightedRandomSelect<T>(List<WeightedElement<T>> weightedElements)
+    public static List<T> SelectNRandom<T>(List<T> elements, int count)
+    {
+        System.Random rand = new();
+        return elements.OrderBy(x => rand.Next()).Take(count).ToList();
+    }
+
+    public static T WeightedSelectRandom<T>(List<WeightedElement<T>> weightedElements)
     {
         var totalWeight = weightedElements.Sum(x => x.Weight);
         double randomValue = new System.Random().NextDouble() * totalWeight;
