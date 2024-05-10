@@ -12,8 +12,8 @@ public class PlayerController : MonoBehaviour, ICharacter
 
     [field: SerializeField] public PlayerMovement Movement { get; private set; }
     [field: SerializeField] public WeaponManager WeaponManager { get; private set; }
-    [SerializeField] private HealthManager healthManager;
-    [SerializeField] private EnergyManager energyManager;
+    [field: SerializeField] public HealthManager HealthManager { get; private set; }
+    [field: SerializeField] public EnergyManager EnergyManager { get; private set; }
     [SerializeField] private XPManager xpManager;
 
     public event EventHandler OnGameOver;
@@ -33,16 +33,15 @@ public class PlayerController : MonoBehaviour, ICharacter
     private void Start()
     {
         xpManager.OnLevelUp += HandleLevelUp;
-        healthManager.OnDeath += HandleDeath;
+        HealthManager.OnDeath += HandleDeath;
 
         EnemyAI.OnEnemyDeath += HandleEnemyDeath;   
     }
 
     private void HandleLevelUp(object sender, LevelUpEventArgs e)
     {
-        Stats.Upgrade();
-        healthManager.Replenish();
-        energyManager.Replenish();
+        //HealthManager.Replenish();
+        //EnergyManager.Replenish();
     }
 
     private void HandleDeath(object sender, EventArgs e)

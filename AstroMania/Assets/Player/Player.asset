@@ -16,50 +16,12 @@ MonoBehaviour:
   <Description>k__BackingField: Elite combat ship
   <Sprite>k__BackingField: {fileID: -3771988729453913823, guid: d51b03a4cebefd44aa0665b75d78527b, type: 3}
   <MaxHealth>k__BackingField:
-    <Levels>k__BackingField:
-    - 100
-    - 110
-    - 120
-    - 130
-    - 140
-    - 150
-    - 160
-    - 170
-    - 180
-    - 190
-    - 200
+    <Value>k__BackingField: 100
   <MoveSpeed>k__BackingField:
-    <Levels>k__BackingField:
-    - 5
-    - 6
-    - 7
-    - 8
-    - 9
-    - 10
+    <Value>k__BackingField: 5
   <DamageBonus>k__BackingField:
-    <Levels>k__BackingField:
-    - 1
-    - 1.1
-    - 1.2
-    - 1.3
-    - 1.4
-    - 1.5
+    <Value>k__BackingField: 1
   <FireRateBonus>k__BackingField:
-    <Levels>k__BackingField:
-    - 1
-    - 0.9
-    - 0.8
-    - 0.7
+    <Value>k__BackingField: 1
   <MaxEnergy>k__BackingField:
-    <Levels>k__BackingField:
-    - 100
-    - 110
-    - 120
-    - 130
-    - 140
-    - 150
-    - 160
-    - 170
-    - 180
-    - 190
-    - 200
+    <Value>k__BackingField: 100

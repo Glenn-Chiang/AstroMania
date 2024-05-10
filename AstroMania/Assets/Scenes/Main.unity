@@ -753,12 +753,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3968869921899384567, guid: 41a0a0cf94691fd4e8345631a2620ec3, type: 3}
       propertyPath: weapons.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3968869921899384567, guid: 41a0a0cf94691fd4e8345631a2620ec3, type: 3}
       propertyPath: weapons.Array.data[1]
       value: 
+      objectReference: {fileID: 11400000, guid: d3195f463d7d98f4c9f12b0641d70026, type: 2}
+    - target: {fileID: 3968869921899384567, guid: 41a0a0cf94691fd4e8345631a2620ec3, type: 3}
+      propertyPath: weapons.Array.data[2]
+      value: 
       objectReference: {fileID: 11400000, guid: 01b8919dd28e39f4990ca9c7c439781b, type: 2}
+    - target: {fileID: 8096083153583554206, guid: 41a0a0cf94691fd4e8345631a2620ec3, type: 3}
+      propertyPath: <EnergyManager>k__BackingField
+      value: 
+      objectReference: {fileID: 1523486486}
+    - target: {fileID: 8096083153583554206, guid: 41a0a0cf94691fd4e8345631a2620ec3, type: 3}
+      propertyPath: <HealthManager>k__BackingField
+      value: 
+      objectReference: {fileID: 1523486485}
     - target: {fileID: 8857050073455270553, guid: 41a0a0cf94691fd4e8345631a2620ec3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

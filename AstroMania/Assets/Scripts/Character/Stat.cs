@@ -1,22 +1,18 @@
 using System;
-using System.Collections.Generic;
 using UnityEngine;
 
 [Serializable]
 public class Stat
 {
-    [field: SerializeField] public List<float> Levels { get; private set; }
-    private int currentLevel = 0;
-    public float Value => Levels[currentLevel];
+    [field: SerializeField] public float Value { get; private set; }
 
-    public Stat(List<float> levels)
+    public Stat(float baseValue)
     {
-        Levels = levels;
+        Value = baseValue;
     }
     
-    public void Upgrade()
+    public void Upgrade(float multiplier)
     {
-        if (currentLevel == Levels.Count - 1) return; // Maxed out
-        currentLevel++;
+        Value *= multiplier;
     }
 }

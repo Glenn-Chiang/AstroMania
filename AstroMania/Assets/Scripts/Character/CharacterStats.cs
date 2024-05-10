@@ -7,17 +7,9 @@ public class CharacterStats
 
     public CharacterStats(CharacterData data)
     {
-        maxHealth = new Stat(data.MaxHealth.Levels);
-        moveSpeed = new Stat(data.MoveSpeed.Levels);
-        damageBonus = new Stat(data.DamageBonus.Levels);
-        fireRateBonus = new Stat(data.FireRateBonus.Levels);
-    }
-
-    public virtual void Upgrade()
-    {
-        maxHealth.Upgrade();
-        moveSpeed.Upgrade();
-        damageBonus.Upgrade();
-        fireRateBonus.Upgrade();
+        maxHealth = new Stat(data.MaxHealth.Value);
+        moveSpeed = new Stat(data.MoveSpeed.Value);
+        damageBonus = new Stat(data.DamageBonus.Value);
+        fireRateBonus = new Stat(data.FireRateBonus.Value);
     }
 }
