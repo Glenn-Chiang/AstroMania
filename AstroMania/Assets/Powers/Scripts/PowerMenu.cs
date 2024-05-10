@@ -8,12 +8,12 @@ public class PowerMenu : MonoBehaviour
     [SerializeField] private PowerManager powerManager;
     [SerializeField] private List<Power> allPowers;
     [SerializeField] private int offerCount; // Number of powers to offer
-    [SerializeField] private List<Power> offeredPowers;
+    private List<Power> offeredPowers;
 
     [SerializeField] private List<MenuSlot> slots;
     [SerializeField] private DisplayController displayController;
 
-    private void Start()
+    private void OnEnable()
     {
         var availablePowers = GetAvailablePowers();
         offeredPowers = RandomUtils.SelectNRandom(availablePowers, offerCount);

@@ -14,4 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <Name>k__BackingField: Energy Boost
   <Description>k__BackingField: Increase max energy by 10%
+  <Sprite>k__BackingField: {fileID: -1002951746298308995, guid: 2373e97b83cd9004694101e2921a0e91, type: 3}
+  <Stackable>k__BackingField: 1
+  player: {fileID: 0}
   multiplier: 1.1

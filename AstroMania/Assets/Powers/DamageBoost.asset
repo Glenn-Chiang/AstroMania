@@ -14,4 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <Name>k__BackingField: Damage Boost
   <Description>k__BackingField: Increase damage of all weapons by 10%
+  <Sprite>k__BackingField: {fileID: 5786218096009060827, guid: e0ee2609282bf3a4594c67de7a93111c, type: 3}
+  <Stackable>k__BackingField: 1
+  player: {fileID: 0}
   multiplier: 1.1

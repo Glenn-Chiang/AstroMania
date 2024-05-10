@@ -7,7 +7,8 @@ public abstract class Power : ScriptableObject
     [field: SerializeField] public Sprite Sprite { get; private set; }
 
     [field: SerializeField] public bool Stackable { get; private set; }
-    public PlayerController player;
+    
+    [HideInInspector] public PlayerController player;
    
     public abstract void Activate();
 }

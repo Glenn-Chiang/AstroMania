@@ -13,5 +13,8 @@ MonoBehaviour:
   m_Name: SpeedBoost
   m_EditorClassIdentifier: 
   <Name>k__BackingField: Speed Boost
-  <Description>k__BackingField: Increase speed by 10%
+  <Description>k__BackingField: Increase movement speed by 10%
+  <Sprite>k__BackingField: {fileID: 4703063782395376175, guid: 79505722e4f620940bfa33f10269534c, type: 3}
+  <Stackable>k__BackingField: 1
+  player: {fileID: 0}
   multiplier: 1.1

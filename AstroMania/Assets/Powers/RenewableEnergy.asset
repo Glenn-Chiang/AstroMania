@@ -15,5 +15,7 @@ MonoBehaviour:
   <Name>k__BackingField: Renewable Energy
   <Description>k__BackingField: Whenever you kill an enemy, regain 5% of your max
     energy
+  <Sprite>k__BackingField: {fileID: -4791943837813961138, guid: 4f1864ee2980c3e4db6e31875ebaa3e8, type: 3}
+  <Stackable>k__BackingField: 0
   player: {fileID: 0}
   proportion: 0.05
