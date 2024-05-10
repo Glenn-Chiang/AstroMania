@@ -494,7 +494,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 7.5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -706,7 +706,7 @@ MonoBehaviour:
   m_Follow: {fileID: 824114363}
   m_Lens:
     FieldOfView: 34
-    OrthographicSize: 5
+    OrthographicSize: 7.5
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -758,7 +758,7 @@ PrefabInstance:
     - target: {fileID: 3968869921899384567, guid: 41a0a0cf94691fd4e8345631a2620ec3, type: 3}
       propertyPath: weapons.Array.data[1]
       value: 
-      objectReference: {fileID: 11400000, guid: d3195f463d7d98f4c9f12b0641d70026, type: 2}
+      objectReference: {fileID: 11400000, guid: 01b8919dd28e39f4990ca9c7c439781b, type: 2}
     - target: {fileID: 8857050073455270553, guid: 41a0a0cf94691fd4e8345631a2620ec3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1713,12 +1713,16 @@ PrefabInstance:
       objectReference: {fileID: 358502489}
     - target: {fileID: 7603402758139661854, guid: 08028e348057fd5479846ba973b5e941, type: 3}
       propertyPath: weapons.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7603402758139661854, guid: 08028e348057fd5479846ba973b5e941, type: 3}
       propertyPath: weapons.Array.data[2]
       value: 
       objectReference: {fileID: 11400000, guid: d3195f463d7d98f4c9f12b0641d70026, type: 2}
+    - target: {fileID: 7603402758139661854, guid: 08028e348057fd5479846ba973b5e941, type: 3}
+      propertyPath: weapons.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: 01b8919dd28e39f4990ca9c7c439781b, type: 2}
     - target: {fileID: 8550791457788676491, guid: 08028e348057fd5479846ba973b5e941, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -240
@@ -1762,7 +1766,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1619361761653730657, guid: f5adf0673bd21ce40be657c00179f688, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5098639345516106762, guid: f5adf0673bd21ce40be657c00179f688, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1818,10 +1822,10 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 519420032}
+  - {fileID: 1058762862}
   - {fileID: 619394802}
   - {fileID: 439483292}
   - {fileID: 1523486484}
-  - {fileID: 1058762862}
   - {fileID: 358502488}
   - {fileID: 52945732}
   - {fileID: 2007857665}

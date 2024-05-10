@@ -18,6 +18,6 @@ MonoBehaviour:
   <Damage>k__BackingField: 10
   <FireRate>k__BackingField: 0.4
   <FirePower>k__BackingField: 15
-  <EnergyCost>k__BackingField: 2
-  <Controller>k__BackingField: {fileID: 0}
+  <EnergyCost>k__BackingField: 3
+  <Controller>k__BackingField: {fileID: -8480432338467676821, guid: e2fed9b39392944479d0a9302b8421bb, type: 3}
   <Projectile>k__BackingField: {fileID: 2153957329439887613, guid: 5dd414875b5955746862cc7995d2deb6, type: 3}
