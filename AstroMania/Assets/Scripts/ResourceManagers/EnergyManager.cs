@@ -10,6 +10,8 @@ public class EnergyManager : ResourceManager
     public override float MaxValue => MaxEnergy;
     public override float Value { get => energy; protected set { energy = value; } }
 
+    public float consumptionMultiplier = 1f;
+
     private void Start()
     {
         player = GetComponent<PlayerController>();
@@ -18,6 +20,8 @@ public class EnergyManager : ResourceManager
 
     public bool ConsumeEnergy(float energyToConsume)
     {
+        energyToConsume *= consumptionMultiplier;
+
         if (energy < energyToConsume)
         {
             return false;

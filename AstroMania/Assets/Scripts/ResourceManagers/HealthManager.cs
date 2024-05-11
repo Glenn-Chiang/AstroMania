@@ -16,6 +16,8 @@ public class HealthManager : ResourceManager, IDamageable
     public event EventHandler OnHealthChange;
     public event EventHandler OnDeath;
 
+    public float damageMultiplier = 1;
+
     private void Start()
     {
         character = GetComponent<ICharacter>();
@@ -24,6 +26,8 @@ public class HealthManager : ResourceManager, IDamageable
 
     public void TakeDamage(float damage)
     {
+        damage *= damageMultiplier;
+
         if (damage < health)
         {
             health -= damage;
