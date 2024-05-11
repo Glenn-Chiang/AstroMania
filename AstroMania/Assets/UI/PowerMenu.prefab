@@ -229,7 +229,6 @@ MonoBehaviour:
   powerManager: {fileID: 0}
   allPowers: []
   offerCount: 0
-  offeredPowers: []
   slots: []
   displayController: {fileID: 0}
 --- !u!1001 &2588632671951699707
@@ -270,7 +269,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7667541177968656472, guid: e99925ba6cbbb67439ed7ec2c9dd3c82, type: 3}
       propertyPath: m_SizeDelta.x
-      value: -200
+      value: -100
       objectReference: {fileID: 0}
     - target: {fileID: 7667541177968656472, guid: e99925ba6cbbb67439ed7ec2c9dd3c82, type: 3}
       propertyPath: m_SizeDelta.y
@@ -372,7 +371,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7667541177968656472, guid: e99925ba6cbbb67439ed7ec2c9dd3c82, type: 3}
       propertyPath: m_SizeDelta.x
-      value: -200
+      value: -100
       objectReference: {fileID: 0}
     - target: {fileID: 7667541177968656472, guid: e99925ba6cbbb67439ed7ec2c9dd3c82, type: 3}
       propertyPath: m_SizeDelta.y
@@ -474,7 +473,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7667541177968656472, guid: e99925ba6cbbb67439ed7ec2c9dd3c82, type: 3}
       propertyPath: m_SizeDelta.x
-      value: -200
+      value: -100
       objectReference: {fileID: 0}
     - target: {fileID: 7667541177968656472, guid: e99925ba6cbbb67439ed7ec2c9dd3c82, type: 3}
       propertyPath: m_SizeDelta.y

@@ -6,24 +6,26 @@ using UnityEngine.UI;
 public class PowerMenu : MonoBehaviour
 {
     [SerializeField] private PowerManager powerManager;
-    [SerializeField] private List<Power> allPowers;
     [SerializeField] private int offerCount; // Number of powers to offer
+    
+    [SerializeField] private List<Power> allPowers;
+    private List<Power> availablePowers;
     private List<Power> offeredPowers;
 
     [SerializeField] private List<MenuSlot> slots;
     [SerializeField] private DisplayController displayController;
 
-    private void OnEnable()
+    private void Awake()
     {
-        var availablePowers = GetAvailablePowers();
-        offeredPowers = RandomUtils.SelectNRandom(availablePowers, offerCount);
-        DisplayPowers();
+        // Initially, only level 0 powers are available
+        availablePowers = allPowers.Where(power => power.Level == 0).ToList();
+        
     }
 
-    private List<Power> GetAvailablePowers()
-    {
-        // Exclude non-stackable powers that the player already owns
-        return allPowers.Except(allPowers.Where(power => !power.Stackable && powerManager.HasPower(power))).ToList();
+    private void OnEnable()
+    {        
+        offeredPowers = RandomUtils.SelectNRandom(availablePowers, offerCount);
+        DisplayPowers();
     }
 
     // Randomly select a number of powers from list of all powers
@@ -37,17 +39,34 @@ public class PowerMenu : MonoBehaviour
             slot.NameText.text = power.Name;
             slot.Image.sprite = power.Sprite;
             slot.DescriptionText.text = power.Description;
-
+            
+            slot.Button.onClick.RemoveAllListeners(); // Remove previous listeners
             slot.Button.onClick.AddListener(() => OnClickPower(power));
+        }
+    }
+
+    private void GivePower(Power power)
+    {
+        powerManager.AddPower(power);
+
+        // If the power is not stackable, it will not be offered again
+        if (!power.Stackable)
+        {
+            availablePowers.Remove(power);
+        }
+
+        // If the power has a next level, add it to the pool of available powers
+        if (power.NextLevel != null)
+        {
+            availablePowers.Add(power.NextLevel);
         }
     }
 
     private void OnClickPower(Power power)
     {
-        powerManager.AddPower(power);
+        GivePower(power);
         gameObject.SetActive(false);
         displayController.Close();
-
     }
 
 }

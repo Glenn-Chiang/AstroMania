@@ -1067,7 +1067,7 @@ PrefabInstance:
       objectReference: {fileID: 1414026413}
     - target: {fileID: 330377532009663129, guid: c287a152c37e6ca4e9449ca8c4c35bbb, type: 3}
       propertyPath: allPowers.Array.size
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 330377532009663129, guid: c287a152c37e6ca4e9449ca8c4c35bbb, type: 3}
       propertyPath: allPowers.Array.data[0]
@@ -1095,6 +1095,10 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: b3d47b8d2421a18469a9543b80ebe0fc, type: 2}
     - target: {fileID: 330377532009663129, guid: c287a152c37e6ca4e9449ca8c4c35bbb, type: 3}
       propertyPath: allPowers.Array.data[6]
+      value: 
+      objectReference: {fileID: 11400000, guid: 584f01347f41ec84f94e13c23544dd86, type: 2}
+    - target: {fileID: 330377532009663129, guid: c287a152c37e6ca4e9449ca8c4c35bbb, type: 3}
+      propertyPath: allPowers.Array.data[7]
       value: 
       objectReference: {fileID: 11400000, guid: 0dc5a71e1a1da2744bd32985e1e4e80d, type: 2}
     - target: {fileID: 2535215612760070502, guid: c287a152c37e6ca4e9449ca8c4c35bbb, type: 3}
@@ -1180,6 +1184,22 @@ PrefabInstance:
     - target: {fileID: 3846281628959156218, guid: c287a152c37e6ca4e9449ca8c4c35bbb, type: 3}
       propertyPath: m_Name
       value: PowerMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 5014605153170316658, guid: c287a152c37e6ca4e9449ca8c4c35bbb, type: 3}
+      propertyPath: m_text
+      value: LEVEL UP - Select a Power
+      objectReference: {fileID: 0}
+    - target: {fileID: 5014605153170316658, guid: c287a152c37e6ca4e9449ca8c4c35bbb, type: 3}
+      propertyPath: m_fontSize
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 5014605153170316658, guid: c287a152c37e6ca4e9449ca8c4c35bbb, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 6552258117120210710, guid: c287a152c37e6ca4e9449ca8c4c35bbb, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 800
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
