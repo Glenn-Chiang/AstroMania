@@ -12,4 +12,9 @@ public class Regen : Power
         regenEffect.regenRate = regenRate;
         regenEffect.healthManager = player.HealthManager;
     }
+
+    public override void Deactivate()
+    {
+        Destroy(player.GetComponent<RegenEffect>());
+    }
 }

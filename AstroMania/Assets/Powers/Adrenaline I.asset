@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6f7e883e5e513d46803dc7914dc6372, type: 3}
+  m_Name: Adrenaline I
+  m_EditorClassIdentifier: 
+  <Name>k__BackingField: Adrenaline I
+  <Description>k__BackingField: When your HP is under 5% of your max HP, increase
+    damage, fire rate and movement speed by 20%
+  <Sprite>k__BackingField: {fileID: -500733117025028782, guid: 4fd5336351c714e47b3f66107d803df5, type: 3}
+  <Stackable>k__BackingField: 0
+  <Level>k__BackingField: 0
+  <NextLevel>k__BackingField: {fileID: 11400000, guid: 0bbf0779bf4f0ff4994edbca56f9e106, type: 2}
+  <PrevLevel>k__BackingField: {fileID: 0}
+  player: {fileID: 0}
+  multiplier: 1.5
+  healthThreshold: 0.5

@@ -11,7 +11,7 @@ public class Stat
         Value = baseValue;
     }
     
-    public void Upgrade(float multiplier)
+    public void ApplyMultiplier(float multiplier)
     {
         Value *= multiplier;
     }

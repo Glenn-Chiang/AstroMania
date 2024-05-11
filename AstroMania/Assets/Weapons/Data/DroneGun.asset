@@ -17,7 +17,7 @@ MonoBehaviour:
   <Sprite>k__BackingField: {fileID: 4491728363511429535, guid: 4c480c95a50136e48a2eba3cb9e8d68c, type: 3}
   <Damage>k__BackingField: 15
   <FireRate>k__BackingField: 0.2
-  <FirePower>k__BackingField: 14
+  <FirePower>k__BackingField: 15
   <EnergyCost>k__BackingField: 0
   <Controller>k__BackingField: {fileID: 1269109831686660430, guid: 98b3d265c2c77ad489b3103e3ef7e1e3, type: 3}
   <Projectile>k__BackingField: {fileID: 2153957329439887613, guid: e7283752bb2a7f64cab4dd4b940c2249, type: 3}

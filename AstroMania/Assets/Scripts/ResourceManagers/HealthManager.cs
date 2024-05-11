@@ -5,7 +5,7 @@ public class HealthManager : ResourceManager, IDamageable
 {
     [SerializeField] private ICharacter character;
 
-    private float MaxHealth => character.Stats.maxHealth.Value;
+    public float MaxHealth => character.Stats.maxHealth.Value;
     private float health;
 
     public override float MaxValue => MaxHealth;
@@ -13,6 +13,7 @@ public class HealthManager : ResourceManager, IDamageable
 
     float IDamageable.HitPoints => health;
 
+    public event EventHandler OnHealthChange;
     public event EventHandler OnDeath;
 
     private void Start()
@@ -32,11 +33,14 @@ public class HealthManager : ResourceManager, IDamageable
             health = 0;
             Die();
         }
+
+        OnHealthChange?.Invoke(this, EventArgs.Empty);
     }
 
     public void Heal(float _health)
     {
         health += Math.Min(_health, MaxHealth - health); // prevent overhealing
+        OnHealthChange?.Invoke(this, EventArgs.Empty);
     }
 
     private void Die()

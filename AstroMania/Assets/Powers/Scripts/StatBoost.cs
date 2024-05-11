@@ -7,6 +7,6 @@ public abstract class StatBoost : Power
     public override void Activate()
     {
         var stat = GetStat(player.Stats);
-        stat.Upgrade(multiplier);
+        stat.ApplyMultiplier(multiplier);
     }
 }
