@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <Name>k__BackingField: Lifesteal I
   <Description>k__BackingField: Whenever you kill an enemy, heal for 5% of their
-    max health
+    max HP
   <Sprite>k__BackingField: {fileID: 9033922684931854037, guid: 7dd5946402d8c884cb50066a0adff342, type: 3}
   <Stackable>k__BackingField: 0
   <Level>k__BackingField: 0

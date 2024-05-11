@@ -8,4 +8,8 @@ public abstract class ResourceManager : MonoBehaviour
     {
         Value = MaxValue;
     }
+    public void Replenish(float proportion)
+    {
+        Value = Mathf.Min(Value + proportion * MaxValue, MaxValue);
+    }
 }

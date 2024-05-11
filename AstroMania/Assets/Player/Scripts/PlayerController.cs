@@ -40,8 +40,8 @@ public class PlayerController : MonoBehaviour, ICharacter
 
     private void HandleLevelUp(object sender, LevelUpEventArgs e)
     {
-        //HealthManager.Replenish();
-        //EnergyManager.Replenish();
+        HealthManager.Replenish(0.5f);
+        EnergyManager.Replenish(0.5f);
     }
 
     private void HandleDeath(object sender, EventArgs e)

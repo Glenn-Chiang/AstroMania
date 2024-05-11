@@ -13,8 +13,11 @@ MonoBehaviour:
   m_Name: HealthBoost
   m_EditorClassIdentifier: 
   <Name>k__BackingField: Health Boost
-  <Description>k__BackingField: Increase max health by 10%
+  <Description>k__BackingField: Increase max HP by 10%
   <Sprite>k__BackingField: {fileID: 5664351768045347204, guid: d1fc62a0d2ba3b64fb5dd2f5de6d4dc1, type: 3}
   <Stackable>k__BackingField: 1
+  <Level>k__BackingField: 0
+  <NextLevel>k__BackingField: {fileID: 0}
+  <PrevLevel>k__BackingField: {fileID: 0}
   player: {fileID: 0}
   multiplier: 1.1

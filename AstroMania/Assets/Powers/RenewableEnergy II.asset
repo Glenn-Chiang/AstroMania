@@ -17,7 +17,7 @@ MonoBehaviour:
     energy
   <Sprite>k__BackingField: {fileID: -4791943837813961138, guid: 4f1864ee2980c3e4db6e31875ebaa3e8, type: 3}
   <Stackable>k__BackingField: 0
-  <Level>k__BackingField: 0
+  <Level>k__BackingField: 1
   <NextLevel>k__BackingField: {fileID: 0}
   <PrevLevel>k__BackingField: {fileID: 11400000, guid: 0dc5a71e1a1da2744bd32985e1e4e80d, type: 2}
   player: {fileID: 0}

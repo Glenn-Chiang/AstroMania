@@ -18,7 +18,7 @@ MonoBehaviour:
   <MaxHealth>k__BackingField:
     <Value>k__BackingField: 100
   <MoveSpeed>k__BackingField:
-    <Value>k__BackingField: 5
+    <Value>k__BackingField: 6
   <DamageBonus>k__BackingField:
     <Value>k__BackingField: 1
   <FireRateBonus>k__BackingField:
