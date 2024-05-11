@@ -38,6 +38,7 @@ public class PowerMenu : MonoBehaviour
 
             slot.NameText.text = power.Name;
             slot.Image.sprite = power.Sprite;
+            slot.Image.preserveAspect = true;
             slot.DescriptionText.text = power.Description;
             
             slot.Button.onClick.RemoveAllListeners(); // Remove previous listeners
