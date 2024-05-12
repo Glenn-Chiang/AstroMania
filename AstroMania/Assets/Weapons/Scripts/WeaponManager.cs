@@ -4,8 +4,8 @@ using UnityEngine;
 public class WeaponManager : MonoBehaviour
 {
     private ICharacter character;
-    private Stat DamageBonus => character.Stats.damageBonus;
-    private Stat FireRateBonus => character.Stats.fireRateBonus;
+    public Stat DamageBonus => character.Stats.damageBonus;
+    public Stat FireRateBonus => character.Stats.fireRateBonus;
 
     [SerializeField] Transform weaponSlot;
 
@@ -17,6 +17,7 @@ public class WeaponManager : MonoBehaviour
     private WeaponController equippedWeapon;
 
     [SerializeField] private EnergyManager energyManager;
+    public List<StatusEffectApplier<StatusEffect>> effectAppliers;
 
     private void Start()
     {
@@ -53,7 +54,6 @@ public class WeaponManager : MonoBehaviour
     private void EquipWeapon()
     {
         equippedWeapon = Instantiate(SelectedWeapon.Controller, weaponSlot);
-        equippedWeapon.damageBonus = DamageBonus;
-        equippedWeapon.fireRateBonus = FireRateBonus;
+        
     }
 }

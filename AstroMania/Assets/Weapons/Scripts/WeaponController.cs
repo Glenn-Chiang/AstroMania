@@ -7,8 +7,12 @@ public class WeaponController : MonoBehaviour
     [SerializeField] protected WeaponData weaponData;
     private bool canFire = true;
 
-    [HideInInspector] public Stat damageBonus;
-    [HideInInspector] public Stat fireRateBonus;
+    public WeaponManager WeaponManager { get; private set; }
+
+    private void Start()
+    {
+        WeaponManager = GetComponentInParent<WeaponManager>();
+    }
 
     public void HandleFire()
     {
@@ -25,15 +29,18 @@ public class WeaponController : MonoBehaviour
     protected virtual void Fire(Transform firePoint)
     {
         var projectile = Instantiate(weaponData.Projectile, firePoint.position, firePoint.rotation);
+        
         var projectileRb = projectile.GetComponent<Rigidbody2D>();
         projectileRb.AddForce(weaponData.FirePower * firePoint.right, ForceMode2D.Impulse);
-        projectile.damage = weaponData.Damage * damageBonus.Value;
+        
+        projectile.damage = weaponData.Damage * WeaponManager.DamageBonus.Value;
+        projectile.effectAppliers = WeaponManager.effectAppliers;
     }
 
     private IEnumerator CoolDown()
     {
         canFire = false;
-        yield return new WaitForSeconds(weaponData.FireRate * fireRateBonus.Value);
+        yield return new WaitForSeconds(weaponData.FireRate * WeaponManager.FireRateBonus.Value);
         canFire = true;
     }
 }

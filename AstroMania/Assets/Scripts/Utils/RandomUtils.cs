@@ -34,6 +34,11 @@ public static class RandomUtils
         // Should not reach this point if weights added up to 1
         return weightedElements[0].Element;
     }
+
+    public static bool WeightedRandomBoolean(float trueProbability)
+    {
+        return new System.Random().NextDouble() < trueProbability;
+    }
 }
 
 [Serializable]

@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fb5f0db4f39b3a46a9be88247edbad6, type: 3}
   m_Name: Berserker II
   m_EditorClassIdentifier: 
-  <Name>k__BackingField: Berserker
-  <Description>k__BackingField: Deal and receive double damage
+  <Name>k__BackingField: Berserker II
+  <Description>k__BackingField: Deal triple damage and receive double damage
   <Sprite>k__BackingField: {fileID: -8113108538026814043, guid: bc275cc904d956e4784e86086ae83bdf, type: 3}
   <Stackable>k__BackingField: 0
-  <Level>k__BackingField: 0
+  <Level>k__BackingField: 1
   <NextLevel>k__BackingField: {fileID: 0}
-  <PrevLevel>k__BackingField: {fileID: 0}
+  <PrevLevel>k__BackingField: {fileID: 11400000, guid: 5e118281750faa444ad6546136a31a35, type: 2}
   player: {fileID: 0}
-  outgoingDamageMultiplier: 2
+  outgoingDamageMultiplier: 3
   incomingDamageMultiplier: 2
