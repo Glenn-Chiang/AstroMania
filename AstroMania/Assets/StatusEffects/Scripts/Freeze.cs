@@ -3,12 +3,21 @@ using UnityEngine;
 
 public class Freeze : StatusEffect
 {
+    private CharacterStats stats;
+    private int moveSpeedMultiplierIndex;
+    private int fireRateBonusMultiplierIndex;
+
     public override void ApplyEffect()
     {
-        var stats = GetComponent<ICharacter>().Stats;
-        stats.moveSpeed.ApplyMultiplier(0);
-        stats.fireRateBonus.ApplyMultiplier(0);
-        
+        stats = GetComponent<ICharacter>().Stats;
+        moveSpeedMultiplierIndex = stats.moveSpeed.ApplyMultiplier(0);
+        fireRateBonusMultiplierIndex = stats.fireRateBonus.ApplyMultiplier(0);
+    }
+
+    public override void RemoveEffect()
+    {
+        stats.moveSpeed.RemoveMultiplier(moveSpeedMultiplierIndex);
+        stats.fireRateBonus.RemoveMultiplier(fireRateBonusMultiplierIndex);
     }
 }
 

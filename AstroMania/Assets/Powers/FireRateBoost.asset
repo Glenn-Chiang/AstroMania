@@ -16,5 +16,8 @@ MonoBehaviour:
   <Description>k__BackingField: Increase fire-rate of all weapons by 10%
   <Sprite>k__BackingField: {fileID: 4391462564053570711, guid: 9dfe2bef3447a7a42a577fb2c3d67c8b, type: 3}
   <Stackable>k__BackingField: 1
+  <Level>k__BackingField: 0
+  <NextLevel>k__BackingField: {fileID: 0}
+  <PrevLevel>k__BackingField: {fileID: 0}
   player: {fileID: 0}
-  multiplier: 0.9
+  multiplier: 1.1

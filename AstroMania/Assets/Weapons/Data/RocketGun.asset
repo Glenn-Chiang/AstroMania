@@ -16,7 +16,7 @@ MonoBehaviour:
   <Description>k__BackingField: Fires explosive rockets that deal AOE damage
   <Sprite>k__BackingField: {fileID: 89213709357392632, guid: eab472abddd141448bb3348541500a3b, type: 3}
   <Damage>k__BackingField: 50
-  <FireRate>k__BackingField: 0.5
+  <FireRate>k__BackingField: 2
   <FirePower>k__BackingField: 20
   <EnergyCost>k__BackingField: 5
   <Controller>k__BackingField: {fileID: 8826303906804295671, guid: 60327d19519cbde4084e563cc45014b5, type: 3}

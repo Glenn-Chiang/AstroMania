@@ -6,7 +6,7 @@ public abstract class StatusEffect : MonoBehaviour
     public float duration;
 
     public abstract void ApplyEffect();
-
+    public virtual void RemoveEffect() { }
 
     private void Start()
     {
@@ -20,6 +20,11 @@ public abstract class StatusEffect : MonoBehaviour
         {
             Destroy(this); // Status effect is removed when effect duration ends
         }
+    }
+
+    private void OnDestroy()
+    {
+        RemoveEffect();
     }
 }
 

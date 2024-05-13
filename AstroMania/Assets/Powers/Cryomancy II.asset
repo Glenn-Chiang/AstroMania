@@ -25,4 +25,4 @@ MonoBehaviour:
   player: {fileID: 0}
   effectArgs:
     duration: 4
-  probability: 0.3
+  probability: 1

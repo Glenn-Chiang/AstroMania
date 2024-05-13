@@ -6,7 +6,8 @@ public class WeaponController : MonoBehaviour
     [SerializeField] protected Transform firePoint;
     [SerializeField] protected WeaponData weaponData;
     public WeaponManager WeaponManager { get; private set; }
-    private float CooldownTime => 1 / (weaponData.FireRate * WeaponManager.FireRateBonus.Value);
+    private float FireRate => weaponData.FireRate * WeaponManager.FireRateBonus.Value;
+    private float CooldownTime => 1 / FireRate;
 
     private bool canFire = true;
 
@@ -17,7 +18,7 @@ public class WeaponController : MonoBehaviour
 
     public void HandleFire()
     {
-        if (!canFire) return;
+        if (!canFire || FireRate == 0) return;
         Fire();
         StartCoroutine(CoolDown());
     }

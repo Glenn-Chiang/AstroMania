@@ -3,12 +3,7 @@ using UnityEngine;
 
 public class WeaponManager : MonoBehaviour
 {
-    private ICharacter character;
-    public Stat DamageBonus => character.Stats.damageBonus;
-    public Stat FireRateBonus => character.Stats.fireRateBonus;
-
     [SerializeField] Transform weaponSlot;
-
     [SerializeField] private List<WeaponData> weapons; // Weapon prefabs
     public List<WeaponData> Weapons => weapons;
 
@@ -18,6 +13,10 @@ public class WeaponManager : MonoBehaviour
 
     [SerializeField] private EnergyManager energyManager;
     public readonly List<IStatusEffectApplier> effectAppliers = new();
+
+    private ICharacter character;
+    public Stat DamageBonus => character.Stats.damageBonus;
+    public Stat FireRateBonus => character.Stats.fireRateBonus;
 
     private void Start()
     {

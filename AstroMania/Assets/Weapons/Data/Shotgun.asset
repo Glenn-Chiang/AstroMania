@@ -16,7 +16,7 @@ MonoBehaviour:
   <Description>k__BackingField: Fires multiple shells at a time
   <Sprite>k__BackingField: {fileID: 6464298943000944574, guid: 5b61f9685a585d444878553ce38cd602, type: 3}
   <Damage>k__BackingField: 10
-  <FireRate>k__BackingField: 0.4
+  <FireRate>k__BackingField: 2.5
   <FirePower>k__BackingField: 15
   <EnergyCost>k__BackingField: 3
   <Controller>k__BackingField: {fileID: -8480432338467676821, guid: e2fed9b39392944479d0a9302b8421bb, type: 3}
