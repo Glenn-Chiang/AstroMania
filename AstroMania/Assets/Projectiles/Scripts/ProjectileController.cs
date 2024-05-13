@@ -4,7 +4,7 @@ using UnityEngine;
 public class ProjectileController : MonoBehaviour
 {
     [HideInInspector] public float damage;
-    [HideInInspector] public List<StatusEffectApplier<StatusEffect>> effectAppliers;
+    [HideInInspector] public List<IStatusEffectApplier> effectAppliers;
 
     protected virtual void OnCollisionEnter2D(Collision2D collision)
     {
@@ -13,19 +13,15 @@ public class ProjectileController : MonoBehaviour
             damageable.TakeDamage(damage);
         }
         
-        if (collision.collider.TryGetComponent<ICharacter>(out var character))
+        if (collision.collider.TryGetComponent<StatusEffectManager>(out var target))
         {
-            ApplyEffects(collision.collider.gameObject);
+            foreach (var effectApplier in effectAppliers)
+            {
+                effectApplier.Apply(target);
+            }
         }
 
         Destroy(gameObject);
     }
 
-    private void ApplyEffects(GameObject target)
-    {
-        foreach (var effectApplier in effectAppliers)
-        {
-            effectApplier.Apply(target);
-        }
-    }
 }

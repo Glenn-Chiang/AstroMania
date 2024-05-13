@@ -5,9 +5,10 @@ public class WeaponController : MonoBehaviour
 {
     [SerializeField] protected Transform firePoint;
     [SerializeField] protected WeaponData weaponData;
-    private bool canFire = true;
-
     public WeaponManager WeaponManager { get; private set; }
+    private float CooldownTime => 1 / (weaponData.FireRate * WeaponManager.FireRateBonus.Value);
+
+    private bool canFire = true;
 
     private void Start()
     {
@@ -40,7 +41,7 @@ public class WeaponController : MonoBehaviour
     private IEnumerator CoolDown()
     {
         canFire = false;
-        yield return new WaitForSeconds(weaponData.FireRate * WeaponManager.FireRateBonus.Value);
+        yield return new WaitForSeconds(CooldownTime);
         canFire = true;
     }
 }

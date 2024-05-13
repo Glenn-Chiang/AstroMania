@@ -17,7 +17,7 @@ public class WeaponManager : MonoBehaviour
     private WeaponController equippedWeapon;
 
     [SerializeField] private EnergyManager energyManager;
-    public List<StatusEffectApplier<StatusEffect>> effectAppliers;
+    public readonly List<IStatusEffectApplier> effectAppliers = new();
 
     private void Start()
     {

@@ -26,7 +26,7 @@ public class AdrenalineEffect : MonoBehaviour
         if (!effectIsActive && health < healthThreshold * player.HealthManager.MaxHealth)
         {
             player.Stats.damageBonus.ApplyMultiplier(multiplier);
-            player.Stats.fireRateBonus.ApplyMultiplier(1 / multiplier);
+            player.Stats.fireRateBonus.ApplyMultiplier(multiplier);
             player.Stats.moveSpeed.ApplyMultiplier(multiplier);
             effectIsActive = true;
         }
@@ -34,7 +34,7 @@ public class AdrenalineEffect : MonoBehaviour
         if (effectIsActive && health >= healthThreshold * player.HealthManager.MaxHealth)
         {
             player.Stats.damageBonus.ApplyMultiplier(1 / multiplier);
-            player.Stats.fireRateBonus.ApplyMultiplier(multiplier);
+            player.Stats.fireRateBonus.ApplyMultiplier(1 / multiplier);
             player.Stats.moveSpeed.ApplyMultiplier(1 / multiplier);
             effectIsActive = false;
         }

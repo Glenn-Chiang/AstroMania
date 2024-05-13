@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 5794111128145611694}
   - component: {fileID: 8096083153583554206}
   - component: {fileID: 4329792089877579408}
+  - component: {fileID: 1014991446962904113}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -190,8 +191,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 463ba19706e9a954a91391552d6b8be3, type: 2}
   - {fileID: 11400000, guid: 6c603752af046724eb12b211ed8b0a74, type: 2}
   - {fileID: 11400000, guid: 8fe20eb6b1a412248bfb1f6535f67dc6, type: 2}
-  - {fileID: 11400000, guid: d3195f463d7d98f4c9f12b0641d70026, type: 2}
   - {fileID: 11400000, guid: 01b8919dd28e39f4990ca9c7c439781b, type: 2}
+  - {fileID: 11400000, guid: d3195f463d7d98f4c9f12b0641d70026, type: 2}
   energyManager: {fileID: 211932211201157776}
 --- !u!114 &1557464832560917483
 MonoBehaviour:
@@ -205,6 +206,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7a982003282ec64b8663b2369c88a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damageMultiplier: 1
 --- !u!114 &211932211201157776
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -218,6 +220,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  consumptionMultiplier: 1
 --- !u!114 &5794111128145611694
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -261,8 +264,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a082a54256c0e1746a07e143e9b40da1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  powers: []
+  powers:
+  - {fileID: 11400000, guid: fd1d8e46608bf07449479718483e2d1f, type: 2}
   player: {fileID: 8096083153583554206}
+--- !u!114 &1014991446962904113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753743145778282374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3032c2d9e505c5499e887035e0e491f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1733269783233455005
 GameObject:
   m_ObjectHideFlags: 0

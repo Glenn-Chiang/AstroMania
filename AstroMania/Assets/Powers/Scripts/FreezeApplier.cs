@@ -1,3 +1,4 @@
 using UnityEngine;
 
-public class FreezeApplier : StatusEffectApplier<FreezeEffect>{}
+[CreateAssetMenu(menuName = "Power/Freeze Applier")]
+public class FreezeApplier : StatusEffectApplier<FreezeArgs>{}

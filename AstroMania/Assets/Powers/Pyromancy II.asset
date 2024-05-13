@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b6429518d3cdb448b771a05474c3dd7, type: 3}
+  m_Name: Pyromancy II
+  m_EditorClassIdentifier: 
+  <Name>k__BackingField: Pyromancy II
+  <Description>k__BackingField: '30% chance to inflict Burn for 10 seconds on enemies
+    you hit
+
+    Burn inflicts 5 damage per second'
+  <Sprite>k__BackingField: {fileID: -8793699301387145223, guid: a461ac83c3801824a878abb211b36376, type: 3}
+  <Stackable>k__BackingField: 0
+  <Level>k__BackingField: 1
+  <NextLevel>k__BackingField: {fileID: 0}
+  <PrevLevel>k__BackingField: {fileID: 11400000, guid: fd1d8e46608bf07449479718483e2d1f, type: 2}
+  player: {fileID: 0}
+  effectArgs:
+    duration: 10
+    damage: 5
+    interval: 1
+  probability: 0.3

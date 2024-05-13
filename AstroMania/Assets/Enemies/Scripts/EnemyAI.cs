@@ -5,7 +5,7 @@ public class EnemyAI : MonoBehaviour, ICharacter
 {
     [SerializeField] private EnemyData enemyData;
     CharacterData ICharacter.CharacterData => enemyData;
-    public CharacterStats Stats => new(enemyData);
+    public CharacterStats Stats {  get; private set; }  
 
     [SerializeField] private Movement movement;
     [SerializeField] private Roaming roaming;
@@ -28,6 +28,11 @@ public class EnemyAI : MonoBehaviour, ICharacter
 
     private GameObject target;
     private Vector2 TargetPos => target.GetComponent<Rigidbody2D>().position;
+
+    private void Awake()
+    {
+        Stats = new(enemyData);
+    }
 
     private void Start()
     {
