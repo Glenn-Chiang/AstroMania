@@ -21,15 +21,3 @@ public class Freeze : StatusEffect
     }
 }
 
-[Serializable]
-public class FreezeArgs : StatusEffectArgs
-{
-    public FreezeArgs(float duration) : base(duration)
-    {
-    }
-
-    public override void AddToTarget(StatusEffectManager effectManager)
-    {
-        effectManager.AddFreeze(this);
-    }
-}

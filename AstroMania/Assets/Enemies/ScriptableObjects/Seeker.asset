@@ -16,12 +16,12 @@ MonoBehaviour:
   <Description>k__BackingField: Fast and highly aggressive enemy
   <Sprite>k__BackingField: {fileID: -630209765417944230, guid: f019cc60142627e44bcb50a14801ede1, type: 3}
   <MaxHealth>k__BackingField:
-    <Value>k__BackingField: 50
+    value: 50
   <MoveSpeed>k__BackingField:
-    <Value>k__BackingField: 5
+    value: 5
   <DamageBonus>k__BackingField:
-    <Value>k__BackingField: 1
+    value: 1
   <FireRateBonus>k__BackingField:
-    <Value>k__BackingField: 1
+    value: 1
   <XpReward>k__BackingField: 6
   <AttackInterval>k__BackingField: 0.5

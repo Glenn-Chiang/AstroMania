@@ -16,12 +16,12 @@ MonoBehaviour:
   <Description>k__BackingField: Standard enemy ship
   <Sprite>k__BackingField: {fileID: 2325457460697817858, guid: 36686fb93bd6ec64ea9ac80d6872c6b4, type: 3}
   <MaxHealth>k__BackingField:
-    <Value>k__BackingField: 50
+    value: 50
   <MoveSpeed>k__BackingField:
-    <Value>k__BackingField: 4
+    value: 4
   <DamageBonus>k__BackingField:
-    <Value>k__BackingField: 1
+    value: 1
   <FireRateBonus>k__BackingField:
-    <Value>k__BackingField: 1
+    value: 1
   <XpReward>k__BackingField: 5
   <AttackInterval>k__BackingField: 1

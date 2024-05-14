@@ -6,7 +6,6 @@ public abstract class Power : ScriptableObject
     [field: SerializeField, TextArea(2,5)] public string Description { get; private set; }
     [field: SerializeField] public Sprite Sprite { get; private set; }
     [field: SerializeField] public bool Stackable { get; private set; }
-    [field: SerializeField] public int Level { get; private set; }
     [field: SerializeField] public Power NextLevel { get; private set; }
     [field: SerializeField] public Power PrevLevel { get; private set; }
    

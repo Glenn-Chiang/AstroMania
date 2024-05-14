@@ -8,19 +8,11 @@ public class PowerMenu : MonoBehaviour
     [SerializeField] private PowerManager powerManager;
     [SerializeField] private int offerCount; // Number of powers to offer
     
-    [SerializeField] private List<Power> allPowers;
-    private List<Power> availablePowers;
+    [SerializeField] private List<Power> availablePowers;
     private List<Power> offeredPowers;
 
     [SerializeField] private List<MenuSlot> slots;
     [SerializeField] private DisplayController displayController;
-
-    private void Awake()
-    {
-        // Initially, only level 0 powers are available
-        availablePowers = allPowers.Where(power => power.Level == 0).ToList();
-        
-    }
 
     private void OnEnable()
     {        

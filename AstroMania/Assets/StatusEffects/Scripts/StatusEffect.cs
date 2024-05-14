@@ -4,7 +4,6 @@ using UnityEngine;
 public abstract class StatusEffect : MonoBehaviour
 {
     public float duration;
-
     public abstract void ApplyEffect();
     public virtual void RemoveEffect() { }
 
@@ -28,14 +27,3 @@ public abstract class StatusEffect : MonoBehaviour
     }
 }
 
-[Serializable]
-public abstract class StatusEffectArgs
-{
-    public float duration;
-    public abstract void AddToTarget(StatusEffectManager effectManager);
-    public StatusEffectArgs(float duration)
-    {
-        this.duration = duration;
-    }
-    
-}

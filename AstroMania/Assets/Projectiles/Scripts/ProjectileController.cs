@@ -4,7 +4,7 @@ using UnityEngine;
 public class ProjectileController : MonoBehaviour
 {
     [HideInInspector] public float damage;
-    [HideInInspector] public List<IStatusEffectApplier> effectAppliers;
+    [HideInInspector] public List<StatusEffectApplier> effectAppliers;
 
     protected virtual void OnCollisionEnter2D(Collision2D collision)
     {

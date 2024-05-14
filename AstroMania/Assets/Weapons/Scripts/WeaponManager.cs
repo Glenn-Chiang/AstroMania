@@ -12,7 +12,7 @@ public class WeaponManager : MonoBehaviour
     private WeaponController equippedWeapon;
 
     [SerializeField] private EnergyManager energyManager;
-    public readonly List<IStatusEffectApplier> effectAppliers = new();
+    public readonly List<StatusEffectApplier> effectAppliers = new();
 
     private ICharacter character;
     public Stat DamageBonus => character.Stats.damageBonus;

@@ -9,20 +9,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9cd7c7f7e8cb87043a81c113296168dd, type: 3}
+  m_Script: {fileID: 11500000, guid: 8cd1ca08c0d66654694508aa5db2d29d, type: 3}
   m_Name: Cryomancy I
   m_EditorClassIdentifier: 
   <Name>k__BackingField: Cryomancy I
-  <Description>k__BackingField: '20% chance to inflict Freeze for 2 seconds on enemies
-    you hit.
-
-    Entities with Freeze are unable to move or attack.'
-  <Sprite>k__BackingField: {fileID: 8219529812996320084, guid: 70e3eee06b35cab44b2e6deb3f9a6e97, type: 3}
+  <Description>k__BackingField: 20% chance to inflict Freeze for 2 seconds on hit
+    enemies
+  <Sprite>k__BackingField: {fileID: 4836512805539262856, guid: 70e3eee06b35cab44b2e6deb3f9a6e97, type: 3}
   <Stackable>k__BackingField: 0
-  <Level>k__BackingField: 0
-  <NextLevel>k__BackingField: {fileID: 11400000, guid: e35e8a26e6fdc594a97b6d558024aeef, type: 2}
+  <NextLevel>k__BackingField: {fileID: 11400000, guid: 64e4c42f7f30a284c9ed1cbc15bff360, type: 2}
   <PrevLevel>k__BackingField: {fileID: 0}
   player: {fileID: 0}
-  effectArgs:
-    duration: 2
   probability: 0.2
+  duration: 2
+  statusEffect: {fileID: 11400000, guid: 3b808b6842060244481e525d9c1d35ff, type: 2}

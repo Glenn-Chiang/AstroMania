@@ -1,9 +1,11 @@
 using UnityEngine;
 
-public abstract class StatusEffectApplier<T> : Power, IStatusEffectApplier where T : StatusEffectArgs
+[CreateAssetMenu(menuName = "Power/Status Effect Applier")]
+public class StatusEffectApplier : Power
 {
-    [SerializeField] private T effectArgs;
     [SerializeField] private float probability;
+    [SerializeField] private float duration;
+    [SerializeField] private StatusEffectData statusEffect;
 
     public override void Activate()
     {
@@ -15,14 +17,8 @@ public abstract class StatusEffectApplier<T> : Power, IStatusEffectApplier where
         // Random chance to apply the effect or not
         if (RandomUtils.WeightedRandomBoolean(probability))
         {
-            effectArgs.AddToTarget(target);
+            statusEffect.ApplyEffect(target, duration);
         }
     }
-
-    void IStatusEffectApplier.Apply(StatusEffectManager target) => Apply(target);
 }
 
-public interface IStatusEffectApplier
-{
-    void Apply(StatusEffectManager target);
-}

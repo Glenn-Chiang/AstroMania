@@ -3,31 +3,15 @@ using UnityEngine;
 
 public class StatusEffectManager : MonoBehaviour
 {
-    public T AddEffect<T>(StatusEffectArgs effectArgs) where T : StatusEffect
+    public readonly List<StatusEffectData> effects = new();
+
+    public void AddEffect(StatusEffectData statusEffect, float duration)
     {
-        // Don't add the status effect is the entity already has this status effect
-        if (gameObject.GetComponent<T>() != null)
+        // Avoid stacking the same effect
+        if (!effects.Contains(statusEffect))
         {
-            return null;
+            statusEffect.ApplyEffect(this, duration);
+            effects.Add(statusEffect);
         }
-
-        var effect = gameObject.AddComponent<T>();
-        effect.duration = effectArgs.duration;
-        return effect;
-    }
-
-    public void AddDamageOverTime(DamageOverTimeArgs effectArgs)
-    {
-        var effect = AddEffect<DamageOverTime>(effectArgs);
-        if (effect != null)
-        {
-            effect.damage = effectArgs.damage;
-            effect.interval = effectArgs.interval;
-        }
-    }
-
-    public void AddFreeze(FreezeArgs effectArgs)
-    {
-        AddEffect<Freeze>(effectArgs);
     }
 }
