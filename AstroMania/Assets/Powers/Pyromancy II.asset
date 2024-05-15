@@ -17,9 +17,9 @@ MonoBehaviour:
     enemies
   <Sprite>k__BackingField: {fileID: -4858172134377206942, guid: a461ac83c3801824a878abb211b36376, type: 3}
   <Stackable>k__BackingField: 0
-  <NextLevel>k__BackingField: {fileID: 0}
+  <NextLevel>k__BackingField: {fileID: 11400000, guid: 94252a0521a74644f828eb2b2f57d9c3, type: 2}
   <PrevLevel>k__BackingField: {fileID: 11400000, guid: 311c9b5dfb875e84ca2026828e2b59e1, type: 2}
   player: {fileID: 0}
-  probability: 1
+  probability: 0.3
   duration: 10
   statusEffect: {fileID: 11400000, guid: 0a962768156e9f6438eaa064e75b3df5, type: 2}

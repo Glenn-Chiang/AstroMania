@@ -12,14 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cd1ca08c0d66654694508aa5db2d29d, type: 3}
   m_Name: Pyromancy III
   m_EditorClassIdentifier: 
-  <Name>k__BackingField: Pyromancy II
-  <Description>k__BackingField: 30% chance to inflict Burn for 10 seconds on hit
+  <Name>k__BackingField: Pyromancy III
+  <Description>k__BackingField: 50% chance to inflict Burn for 10 seconds on hit
     enemies
   <Sprite>k__BackingField: {fileID: -4858172134377206942, guid: a461ac83c3801824a878abb211b36376, type: 3}
   <Stackable>k__BackingField: 0
   <NextLevel>k__BackingField: {fileID: 0}
-  <PrevLevel>k__BackingField: {fileID: 11400000, guid: 311c9b5dfb875e84ca2026828e2b59e1, type: 2}
+  <PrevLevel>k__BackingField: {fileID: 11400000, guid: a25edf2147d280f41a1c3218e4654009, type: 2}
   player: {fileID: 0}
-  probability: 1
+  probability: 0.5
   duration: 10
   statusEffect: {fileID: 11400000, guid: 0a962768156e9f6438eaa064e75b3df5, type: 2}

@@ -16,7 +16,6 @@ public class StatusEffectManager : MonoBehaviour
             statusEffect.ApplyEffect(this, duration);
             effects.Add(statusEffect);
             EffectAdded?.Invoke(this, statusEffect);
-            Debug.Log("Effect added");
         }
     }
 
