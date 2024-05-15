@@ -34,10 +34,13 @@ public class WeaponManager : MonoBehaviour
 
     public void SelectWeapon(int index)
     {
-        if (index < 0 || index >= weapons.Count) return;
-        if (index == selectedIndex) return;
+        if (index < 0 || index >= weapons.Count) return; // Invalid index
+        if (index == selectedIndex) return; // Already selected
 
-        Destroy(equippedWeapon.gameObject);
+        if (equippedWeapon != null)
+        {
+            Destroy(equippedWeapon.gameObject); // Remove currently selected weapon
+        }
         selectedIndex = index;
         EquipWeapon();
     }
@@ -72,6 +75,11 @@ public class WeaponManager : MonoBehaviour
             SelectWeapon(weapons.Count - 1);
             return;
         }
+    }
+
+    public void SelectRandomWeapon()
+    {
+        SelectWeapon(Random.Range(0, weapons.Count));
     }
 
     public void AddWeapon(WeaponData weapon)

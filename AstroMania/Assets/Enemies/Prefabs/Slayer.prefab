@@ -232,6 +232,7 @@ MonoBehaviour:
   weaponSlot: {fileID: 7868179834547568626}
   weapons:
   - {fileID: 11400000, guid: fe9ba7e20d2eb4447a60a62227cbfe8e, type: 2}
+  - {fileID: 11400000, guid: 433b3c6d005170e4da532f1066125d91, type: 2}
   energyManager: {fileID: 0}
 --- !u!114 &4656005358509597324
 MonoBehaviour:

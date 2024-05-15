@@ -37,6 +37,7 @@ public class EnemyAI : MonoBehaviour, ICharacter
     private void Start()
     {
         healthManager.OnDeath += HandleDeath;
+        weaponManager.SelectRandomWeapon();
     }
 
 

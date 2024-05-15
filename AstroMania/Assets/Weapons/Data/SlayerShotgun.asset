@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 965e0323f37e62947bab90cd8265fe5e, type: 3}
-  m_Name: SlayerGun
+  m_Name: SlayerShotgun
   m_EditorClassIdentifier: 
-  <Name>k__BackingField: Slayer Gun
+  <Name>k__BackingField: Slayer Shotgun
   <Description>k__BackingField: Weapon equipped by enemy Slayers
   <Sprite>k__BackingField: {fileID: 4274662028142297611, guid: dea181a84f94015418e0770ba0cb5628, type: 3}
-  <Damage>k__BackingField: 25
-  <FireRate>k__BackingField: 5
+  <Damage>k__BackingField: 15
+  <FireRate>k__BackingField: 2
   <FirePower>k__BackingField: 20
   <EnergyCost>k__BackingField: 0
-  <Controller>k__BackingField: {fileID: 1269109831686660430, guid: 6ef4a05ba531d0b419a7f294ee6628b0, type: 3}
+  <Controller>k__BackingField: {fileID: 4044893794912971278, guid: 4c8c00e6aae76cc4881a2a86340c6caf, type: 3}
   <Projectile>k__BackingField: {fileID: 2153957329439887613, guid: e7283752bb2a7f64cab4dd4b940c2249, type: 3}
