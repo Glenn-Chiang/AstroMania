@@ -20,6 +20,6 @@ MonoBehaviour:
   <NextLevel>k__BackingField: {fileID: 0}
   <PrevLevel>k__BackingField: {fileID: 11400000, guid: a25edf2147d280f41a1c3218e4654009, type: 2}
   player: {fileID: 0}
-  probability: 0.5
+  probability: 1
   duration: 10
   statusEffect: {fileID: 11400000, guid: 0a962768156e9f6438eaa064e75b3df5, type: 2}
