@@ -191,25 +191,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &57060079 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7339387476810086194, guid: 3efeea863c0c6d344a7f4bc6aeda5551, type: 3}
-  m_PrefabInstance: {fileID: 2025474958205096210}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &57060083
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 57060079}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b7c755be35255d4ba5f5fa52d2c77ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  resourceManager: {fileID: 1523486486}
-  slider: {fileID: 822476324}
 --- !u!1 &358502484
 GameObject:
   m_ObjectHideFlags: 0
@@ -640,17 +621,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &822476324 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4806860000060033140, guid: 3efeea863c0c6d344a7f4bc6aeda5551, type: 3}
-  m_PrefabInstance: {fileID: 2025474958205096210}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &824114363 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8857050073455270553, guid: 41a0a0cf94691fd4e8345631a2620ec3, type: 3}
@@ -847,17 +817,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d5a8d35c18f67034abcc9965187583b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1877132774 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4630083768637081482, guid: 3efeea863c0c6d344a7f4bc6aeda5551, type: 3}
-  m_PrefabInstance: {fileID: 2025474958205096210}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1944672129 stripped
@@ -1496,14 +1455,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 358502488}
     m_Modifications:
-    - target: {fileID: 800130349922200446, guid: 3efeea863c0c6d344a7f4bc6aeda5551, type: 3}
-      propertyPath: m_Color.b
-      value: 0.98039216
-      objectReference: {fileID: 0}
-    - target: {fileID: 800130349922200446, guid: 3efeea863c0c6d344a7f4bc6aeda5551, type: 3}
-      propertyPath: m_Color.g
-      value: 0.78431374
-      objectReference: {fileID: 0}
     - target: {fileID: 854906539968653448, guid: 3efeea863c0c6d344a7f4bc6aeda5551, type: 3}
       propertyPath: m_Name
       value: StatsHUD
@@ -1516,10 +1467,6 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2889522302014880770, guid: 3efeea863c0c6d344a7f4bc6aeda5551, type: 3}
-      propertyPath: slider
-      value: 
-      objectReference: {fileID: 1877132774}
     - target: {fileID: 2889522302014880770, guid: 3efeea863c0c6d344a7f4bc6aeda5551, type: 3}
       propertyPath: resourceManager
       value: 
@@ -1612,21 +1559,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4630083768637081482, guid: 3efeea863c0c6d344a7f4bc6aeda5551, type: 3}
-      propertyPath: m_TargetGraphic
+    - target: {fileID: 8907464843415692229, guid: 3efeea863c0c6d344a7f4bc6aeda5551, type: 3}
+      propertyPath: resourceManager
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6525924179866972241, guid: 3efeea863c0c6d344a7f4bc6aeda5551, type: 3}
-      propertyPath: m_Color.a
-      value: 0.5882353
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1523486486}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7339387476810086194, guid: 3efeea863c0c6d344a7f4bc6aeda5551, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 57060083}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3efeea863c0c6d344a7f4bc6aeda5551, type: 3}
 --- !u!1001 &3746698906812740590
 PrefabInstance:
