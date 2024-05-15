@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &729972324745750525
+--- !u!1 &1471227874515881547
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,49 +8,45 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7273554971252452028}
-  - component: {fileID: 1902919154554905500}
+  - component: {fileID: 4205798853403778151}
+  - component: {fileID: 6718173873385257382}
   m_Layer: 0
-  m_Name: CellSpawner
+  m_Name: DebrisSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7273554971252452028
+--- !u!4 &4205798853403778151
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 729972324745750525}
+  m_GameObject: {fileID: 1471227874515881547}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.4569185, y: -0.57143444, z: -0.2890201}
+  m_LocalPosition: {x: -0.5133491, y: -0.8919468, z: -0.20292683}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1902919154554905500
+--- !u!114 &6718173873385257382
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 729972324745750525}
+  m_GameObject: {fileID: 1471227874515881547}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a57b5a746ab0e1f47afd2535f97879ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entities:
-  - <Element>k__BackingField: {fileID: 4852294399675846799, guid: d907448162f676245b9de09c8cb56b6a, type: 3}
-    <Weight>k__BackingField: 0.6
-  - <Element>k__BackingField: {fileID: 4852294399675846799, guid: 2b15f2b7766e8ec41ab0e2825753f72e, type: 3}
-    <Weight>k__BackingField: 0.4
-  spawnCount: 100
+  entityPool: {fileID: 11400000, guid: e64ecb8d1fd160749b9bc7eac49e12ee, type: 2}
+  initialSpawnCount: 0
   minX: -100
   maxX: 100
-  MinY: -100
-  MaxY: 100
+  minY: -100
+  maxY: 100

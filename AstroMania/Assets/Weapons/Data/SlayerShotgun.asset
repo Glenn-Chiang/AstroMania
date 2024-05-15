@@ -16,7 +16,7 @@ MonoBehaviour:
   <Description>k__BackingField: Weapon equipped by enemy Slayers
   <Sprite>k__BackingField: {fileID: 4274662028142297611, guid: dea181a84f94015418e0770ba0cb5628, type: 3}
   <Damage>k__BackingField: 15
-  <FireRate>k__BackingField: 2
+  <FireRate>k__BackingField: 1
   <FirePower>k__BackingField: 20
   <EnergyCost>k__BackingField: 0
   <Controller>k__BackingField: {fileID: 4044893794912971278, guid: 4c8c00e6aae76cc4881a2a86340c6caf, type: 3}

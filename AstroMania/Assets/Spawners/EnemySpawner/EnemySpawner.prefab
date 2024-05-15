@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 1619361761653730657}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.3567562, y: -1.3859735, z: -0.0486533}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -45,13 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a57b5a746ab0e1f47afd2535f97879ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entities:
-  - <Element>k__BackingField: {fileID: 8920851708171242474, guid: 06c740073f6e0be488b2cb6b1c7108cf, type: 3}
-    <Weight>k__BackingField: 0.5
-  - <Element>k__BackingField: {fileID: 8920851708171242474, guid: 81bcbfe3762240f4fb28149a7e386292, type: 3}
-    <Weight>k__BackingField: 0.3
-  - <Element>k__BackingField: {fileID: 8920851708171242474, guid: 91e88293ae543d14695f0a37e6a8c884, type: 3}
-    <Weight>k__BackingField: 0.2
+  entities: []
   initialSpawnCount: 0
   minX: -100
   maxX: 100
@@ -69,6 +63,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5a749ef84d34bf4d9551fb35cd0f891, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyPools:
+  - {fileID: 11400000, guid: 29fc3d9c58ac3e148b494f8c13235dc6, type: 2}
+  - {fileID: 11400000, guid: 67f6d85810a1c1444b5d01270502742b, type: 2}
+  - {fileID: 11400000, guid: d9f28a1b4dceb6d4188915d2cca67a67, type: 2}
+  - {fileID: 11400000, guid: 5157a8f00fb826444a0b53bb10fe3348, type: 2}
   spawner: {fileID: 5544089719255625571}
   spawnInterval: 10
   batchSize: 5
+  poolChangeInterval: 1
