@@ -42,6 +42,38 @@ public class WeaponManager : MonoBehaviour
         EquipWeapon();
     }
 
+    public void SelectNextWeapon()
+    {
+        if (weapons.Count <= 2) return;
+
+        if (selectedIndex < weapons.Count - 1)
+        {
+            SelectWeapon(selectedIndex + 1);
+            return;
+        }
+        if (selectedIndex == weapons.Count - 1)
+        {
+            SelectWeapon(0);
+            return;
+        }        
+    }
+
+    public void SelectPrevWeapon()
+    {
+        if (weapons.Count <= 2) return;
+
+        if (selectedIndex > 0)
+        {
+            SelectWeapon(selectedIndex - 1);
+            return;
+        }
+        if (selectedIndex == 0)
+        {
+            SelectWeapon(weapons.Count - 1);
+            return;
+        }
+    }
+
     public void AddWeapon(WeaponData weapon)
     {
         if (!weapons.Contains(weapon))

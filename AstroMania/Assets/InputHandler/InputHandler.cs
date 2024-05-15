@@ -30,17 +30,28 @@ public class InputHandler : MonoBehaviour
             player.Movement.Dash();
         }
         
+        // Aiming
         var cursorPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         player.Movement.LookAt(cursorPos);
 
+        // Firing 
         if (Input.GetButtonDown("Fire1"))
         {
             player.WeaponManager.FireWeapon();
         }
 
+        // Switching weapons
         if (GetNumberInput(out int number))
         {
             player.WeaponManager.SelectWeapon(number - 1);
+        }
+        if (Input.mouseScrollDelta.y > 0)
+        {
+            player.WeaponManager.SelectNextWeapon();
+        }
+        if (Input.mouseScrollDelta.y  < 0)
+        {
+            player.WeaponManager.SelectPrevWeapon();
         }
     }
 
