@@ -397,6 +397,14 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2053819325508279457, guid: 5b895fdc99cb1eb4d9f0383cd765de98, type: 3}
+      propertyPath: resourceManager
+      value: 
+      objectReference: {fileID: 4098429489217318975}
+    - target: {fileID: 3341009839121659585, guid: 5b895fdc99cb1eb4d9f0383cd765de98, type: 3}
+      propertyPath: effectManager
+      value: 
+      objectReference: {fileID: 5729967489606833652}
     - target: {fileID: 4663090046638828150, guid: 5b895fdc99cb1eb4d9f0383cd765de98, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -463,7 +471,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4663090046638828150, guid: 5b895fdc99cb1eb4d9f0383cd765de98, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 4663090046638828150, guid: 5b895fdc99cb1eb4d9f0383cd765de98, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -481,6 +489,10 @@ PrefabInstance:
       propertyPath: attachedEntity
       value: 
       objectReference: {fileID: 8831732412960897608}
+    - target: {fileID: 4931395883392253835, guid: 5b895fdc99cb1eb4d9f0383cd765de98, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8994690727672890987, guid: 5b895fdc99cb1eb4d9f0383cd765de98, type: 3}
       propertyPath: resourceManager
       value: 

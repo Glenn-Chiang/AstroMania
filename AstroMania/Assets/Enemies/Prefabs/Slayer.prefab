@@ -49,6 +49,7 @@ GameObject:
   - component: {fileID: 4656005358509597324}
   - component: {fileID: 4098429489217318975}
   - component: {fileID: 6624251957727437475}
+  - component: {fileID: 1134000764677845540}
   m_Layer: 6
   m_Name: Slayer
   m_TagString: Enemy
@@ -263,6 +264,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7a982003282ec64b8663b2369c88a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damageMultiplier: 1
 --- !u!114 &6624251957727437475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -276,6 +278,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosion: {fileID: 1113693568401335511, guid: 889ff4b69713ca144ab7579ab1f45125, type: 3}
+--- !u!114 &1134000764677845540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8920851708171242474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3032c2d9e505c5499e887035e0e491f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &9129804258386740636
 GameObject:
   m_ObjectHideFlags: 0
@@ -373,6 +387,14 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2053819325508279457, guid: 5b895fdc99cb1eb4d9f0383cd765de98, type: 3}
+      propertyPath: resourceManager
+      value: 
+      objectReference: {fileID: 4098429489217318975}
+    - target: {fileID: 3341009839121659585, guid: 5b895fdc99cb1eb4d9f0383cd765de98, type: 3}
+      propertyPath: effectManager
+      value: 
+      objectReference: {fileID: 1134000764677845540}
     - target: {fileID: 4663090046638828150, guid: 5b895fdc99cb1eb4d9f0383cd765de98, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -439,7 +461,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4663090046638828150, guid: 5b895fdc99cb1eb4d9f0383cd765de98, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -1.4
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 4663090046638828150, guid: 5b895fdc99cb1eb4d9f0383cd765de98, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -455,7 +477,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4691596706343142017, guid: 5b895fdc99cb1eb4d9f0383cd765de98, type: 3}
       propertyPath: offset.y
-      value: -1.4
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 4691596706343142017, guid: 5b895fdc99cb1eb4d9f0383cd765de98, type: 3}
       propertyPath: attachedEntity

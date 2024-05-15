@@ -9,6 +9,8 @@ public abstract class StatusEffectData : ScriptableObject
     public void ApplyEffect(StatusEffectManager target, float duration)
     {
         var effect = ApplyEffect(target);
+        effect.effectData = this;
+        effect.effectManager = target;
         effect.duration = duration;
     }
 

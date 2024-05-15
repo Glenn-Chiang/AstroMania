@@ -17,7 +17,7 @@ public class StatusEffectApplier : Power
         // Random chance to apply the effect or not
         if (RandomUtils.WeightedRandomBoolean(probability))
         {
-            statusEffect.ApplyEffect(target, duration);
+            target.AddEffect(statusEffect, duration);
         }
     }
 }
