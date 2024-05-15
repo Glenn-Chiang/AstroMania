@@ -1853,6 +1853,94 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c95c5dc3193d2f44bb072720773e6233, type: 3}
+--- !u!1001 &7497047379284654381
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6297971117922763548, guid: 9a34893f59d9fc042b72bfbb7b7ae92e, type: 3}
+      propertyPath: stages.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6297971117922763548, guid: 9a34893f59d9fc042b72bfbb7b7ae92e, type: 3}
+      propertyPath: stages.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: ccca1a271979607499830b7f7f68deeb, type: 2}
+    - target: {fileID: 6297971117922763548, guid: 9a34893f59d9fc042b72bfbb7b7ae92e, type: 3}
+      propertyPath: stages.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: 2fd173881d8467e44b68adcd1b87914d, type: 2}
+    - target: {fileID: 6297971117922763548, guid: 9a34893f59d9fc042b72bfbb7b7ae92e, type: 3}
+      propertyPath: stages.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: 7ceebdd0712fa6c419e9a1ce520a22e0, type: 2}
+    - target: {fileID: 6297971117922763548, guid: 9a34893f59d9fc042b72bfbb7b7ae92e, type: 3}
+      propertyPath: stages.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: 1487da62b005ae44b9262524cbf52bb0, type: 2}
+    - target: {fileID: 7348437177718421678, guid: 9a34893f59d9fc042b72bfbb7b7ae92e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7348437177718421678, guid: 9a34893f59d9fc042b72bfbb7b7ae92e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7348437177718421678, guid: 9a34893f59d9fc042b72bfbb7b7ae92e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7348437177718421678, guid: 9a34893f59d9fc042b72bfbb7b7ae92e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7348437177718421678, guid: 9a34893f59d9fc042b72bfbb7b7ae92e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7348437177718421678, guid: 9a34893f59d9fc042b72bfbb7b7ae92e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7348437177718421678, guid: 9a34893f59d9fc042b72bfbb7b7ae92e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7348437177718421678, guid: 9a34893f59d9fc042b72bfbb7b7ae92e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7348437177718421678, guid: 9a34893f59d9fc042b72bfbb7b7ae92e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7348437177718421678, guid: 9a34893f59d9fc042b72bfbb7b7ae92e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8921741993490005802, guid: 9a34893f59d9fc042b72bfbb7b7ae92e, type: 3}
+      propertyPath: m_Name
+      value: StageManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9a34893f59d9fc042b72bfbb7b7ae92e, type: 3}
+--- !u!114 &7497047379284654382 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6297971117922763548, guid: 9a34893f59d9fc042b72bfbb7b7ae92e, type: 3}
+  m_PrefabInstance: {fileID: 7497047379284654381}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc89a1da3e9ea0945b2d389549b66d37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &8218610274011943857
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1917,6 +2005,10 @@ PrefabInstance:
       propertyPath: initialSpawnCount
       value: 150
       objectReference: {fileID: 0}
+    - target: {fileID: 7577490239597732933, guid: f5adf0673bd21ce40be657c00179f688, type: 3}
+      propertyPath: stageManager
+      value: 
+      objectReference: {fileID: 7497047379284654382}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1936,4 +2028,5 @@ SceneRoots:
   - {fileID: 2007857665}
   - {fileID: 6642837229228484066}
   - {fileID: 8218610274011943857}
+  - {fileID: 7497047379284654381}
   - {fileID: 3746698906812740590}
