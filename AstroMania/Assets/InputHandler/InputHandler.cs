@@ -4,6 +4,7 @@ using UnityEngine;
 public class InputHandler : MonoBehaviour
 {
     private PlayerController player;
+    [SerializeField] private DisplayController displayController;
     private bool isGameOver = false;
 
     private void Start()
@@ -19,7 +20,7 @@ public class InputHandler : MonoBehaviour
 
     private void Update()
     {
-        if (isGameOver) return;
+        if (isGameOver || displayController.MenuIsActive) return;
 
         var moveX = Input.GetAxisRaw("Horizontal");
         var moveY = Input.GetAxisRaw("Vertical");

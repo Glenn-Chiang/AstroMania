@@ -323,6 +323,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: InputHandler
       objectReference: {fileID: 0}
+    - target: {fileID: 4098440852762667682, guid: 57d6b589b9e5c0b45bb3fccb674db018, type: 3}
+      propertyPath: displayController
+      value: 
+      objectReference: {fileID: 358502489}
     - target: {fileID: 8857372974976708019, guid: 57d6b589b9e5c0b45bb3fccb674db018, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -450,7 +454,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 1, g: 0.78431374, b: 0.78431374, a: 0}
+  m_BackGroundColor: {r: 1, g: 0.8820755, b: 0.8820755, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1833,34 +1837,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6297971117922763548, guid: 9a34893f59d9fc042b72bfbb7b7ae92e, type: 3}
-      propertyPath: stages.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6297971117922763548, guid: 9a34893f59d9fc042b72bfbb7b7ae92e, type: 3}
-      propertyPath: stageChangeInterval
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6297971117922763548, guid: 9a34893f59d9fc042b72bfbb7b7ae92e, type: 3}
-      propertyPath: stages.Array.data[0]
-      value: 
-      objectReference: {fileID: 11400000, guid: ccca1a271979607499830b7f7f68deeb, type: 2}
-    - target: {fileID: 6297971117922763548, guid: 9a34893f59d9fc042b72bfbb7b7ae92e, type: 3}
-      propertyPath: stages.Array.data[1]
-      value: 
-      objectReference: {fileID: 11400000, guid: 2fd173881d8467e44b68adcd1b87914d, type: 2}
-    - target: {fileID: 6297971117922763548, guid: 9a34893f59d9fc042b72bfbb7b7ae92e, type: 3}
-      propertyPath: stages.Array.data[2]
-      value: 
-      objectReference: {fileID: 11400000, guid: 7ceebdd0712fa6c419e9a1ce520a22e0, type: 2}
-    - target: {fileID: 6297971117922763548, guid: 9a34893f59d9fc042b72bfbb7b7ae92e, type: 3}
-      propertyPath: stages.Array.data[3]
-      value: 
-      objectReference: {fileID: 11400000, guid: 1487da62b005ae44b9262524cbf52bb0, type: 2}
-    - target: {fileID: 6297971117922763548, guid: 9a34893f59d9fc042b72bfbb7b7ae92e, type: 3}
-      propertyPath: stages.Array.data[4]
-      value: 
-      objectReference: {fileID: 11400000, guid: 9e985fe265f844041893d3314c953692, type: 2}
     - target: {fileID: 7348437177718421678, guid: 9a34893f59d9fc042b72bfbb7b7ae92e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

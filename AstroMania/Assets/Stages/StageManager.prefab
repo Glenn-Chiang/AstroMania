@@ -44,5 +44,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc89a1da3e9ea0945b2d389549b66d37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stages: []
-  stageChangeInterval: 0
+  stages:
+  - {fileID: 11400000, guid: ccca1a271979607499830b7f7f68deeb, type: 2}
+  - {fileID: 11400000, guid: 2fd173881d8467e44b68adcd1b87914d, type: 2}
+  - {fileID: 11400000, guid: 7ceebdd0712fa6c419e9a1ce520a22e0, type: 2}
+  - {fileID: 11400000, guid: 1487da62b005ae44b9262524cbf52bb0, type: 2}
+  - {fileID: 11400000, guid: 9e985fe265f844041893d3314c953692, type: 2}
+  stageChangeInterval: 120

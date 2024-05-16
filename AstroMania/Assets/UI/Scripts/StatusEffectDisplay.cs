@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class StatusEffectDisplayer : MonoBehaviour
+public class StatusEffectDisplay : MonoBehaviour
 {
     [SerializeField] private StatusEffectManager effectManager;
     [SerializeField] private Image iconPrefab; // The status effect icon is displayed in the image component of this prefab
