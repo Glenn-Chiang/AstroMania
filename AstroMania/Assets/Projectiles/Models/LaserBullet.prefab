@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4311959966598648834}
   - component: {fileID: 5181656368540647935}
   - component: {fileID: 8723970527414513309}
-  - component: {fileID: 2153957329439887613}
+  - component: {fileID: 8048913315408407526}
   m_Layer: 8
   m_Name: LaserBullet
   m_TagString: Untagged
@@ -116,7 +116,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.375, y: 0}
@@ -159,7 +159,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &2153957329439887613
+--- !u!114 &8048913315408407526
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -168,7 +168,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 3985364689995716846}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a784e3e6bed052458bc74bdd7912131, type: 3}
+  m_Script: {fileID: 11500000, guid: 08a0cf5dab2e22f4582ace44f892c900, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 0
+  effectAppliers: []

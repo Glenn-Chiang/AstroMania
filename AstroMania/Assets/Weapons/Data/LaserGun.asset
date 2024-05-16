@@ -16,8 +16,8 @@ MonoBehaviour:
   <Description>k__BackingField: Fires a powerful laser that penetrates enemies
   <Sprite>k__BackingField: {fileID: -1211821765487658003, guid: 544f32880a891fd4489e56a2bea22818, type: 3}
   <Damage>k__BackingField: 20
-  <FireRate>k__BackingField: 2
+  <FireRate>k__BackingField: 3
   <FirePower>k__BackingField: 20
   <EnergyCost>k__BackingField: 2
   <Controller>k__BackingField: {fileID: 1269109831686660430, guid: 78e4a5af55448c94793f319c4c21f3a0, type: 3}
-  <Projectile>k__BackingField: {fileID: 2153957329439887613, guid: aac73596288a4374e92408dcc33f5d29, type: 3}
+  <Projectile>k__BackingField: {fileID: 8048913315408407526, guid: aac73596288a4374e92408dcc33f5d29, type: 3}

@@ -16,7 +16,7 @@ MonoBehaviour:
   <Description>k__BackingField: Modest but reliable standard-issue weapon
   <Sprite>k__BackingField: {fileID: 4491728363511429535, guid: 4c480c95a50136e48a2eba3cb9e8d68c, type: 3}
   <Damage>k__BackingField: 8
-  <FireRate>k__BackingField: 5
+  <FireRate>k__BackingField: 4
   <FirePower>k__BackingField: 10
   <EnergyCost>k__BackingField: 0
   <Controller>k__BackingField: {fileID: 1269109831686660430, guid: 7f2c6bd47d1b259499e56b768b7a61f5, type: 3}

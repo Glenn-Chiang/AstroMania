@@ -8,20 +8,23 @@ public class ProjectileController : MonoBehaviour
 
     protected virtual void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.TryGetComponent<IDamageable>(out var damageable))
+        HitTarget(collision.collider.gameObject);
+        Destroy(gameObject);
+    }
+
+    protected void HitTarget(GameObject target)
+    {
+        if (target.TryGetComponent<IDamageable>(out var damageable))
         {
             damageable.TakeDamage(damage);
         }
         
-        if (collision.collider.TryGetComponent<StatusEffectManager>(out var target))
+        if (target.TryGetComponent<StatusEffectManager>(out var effectManager))
         {
             foreach (var effectApplier in effectAppliers)
             {
-                effectApplier.Apply(target);
+                effectApplier.Apply(effectManager);
             }
         }
-
-        Destroy(gameObject);
     }
-
 }

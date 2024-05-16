@@ -945,6 +945,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WorldGenerator
       objectReference: {fileID: 0}
+    - target: {fileID: 5640346396742726028, guid: d2230153afbeb2f45b74b3eceacbe88e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6507348411371096028, guid: d2230153afbeb2f45b74b3eceacbe88e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

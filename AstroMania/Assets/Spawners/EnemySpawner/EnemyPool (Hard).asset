@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <Entities>k__BackingField:
   - <Element>k__BackingField: {fileID: 8920851708171242474, guid: 06c740073f6e0be488b2cb6b1c7108cf, type: 3}
-    <Weight>k__BackingField: 0.4
+    <Weight>k__BackingField: 0.2
   - <Element>k__BackingField: {fileID: 8920851708171242474, guid: 81bcbfe3762240f4fb28149a7e386292, type: 3}
-    <Weight>k__BackingField: 0.35
+    <Weight>k__BackingField: 0.3
   - <Element>k__BackingField: {fileID: 8920851708171242474, guid: 91e88293ae543d14695f0a37e6a8c884, type: 3}
-    <Weight>k__BackingField: 0.25
+    <Weight>k__BackingField: 0.5
