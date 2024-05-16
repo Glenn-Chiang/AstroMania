@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class StageManager : MonoBehaviour
 {
+    public static StageManager Instance;
+
     [SerializeField] private List<StageData> stages;
     [SerializeField] private float stageChangeInterval;
     public event EventHandler<StageData> StageChanged;
@@ -13,6 +15,13 @@ public class StageManager : MonoBehaviour
 
     private void Awake()
     {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(this);
+            return;
+        }
+        Instance = this;
+
         InvokeRepeating(nameof(AdvanceStage), stageChangeInterval, stageChangeInterval);
     }
 

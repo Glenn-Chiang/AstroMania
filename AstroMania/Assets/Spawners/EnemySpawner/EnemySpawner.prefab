@@ -45,12 +45,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a57b5a746ab0e1f47afd2535f97879ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entities: []
-  initialSpawnCount: 0
-  minX: -100
-  maxX: 100
-  minY: -100
-  maxY: 100
+  entityPool: {fileID: 11400000, guid: 29fc3d9c58ac3e148b494f8c13235dc6, type: 2}
+  initialSpawnCount: 100
 --- !u!114 &7577490239597732933
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63,12 +59,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5a749ef84d34bf4d9551fb35cd0f891, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPools:
-  - {fileID: 11400000, guid: 29fc3d9c58ac3e148b494f8c13235dc6, type: 2}
-  - {fileID: 11400000, guid: 67f6d85810a1c1444b5d01270502742b, type: 2}
-  - {fileID: 11400000, guid: d9f28a1b4dceb6d4188915d2cca67a67, type: 2}
-  - {fileID: 11400000, guid: 5157a8f00fb826444a0b53bb10fe3348, type: 2}
   spawner: {fileID: 5544089719255625571}
   spawnInterval: 10
   batchSize: 5
-  poolChangeInterval: 1

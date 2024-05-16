@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class EnemySpawnController : MonoBehaviour
 {
-    [SerializeField] private StageManager stageManager;
+    private StageManager StageManager => StageManager.Instance;
     private EntityPool currentPool;
 
     [SerializeField] private Spawner spawner;
@@ -11,7 +11,7 @@ public class EnemySpawnController : MonoBehaviour
     
     private void Start()
     {
-        stageManager.StageChanged += OnStageChanged;
+        StageManager.StageChanged += OnStageChanged;
         InvokeRepeating(nameof(SpawnBatch), spawnInterval, spawnInterval);   
     }
 

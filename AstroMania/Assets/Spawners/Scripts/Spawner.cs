@@ -4,7 +4,6 @@ using UnityEngine;
 public abstract class Spawner : MonoBehaviour
 {
     public EntityPool entityPool;
-    private List<WeightedElement<GameObject>> Entities => entityPool.Entities;
 
     [SerializeField] private int initialSpawnCount;
 
@@ -24,7 +23,7 @@ public abstract class Spawner : MonoBehaviour
     public void SpawnRandomEntity()
     {
         var spawnPosition = GetSpawnPosition();
-        var entity = RandomUtils.WeightedSelectRandom(Entities);
+        var entity = RandomUtils.WeightedSelectRandom(entityPool.Entities);
         Instantiate(entity, spawnPosition, RandomRotation());
     }
 

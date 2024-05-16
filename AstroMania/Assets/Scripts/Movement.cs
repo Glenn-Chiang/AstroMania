@@ -2,16 +2,9 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    [SerializeField] private ICharacter character;
-
     [SerializeField] protected Rigidbody2D rb;
-    private float MoveSpeed => character.Stats.moveSpeed.Value;
+    private float MoveSpeed => GetComponent<ICharacter>().Stats.moveSpeed.Value;
     protected Vector2 moveDir;
-
-    private void Start()
-    {
-        character = GetComponent<ICharacter>();
-    }
 
     public void LookAt(Vector3 lookPos)
     {
