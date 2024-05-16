@@ -10,7 +10,7 @@ public class InputHandler : MonoBehaviour
     private void Start()
     {
         player = PlayerController.Instance;
-        player.OnGameOver += HandleGameOver;
+        player.PlayerDied += HandleGameOver;
     }
 
     private void HandleGameOver(object sender, EventArgs e)

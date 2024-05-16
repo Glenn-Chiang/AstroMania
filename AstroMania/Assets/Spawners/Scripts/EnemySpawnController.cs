@@ -11,13 +11,14 @@ public class EnemySpawnController : MonoBehaviour
     
     private void Start()
     {
+        currentPool = StageManager.CurrentStage.EnemyPool;
         StageManager.StageChanged += OnStageChanged;
         InvokeRepeating(nameof(SpawnBatch), spawnInterval, spawnInterval);   
     }
 
     private void OnStageChanged(object sender, StageData stage)
     {
-        currentPool = stage.EnemyPool;
+        currentPool = StageManager.CurrentStage.EnemyPool;
     }
 
     private void SpawnBatch()

@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -31,6 +32,7 @@ public class WorldGenerator : MonoBehaviour
     private void Start()
     {
         Sector.EnteredSector += OnEnterSector;
+        Player.PlayerDied += OnPlayerDeath;
         GenerateSector(transform.position);
     }
 
@@ -106,5 +108,10 @@ public class WorldGenerator : MonoBehaviour
         {
             generatedSectors.Add(Instantiate(sectorPrefab, sectorOrigin, Quaternion.identity));
         }
+    }
+
+    private void OnPlayerDeath(object sender, EventArgs e)
+    {
+        Destroy(gameObject);
     }
 }

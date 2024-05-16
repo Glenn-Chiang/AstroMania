@@ -16,7 +16,7 @@ public class PlayerController : MonoBehaviour, ICharacter
     [field: SerializeField] public EnergyManager EnergyManager { get; private set; }
     [SerializeField] private XPManager xpManager;
 
-    public event EventHandler OnGameOver;
+    public event EventHandler PlayerDied;
 
     private void Awake()
     {
@@ -48,7 +48,7 @@ public class PlayerController : MonoBehaviour, ICharacter
     {
         Debug.Log("Player died");
         Destroy(gameObject);
-        OnGameOver?.Invoke(this, EventArgs.Empty);
+        PlayerDied?.Invoke(this, EventArgs.Empty);
     }
 
     private void HandleEnemyDeath(object sender, EnemyDeathEventArgs e)

@@ -12,6 +12,7 @@ public class Sector : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
+        if (Player == null) return;
         if (collider.gameObject == Player.gameObject)
         {
             EnteredSector?.Invoke(this, this);
