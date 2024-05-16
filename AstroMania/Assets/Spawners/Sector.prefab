@@ -79,7 +79,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 200, y: 200}
+  m_Size: {x: 100, y: 100}
   m_EdgeRadius: 0
 --- !u!114 &6123980884245418507
 MonoBehaviour:
@@ -147,7 +147,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6718173873385257382, guid: 8fba1c6f2c9155841a190b9f04526843, type: 3}
       propertyPath: initialSpawnCount
-      value: 500
+      value: 120
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -173,7 +173,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1902919154554905500, guid: c95c5dc3193d2f44bb072720773e6233, type: 3}
       propertyPath: initialSpawnCount
-      value: 100
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7273554971252452028, guid: c95c5dc3193d2f44bb072720773e6233, type: 3}
       propertyPath: m_LocalPosition.x
