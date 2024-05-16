@@ -1,5 +1,7 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class WeaponManager : MonoBehaviour
 {
@@ -18,6 +20,8 @@ public class WeaponManager : MonoBehaviour
     public Stat DamageBonus => character.Stats.damageBonus;
     public Stat FireRateBonus => character.Stats.fireRateBonus;
 
+    public event EventHandler ChangedWeapon;
+
     private void Start()
     {
         character = GetComponent<ICharacter>();
@@ -31,6 +35,10 @@ public class WeaponManager : MonoBehaviour
             equippedWeapon.HandleFire();
         }
     }
+    private void EquipWeapon()
+    {
+        equippedWeapon = Instantiate(SelectedWeapon.Controller, weaponSlot);   
+    }
 
     public void SelectWeapon(int index)
     {
@@ -41,8 +49,11 @@ public class WeaponManager : MonoBehaviour
         {
             Destroy(equippedWeapon.gameObject); // Remove currently selected weapon
         }
+        
         selectedIndex = index;
         EquipWeapon();
+
+        ChangedWeapon?.Invoke(this, EventArgs.Empty);
     }
 
     public void SelectNextWeapon()
@@ -79,7 +90,7 @@ public class WeaponManager : MonoBehaviour
 
     public void SelectRandomWeapon()
     {
-        SelectWeapon(Random.Range(0, weapons.Count));
+        SelectWeapon(UnityEngine.Random.Range(0, weapons.Count));
     }
 
     public void AddWeapon(WeaponData weapon)
@@ -90,9 +101,4 @@ public class WeaponManager : MonoBehaviour
         }
     }
 
-    private void EquipWeapon()
-    {
-        equippedWeapon = Instantiate(SelectedWeapon.Controller, weaponSlot);
-        
-    }
 }
