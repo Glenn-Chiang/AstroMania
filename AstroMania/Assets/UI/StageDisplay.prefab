@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 554556929433858196}
   - component: {fileID: 4653141396985069108}
   - component: {fileID: 7973035048293532210}
+  - component: {fileID: 5247032305985990533}
   m_Layer: 5
   m_Name: StageDisplay
   m_TagString: Untagged
@@ -77,6 +78,21 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &5247032305985990533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 95259748586579819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d2d82addb92ab342ad348601177754e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stageManager: {fileID: 0}
+  stageText: {fileID: 4651443919583896927}
+  stageIcon: {fileID: 0}
 --- !u!1 &8193447398952266979
 GameObject:
   m_ObjectHideFlags: 0
@@ -88,6 +104,7 @@ GameObject:
   - component: {fileID: 7298344555550647357}
   - component: {fileID: 3217215562340645633}
   - component: {fileID: 372487178308369097}
+  - component: {fileID: 7855084677652346933}
   m_Layer: 5
   m_Name: Timer
   m_TagString: Untagged
@@ -211,6 +228,19 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &7855084677652346933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8193447398952266979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 567f7948046d0094593b433571f0fe67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerText: {fileID: 372487178308369097}
 --- !u!1 &8689304938530227437
 GameObject:
   m_ObjectHideFlags: 0
@@ -223,7 +253,7 @@ GameObject:
   - component: {fileID: 9125471967694753906}
   - component: {fileID: 4651443919583896927}
   m_Layer: 5
-  m_Name: Stage
+  m_Name: StageName
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

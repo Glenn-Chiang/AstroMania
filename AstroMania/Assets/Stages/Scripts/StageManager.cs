@@ -9,7 +9,7 @@ public class StageManager : MonoBehaviour
     public event EventHandler<StageData> StageChanged;
 
     private int currentStageIndex = 0;
-    private StageData CurrentStage => stages[currentStageIndex];
+    public StageData CurrentStage => stages[currentStageIndex];
 
     private void Awake()
     {
