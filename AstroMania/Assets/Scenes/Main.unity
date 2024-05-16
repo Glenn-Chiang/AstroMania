@@ -1733,7 +1733,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1595619547399094374, guid: 2d7e7dc3122009049886b10f599feeb6, type: 3}
       propertyPath: m_Color.a
-      value: 0.039215688
+      value: 0.19607843
+      objectReference: {fileID: 0}
+    - target: {fileID: 6754195668507811309, guid: 2d7e7dc3122009049886b10f599feeb6, type: 3}
+      propertyPath: activeDuration
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 9081135706953055384, guid: 2d7e7dc3122009049886b10f599feeb6, type: 3}
       propertyPath: m_Name
