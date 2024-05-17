@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -12,6 +13,16 @@ public class PowerManager : MonoBehaviour
         {
             power.player = player;
             power.Activate();
+        }
+
+        player.PlayerDied += OnPlayerDeath;
+    }
+
+    private void OnPlayerDeath(object sender, EventArgs e)
+    {
+        foreach (var power in powers)
+        {
+            power.Deactivate();
         }
     }
 

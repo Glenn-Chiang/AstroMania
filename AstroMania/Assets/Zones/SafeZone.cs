@@ -16,7 +16,7 @@ public class SafeZone : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.CompareTag("Enemy") || collider.TryGetComponent<ProjectileController>(out var projectile))
+        if (collider.CompareTag("Enemy"))
         {
             Destroy(collider.gameObject);
         }

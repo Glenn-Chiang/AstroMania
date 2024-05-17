@@ -15,3 +15,4 @@ MonoBehaviour:
   <Name>k__BackingField: Medium
   <Icon>k__BackingField: {fileID: 0}
   <EnemyPool>k__BackingField: {fileID: 11400000, guid: 67f6d85810a1c1444b5d01270502742b, type: 2}
+  <EnemySpawnInterval>k__BackingField: 8

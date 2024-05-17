@@ -8,8 +8,10 @@ public class ResourceBar : MonoBehaviour
 
     private void Update()
     {
-        if (resourceManager == null) return;
-
+        if (resourceManager == null)
+        {
+            enabled = false;
+        }
         slider.maxValue = resourceManager.MaxValue;
         slider.value = resourceManager.Value;
     }

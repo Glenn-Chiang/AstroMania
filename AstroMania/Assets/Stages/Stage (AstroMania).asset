@@ -15,3 +15,4 @@ MonoBehaviour:
   <Name>k__BackingField: AstroMania
   <Icon>k__BackingField: {fileID: 0}
   <EnemyPool>k__BackingField: {fileID: 11400000, guid: 5157a8f00fb826444a0b53bb10fe3348, type: 2}
+  <EnemySpawnInterval>k__BackingField: 1

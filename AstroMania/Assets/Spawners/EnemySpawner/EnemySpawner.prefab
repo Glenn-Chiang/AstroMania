@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   entityPool: {fileID: 11400000, guid: 29fc3d9c58ac3e148b494f8c13235dc6, type: 2}
-  initialSpawnCount: 60
+  initialSpawnCount: 50
 --- !u!114 &7577490239597732933
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60,5 +60,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawner: {fileID: 5544089719255625571}
-  spawnInterval: 10
-  batchSize: 5

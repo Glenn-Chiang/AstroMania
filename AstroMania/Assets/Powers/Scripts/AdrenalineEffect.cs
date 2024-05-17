@@ -11,12 +11,12 @@ public class AdrenalineEffect : MonoBehaviour
 
     private void Start()
     {
-        player.HealthManager.OnHealthChange += HandleHealthChange;
+        player.HealthManager.HealthChanged += HandleHealthChange;
     }
 
     private void OnDestroy()
     {
-        player.HealthManager.OnHealthChange -= HandleHealthChange;
+        player.HealthManager.HealthChanged -= HandleHealthChange;
     }
 
     private void HandleHealthChange(object sender, EventArgs e)
