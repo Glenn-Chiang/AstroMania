@@ -9,19 +9,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: Player
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerCharacterData
-  <Name>k__BackingField: Player
-  <Description>k__BackingField: Elite combat ship
-  <Sprite>k__BackingField: {fileID: -3771988729453913823, guid: d51b03a4cebefd44aa0665b75d78527b, type: 3}
+  m_Script: {fileID: 11500000, guid: 92314dba717c02845940056f07bf6539, type: 3}
+  m_Name: PlayerData
+  m_EditorClassIdentifier: 
+  <Name>k__BackingField: 
+  <Description>k__BackingField: 
+  <Sprite>k__BackingField: {fileID: 0}
   <MaxHealth>k__BackingField:
-    value: 100
+    value: 0
   <MoveSpeed>k__BackingField:
-    value: 6
+    value: 0
   <DamageBonus>k__BackingField:
-    value: 1
+    value: 0
   <FireRateBonus>k__BackingField:
-    value: 1
+    value: 0
   <MaxEnergy>k__BackingField:
-    value: 150
+    value: 0

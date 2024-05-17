@@ -7,8 +7,8 @@ public class WorldGenerator : MonoBehaviour
 {
     public static WorldGenerator Instance { get; private set; }
 
-    private PlayerController Player => PlayerController.Instance;
-    private Vector2 PlayerPos => Player.transform.position;
+    private PlayerController player;
+    private Vector2 PlayerPos => player.transform.position;
 
     [SerializeField] private Sector sectorPrefab;
     private float SectorWidth => sectorPrefab.Width;
@@ -31,9 +31,10 @@ public class WorldGenerator : MonoBehaviour
 
     private void Start()
     {
+        player = PlayerController.Instance;
         Sector.EnteredSector += OnEnterSector;
-        Player.PlayerDied += OnPlayerDeath;
-        GenerateSector(transform.position);
+        player.PlayerDied += OnPlayerDeath;
+        currentSector = GenerateSector(transform.position);
     }
 
     private void OnEnterSector(object sender, Sector sector)
@@ -102,12 +103,15 @@ public class WorldGenerator : MonoBehaviour
         }
     }
 
-    private void GenerateSector(Vector2 sectorOrigin)
+    private Sector GenerateSector(Vector2 sectorOrigin)
     {
         if (!generatedSectors.Any(sector => sector.Origin == sectorOrigin))
         {
-            generatedSectors.Add(Instantiate(sectorPrefab, sectorOrigin, Quaternion.identity));
+            var sector = Instantiate(sectorPrefab, sectorOrigin, Quaternion.identity);
+            generatedSectors.Add(sector);
+            return sector;
         }
+        return null;
     }
 
     private void OnPlayerDeath(object sender, EventArgs e)

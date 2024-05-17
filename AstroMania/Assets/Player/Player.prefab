@@ -17,9 +17,9 @@ GameObject:
   - component: {fileID: 1557464832560917483}
   - component: {fileID: 211932211201157776}
   - component: {fileID: 5794111128145611694}
-  - component: {fileID: 8096083153583554206}
   - component: {fileID: 4329792089877579408}
   - component: {fileID: 1014991446962904113}
+  - component: {fileID: -8443603974079047522}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -234,24 +234,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   xpPerLevel: 100
---- !u!114 &8096083153583554206
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 753743145778282374}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34e69e1df36a8ea4e8af87c179f4bc82, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterData: {fileID: 11400000, guid: 7f7a9adabf7267344a69d91d259191b8, type: 2}
-  <Movement>k__BackingField: {fileID: 7419207094389121070}
-  <WeaponManager>k__BackingField: {fileID: 3968869921899384567}
-  <HealthManager>k__BackingField: {fileID: 1557464832560917483}
-  <EnergyManager>k__BackingField: {fileID: 211932211201157776}
-  xpManager: {fileID: 5794111128145611694}
 --- !u!114 &4329792089877579408
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -264,9 +246,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a082a54256c0e1746a07e143e9b40da1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  powers:
-  - {fileID: 11400000, guid: fd1d8e46608bf07449479718483e2d1f, type: 2}
-  player: {fileID: 8096083153583554206}
+  powers: []
+  player: {fileID: -8443603974079047522}
 --- !u!114 &1014991446962904113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -279,6 +260,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3032c2d9e505c5499e887035e0e491f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-8443603974079047522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753743145778282374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34e69e1df36a8ea4e8af87c179f4bc82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterData: {fileID: 11400000, guid: d9ca4ed29589c5048928dc139da270ee, type: 2}
+  <Movement>k__BackingField: {fileID: 7419207094389121070}
+  <WeaponManager>k__BackingField: {fileID: 3968869921899384567}
+  <HealthManager>k__BackingField: {fileID: 1557464832560917483}
+  <EnergyManager>k__BackingField: {fileID: 211932211201157776}
+  xpManager: {fileID: 5794111128145611694}
 --- !u!1 &1733269783233455005
 GameObject:
   m_ObjectHideFlags: 0
