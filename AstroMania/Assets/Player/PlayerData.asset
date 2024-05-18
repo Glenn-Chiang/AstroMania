@@ -12,16 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92314dba717c02845940056f07bf6539, type: 3}
   m_Name: PlayerData
   m_EditorClassIdentifier: 
-  <Name>k__BackingField: 
-  <Description>k__BackingField: 
-  <Sprite>k__BackingField: {fileID: 0}
+  <Name>k__BackingField: Player
+  <Description>k__BackingField: Elite AI-powered combat ship
+  <Sprite>k__BackingField: {fileID: -3771988729453913823, guid: d51b03a4cebefd44aa0665b75d78527b, type: 3}
   <MaxHealth>k__BackingField:
-    value: 0
+    value: 100
   <MoveSpeed>k__BackingField:
-    value: 0
+    value: 6
   <DamageBonus>k__BackingField:
-    value: 0
+    value: 1
   <FireRateBonus>k__BackingField:
-    value: 0
+    value: 1
   <MaxEnergy>k__BackingField:
-    value: 0
+    value: 150

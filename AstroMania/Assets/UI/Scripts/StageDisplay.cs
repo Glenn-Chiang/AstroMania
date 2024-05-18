@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -11,7 +12,13 @@ public class StageDisplay : MonoBehaviour
     private void Start()
     {
         stageManager.StageChanged += OnStageChanged;
+        PlayerController.Instance.PlayerDied += OnPlayerDeath;
         UpdateDisplay();
+    }
+
+    private void OnPlayerDeath(object sender, EventArgs e)
+    {
+        enabled = false;
     }
 
     private void OnStageChanged(object sender, StageData stage)

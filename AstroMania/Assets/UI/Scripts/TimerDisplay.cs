@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 
@@ -5,6 +6,16 @@ public class TimerDisplay : MonoBehaviour
 {
     [SerializeField] private TMP_Text timerText;
     private float elapsedTime;
+
+    private void Start()
+    {
+        PlayerController.Instance.PlayerDied += OnPlayerDeath;
+    }
+
+    private void OnPlayerDeath(object sender, EventArgs e)
+    {
+        enabled = false;
+    }
 
     private void Update()
     {
