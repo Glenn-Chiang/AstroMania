@@ -4,7 +4,9 @@ using UnityEngine;
 public class InputHandler : MonoBehaviour
 {
     private PlayerController player;
-    [SerializeField] private LevelUpDisplay displayController;
+
+    [SerializeField] private MenuDisplayer pauseMenuDisplayer;
+
     private bool isGameOver = false;
 
     private void Start()
@@ -20,7 +22,19 @@ public class InputHandler : MonoBehaviour
 
     private void Update()
     {
-        if (isGameOver || displayController.MenuIsActive) return;
+        // Disable inputs if game over
+        if (isGameOver) return;
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            pauseMenuDisplayer.Toggle();
+        }
+
+        // If a menu is open, disable inputs
+        if (MenuDisplayManager.Instance.NumMenusShown > 0)
+        {
+            return;
+        }
 
         var moveX = Input.GetAxisRaw("Horizontal");
         var moveY = Input.GetAxisRaw("Vertical");
