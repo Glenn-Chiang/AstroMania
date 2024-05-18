@@ -20,6 +20,7 @@ GameObject:
   - component: {fileID: 4329792089877579408}
   - component: {fileID: 1014991446962904113}
   - component: {fileID: -8443603974079047522}
+  - component: {fileID: 1745177707462370928}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -64,7 +65,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -278,6 +279,20 @@ MonoBehaviour:
   <HealthManager>k__BackingField: {fileID: 1557464832560917483}
   <EnergyManager>k__BackingField: {fileID: 211932211201157776}
   xpManager: {fileID: 5794111128145611694}
+--- !u!114 &1745177707462370928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753743145778282374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07d9c6bdfcdcacd48af3772898aab692, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthManager: {fileID: 1557464832560917483}
+  explosion: {fileID: 1113693568401335511, guid: 889ff4b69713ca144ab7579ab1f45125, type: 3}
 --- !u!1 &1733269783233455005
 GameObject:
   m_ObjectHideFlags: 0

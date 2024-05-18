@@ -251,7 +251,6 @@ MonoBehaviour:
   weaponManager: {fileID: 4372755983408478146}
   healthManager: {fileID: 4098429489217318975}
   minDistance: 5
-  deathEffect: {fileID: 6240571752949196339}
 --- !u!114 &4098429489217318975
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -277,6 +276,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07d9c6bdfcdcacd48af3772898aab692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthManager: {fileID: 4098429489217318975}
   explosion: {fileID: 1113693568401335511, guid: 889ff4b69713ca144ab7579ab1f45125, type: 3}
 --- !u!114 &4930943026231150664
 MonoBehaviour:

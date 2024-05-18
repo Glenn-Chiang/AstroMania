@@ -752,26 +752,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 4329792089877579408, guid: 41a0a0cf94691fd4e8345631a2620ec3, type: 3}
-      propertyPath: powers.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4329792089877579408, guid: 41a0a0cf94691fd4e8345631a2620ec3, type: 3}
-      propertyPath: powers.Array.data[0]
-      value: 
-      objectReference: {fileID: 11400000, guid: 94252a0521a74644f828eb2b2f57d9c3, type: 2}
-    - target: {fileID: 4329792089877579408, guid: 41a0a0cf94691fd4e8345631a2620ec3, type: 3}
-      propertyPath: powers.Array.data[1]
-      value: 
-      objectReference: {fileID: 11400000, guid: 64e4c42f7f30a284c9ed1cbc15bff360, type: 2}
-    - target: {fileID: 6799369211268817351, guid: 41a0a0cf94691fd4e8345631a2620ec3, type: 3}
-      propertyPath: m_CastShadows
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6799369211268817351, guid: 41a0a0cf94691fd4e8345631a2620ec3, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
     - target: {fileID: 8857050073455270553, guid: 41a0a0cf94691fd4e8345631a2620ec3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
