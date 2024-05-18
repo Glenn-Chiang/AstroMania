@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public class DisplayController : MonoBehaviour
+public class LevelUpDisplay : MonoBehaviour
 {
     [SerializeField] private XPManager xpManager;
     [SerializeField] private GameObject levelUpMenu;

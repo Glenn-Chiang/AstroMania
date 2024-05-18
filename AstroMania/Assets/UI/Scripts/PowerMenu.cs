@@ -12,7 +12,7 @@ public class PowerMenu : MonoBehaviour
     private List<Power> offeredPowers;
 
     [SerializeField] private List<MenuSlot> slots;
-    [SerializeField] private DisplayController displayController;
+    [SerializeField] private LevelUpDisplay displayController;
 
     private void OnEnable()
     {        

@@ -4,7 +4,7 @@ using UnityEngine;
 public class InputHandler : MonoBehaviour
 {
     private PlayerController player;
-    [SerializeField] private DisplayController displayController;
+    [SerializeField] private LevelUpDisplay displayController;
     private bool isGameOver = false;
 
     private void Start()
