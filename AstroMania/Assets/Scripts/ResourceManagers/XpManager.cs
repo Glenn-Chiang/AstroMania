@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class XPManager : ResourceManager
 {
-    [SerializeField] private float xpPerLevel = 100;
+    private readonly float xpPerLevel = 100;
     private float totalXp = 0;
     public int Level => (int)(totalXp / xpPerLevel);
     public float CurrentLevelXp => totalXp % xpPerLevel; // XP earned at current level
@@ -11,7 +11,7 @@ public class XPManager : ResourceManager
     public override float MaxValue => xpPerLevel;
     public override float Value { get => CurrentLevelXp; protected set {  } }
 
-    public event EventHandler<LevelUpEventArgs> OnLevelUp;
+    public event EventHandler<LevelUpEventArgs> LevelledUp;
 
     public void AddXp(float xpReward)
     {
@@ -27,8 +27,8 @@ public class XPManager : ResourceManager
 
     private void LevelUp()
     {
-        OnLevelUp?.Invoke(this, new LevelUpEventArgs(Level));
         Debug.Log("Level up");
+        LevelledUp?.Invoke(this, new LevelUpEventArgs(Level));
     }
 }
 

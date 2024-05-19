@@ -10,7 +10,7 @@ public class LevelUpDisplayer : MonoBehaviour
 
     private void Start()
     {
-        xpManager.OnLevelUp += HandleLevelUp;
+        xpManager.LevelledUp += HandleLevelUp;
     }
 
     private void HandleLevelUp(object sender, LevelUpEventArgs e)

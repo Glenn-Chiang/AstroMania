@@ -32,7 +32,7 @@ public class PlayerController : MonoBehaviour, ICharacter
 
     private void Start()
     {
-        xpManager.OnLevelUp += HandleLevelUp;
+        xpManager.LevelledUp += HandleLevelUp;
         HealthManager.Died += HandleDeath;
 
         EnemyAI.OnEnemyDeath += HandleEnemyDeath;   
@@ -46,7 +46,6 @@ public class PlayerController : MonoBehaviour, ICharacter
 
     private void HandleDeath(object sender, EventArgs e)
     {
-        Debug.Log("Player died");
         gameObject.SetActive(false);
         PlayerDied?.Invoke(this, EventArgs.Empty);
     }
@@ -55,5 +54,10 @@ public class PlayerController : MonoBehaviour, ICharacter
     {
         var enemyData = e.enemyData;
         xpManager.AddXp(enemyData.XpReward);
+    }
+
+    private void OnDestroy()
+    {
+        EnemyAI.OnEnemyDeath -= HandleEnemyDeath;
     }
 }

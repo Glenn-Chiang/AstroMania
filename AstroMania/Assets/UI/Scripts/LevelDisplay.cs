@@ -10,7 +10,7 @@ public class LevelDisplay : MonoBehaviour
 
     private void Start()
     {
-        xpManager.OnLevelUp += UpdateDisplay;
+        xpManager.LevelledUp += UpdateDisplay;
     }
 
     private void UpdateDisplay(object sender, LevelUpEventArgs e)
