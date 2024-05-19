@@ -6,6 +6,7 @@ public class InputHandler : MonoBehaviour
     private PlayerController player;
 
     [SerializeField] private MenuDisplayer pauseMenuDisplayer;
+    [SerializeField] private MenuDisplayer powerListDisplayer;
 
     private bool isGameOver = false;
 
@@ -22,15 +23,25 @@ public class InputHandler : MonoBehaviour
 
     private void Update()
     {
-        // Disable inputs if game over
+        // Disable all  key inputs if game over
         if (isGameOver) return;
 
+        // Toggle pause
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             pauseMenuDisplayer.Toggle();
         }
 
-        // If a menu is open, disable inputs
+        // If pause menu is open, disable all other key inputs
+        if (pauseMenuDisplayer.IsActive) return;
+
+        // Toggle power list
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            powerListDisplayer.Toggle();
+        }
+
+        // If any menu is open, disable action key inputs
         if (MenuDisplayManager.Instance.NumMenusShown > 0)
         {
             return;

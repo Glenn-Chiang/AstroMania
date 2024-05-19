@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public class GameOverDisplay : MonoBehaviour
+public class GameOverDisplayer : MonoBehaviour
 {
     [SerializeField] private GameObject gameOverDisplay;
 

@@ -4,6 +4,7 @@ using UnityEngine;
 public class MenuDisplayer : MonoBehaviour
 {
     [SerializeField] private GameObject menu;
+    public bool IsActive => menu.activeInHierarchy;
 
     public void Show()
     {
