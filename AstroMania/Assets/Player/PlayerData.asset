@@ -24,4 +24,4 @@ MonoBehaviour:
   <FireRateBonus>k__BackingField:
     value: 1
   <MaxEnergy>k__BackingField:
-    value: 150
+    value: 100

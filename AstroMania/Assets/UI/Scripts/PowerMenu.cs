@@ -1,7 +1,5 @@
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class PowerMenu : MonoBehaviour
 {
@@ -11,7 +9,7 @@ public class PowerMenu : MonoBehaviour
     [SerializeField] private List<Power> availablePowers;
     private List<Power> offeredPowers;
 
-    [SerializeField] private List<MenuSlot> slots;
+    [SerializeField] private List<ItemSlot> slots;
     [SerializeField] private MenuDisplayer menuDisplayer;
 
     private void OnEnable()

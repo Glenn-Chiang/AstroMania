@@ -5,16 +5,11 @@ public class WeaponController : MonoBehaviour
 {
     [SerializeField] protected Transform firePoint;
     [SerializeField] protected WeaponData weaponData;
-    public WeaponManager WeaponManager { get; private set; }
+    public WeaponManager WeaponManager => GetComponentInParent<WeaponManager>();
     private float FireRate => weaponData.FireRate * WeaponManager.FireRateBonus.Value;
     private float CooldownTime => 1 / FireRate;
 
     private bool canFire = true;
-
-    private void Start()
-    {
-        WeaponManager = GetComponentInParent<WeaponManager>();
-    }
 
     public void HandleFire()
     {
