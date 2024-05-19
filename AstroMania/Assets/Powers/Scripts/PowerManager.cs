@@ -5,11 +5,12 @@ using UnityEngine;
 public class PowerManager : MonoBehaviour
 {
     [SerializeField] private List<Power> powers;
+    public IReadOnlyList<Power> Powers => powers;
     [SerializeField] private PlayerController player;
 
     private void Start()
     {
-        foreach (var power in powers)
+        foreach (var power in Powers)
         {
             power.player = player;
             power.Activate();
@@ -20,7 +21,7 @@ public class PowerManager : MonoBehaviour
 
     private void OnPlayerDeath(object sender, EventArgs e)
     {
-        foreach (var power in powers)
+        foreach (var power in Powers)
         {
             power.Deactivate();
         }
