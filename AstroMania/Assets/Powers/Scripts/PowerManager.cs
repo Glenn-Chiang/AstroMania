@@ -1,19 +1,23 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class PowerManager : MonoBehaviour
 {
-    [SerializeField] private List<Power> powers;
-    public IReadOnlyList<Power> Powers => powers;
+    [SerializeField] private List<PowerStack> powers;
+    public IReadOnlyList<PowerStack> Powers => powers;
     [SerializeField] private PlayerController player;
+
+    public event EventHandler<PowerStack> PowerAdded;
+    public event EventHandler<Power> PowerRemoved;
 
     private void Start()
     {
-        foreach (var power in Powers)
+        foreach (var powerStack in Powers)
         {
-            power.player = player;
-            power.Activate();
+            powerStack.Power.player = player;
+            powerStack.Activate();
         }
 
         player.PlayerDied += OnPlayerDeath;
@@ -21,34 +25,83 @@ public class PowerManager : MonoBehaviour
 
     private void OnPlayerDeath(object sender, EventArgs e)
     {
-        foreach (var power in Powers)
+        foreach (var powerStack in Powers)
         {
-            power.Deactivate();
+            powerStack.Deactivate();
         }
     }
 
-    public bool HasPower(Power power)
+    private PowerStack GetPowerStack(Power powerData)
     {
-        return powers.Contains(power);
+        return powers.FirstOrDefault(powerStack => powerStack.Power == powerData);
     }
 
-    public void AddPower(Power power)
+    public void AddPower(Power powerData)
     {
         // If the player already owns a lower level version of this power,
         // remove the lower level version and replace it with the next level one
-        if (power.PrevLevel && powers.Contains(power.PrevLevel))
+        if (powerData.PrevLevel && GetPowerStack(powerData.PrevLevel) != null)
         {
-            RemovePower(power.PrevLevel);
+            RemovePower(powerData.PrevLevel);
         }
 
-        powers.Add(power);
-        power.player = player;
-        power.Activate();
+        var powerStack = GetPowerStack(powerData);
+
+        if (powerStack == null)
+        {
+            powerStack = new PowerStack(powerData, 1);
+            powers.Add(powerStack);
+        }
+        // If this power is stackable and the player already owns it, then stack the power
+        else if (powerData.Stackable)
+        {
+            powerStack.Stack();
+        }
+
+        powerData.player = player;
+        powerData.Activate();
+        PowerAdded?.Invoke(this, powerStack);
     }
 
-    public void RemovePower(Power power)
+    public void RemovePower(Power powerData)
     {
-        powers.Remove(power);
-        power.Deactivate();
+        var powerStack = GetPowerStack(powerData);
+        powers.Remove(powerStack);
+        powerStack.Deactivate();
+        PowerRemoved?.Invoke(this, powerData);
+    }
+}
+
+[Serializable]
+public class PowerStack
+{
+    [field: SerializeField] public Power Power { get; private set; }
+    [field: SerializeField] public int Count { get; private set; }
+
+    public PowerStack(Power power, int initialCount)
+    {
+        this.Power = power;
+        Count = initialCount;
+    }
+
+    public void Stack()
+    {
+        Count++;
+    }
+
+    public void Activate()
+    {
+        for (int i = 0; i < Count; i++)
+        {
+            Power.Activate();
+        }
+    }
+
+    public void Deactivate()
+    {
+        for (int i = 0; i < Count; i++)
+        {
+            Power.Deactivate();
+        }
     }
 }

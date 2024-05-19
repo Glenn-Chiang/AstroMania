@@ -829,34 +829,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 4329792089877579408, guid: 41a0a0cf94691fd4e8345631a2620ec3, type: 3}
-      propertyPath: powers.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4329792089877579408, guid: 41a0a0cf94691fd4e8345631a2620ec3, type: 3}
-      propertyPath: powers.Array.data[0]
-      value: 
-      objectReference: {fileID: 11400000, guid: 5e118281750faa444ad6546136a31a35, type: 2}
-    - target: {fileID: 4329792089877579408, guid: 41a0a0cf94691fd4e8345631a2620ec3, type: 3}
-      propertyPath: powers.Array.data[1]
-      value: 
-      objectReference: {fileID: 11400000, guid: ac85204b57880bf4394322ca80f10145, type: 2}
-    - target: {fileID: 4329792089877579408, guid: 41a0a0cf94691fd4e8345631a2620ec3, type: 3}
-      propertyPath: powers.Array.data[2]
-      value: 
-      objectReference: {fileID: 11400000, guid: a25edf2147d280f41a1c3218e4654009, type: 2}
-    - target: {fileID: 4329792089877579408, guid: 41a0a0cf94691fd4e8345631a2620ec3, type: 3}
-      propertyPath: powers.Array.data[3]
-      value: 
-      objectReference: {fileID: 11400000, guid: a899fc93db063ef4b89c3b9142fd9be4, type: 2}
-    - target: {fileID: 6799369211268817351, guid: 41a0a0cf94691fd4e8345631a2620ec3, type: 3}
-      propertyPath: m_CastShadows
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6799369211268817351, guid: 41a0a0cf94691fd4e8345631a2620ec3, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
     - target: {fileID: 8857050073455270553, guid: 41a0a0cf94691fd4e8345631a2620ec3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -940,17 +912,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 55845108173489106, guid: 3e3b8008567479242ab518cdde82b398, type: 3}
   m_PrefabInstance: {fileID: 8719782367102689161}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1944672129 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4329792089877579408, guid: 41a0a0cf94691fd4e8345631a2620ec3, type: 3}
-  m_PrefabInstance: {fileID: 1523486484}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a082a54256c0e1746a07e143e9b40da1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1944672132 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3968869921899384567, guid: 41a0a0cf94691fd4e8345631a2620ec3, type: 3}
@@ -960,6 +921,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 29a894e1330b7af4c91a1b6651dd9d1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1944672140 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 497135048097080343, guid: 41a0a0cf94691fd4e8345631a2620ec3, type: 3}
+  m_PrefabInstance: {fileID: 1523486484}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a082a54256c0e1746a07e143e9b40da1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!224 &1999655471 stripped
@@ -1085,7 +1057,7 @@ PrefabInstance:
     - target: {fileID: 2637181308617168904, guid: 66e4cd1cd4d794b49bb4c8a5f1ec5db8, type: 3}
       propertyPath: powerManager
       value: 
-      objectReference: {fileID: 1944672129}
+      objectReference: {fileID: 1944672140}
     - target: {fileID: 6399239313643287597, guid: 66e4cd1cd4d794b49bb4c8a5f1ec5db8, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1291,7 +1263,7 @@ PrefabInstance:
     - target: {fileID: 330377532009663129, guid: c287a152c37e6ca4e9449ca8c4c35bbb, type: 3}
       propertyPath: powerManager
       value: 
-      objectReference: {fileID: 1944672129}
+      objectReference: {fileID: 1944672140}
     - target: {fileID: 330377532009663129, guid: c287a152c37e6ca4e9449ca8c4c35bbb, type: 3}
       propertyPath: menuDisplayer
       value: 
