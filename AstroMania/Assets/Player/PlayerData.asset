@@ -16,12 +16,12 @@ MonoBehaviour:
   <Description>k__BackingField: Elite combat ship equipped with an arsenal of weapons
   <Sprite>k__BackingField: {fileID: -3771988729453913823, guid: d51b03a4cebefd44aa0665b75d78527b, type: 3}
   <MaxHealth>k__BackingField:
-    value: 100
+    <BaseValue>k__BackingField: 100
   <MoveSpeed>k__BackingField:
-    value: 8
+    <BaseValue>k__BackingField: 8
   <DamageBonus>k__BackingField:
-    value: 1
+    <BaseValue>k__BackingField: 1
   <FireRateBonus>k__BackingField:
-    value: 1
+    <BaseValue>k__BackingField: 1
   <MaxEnergy>k__BackingField:
-    value: 100
+    <BaseValue>k__BackingField: 100

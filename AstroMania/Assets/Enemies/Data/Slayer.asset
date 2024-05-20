@@ -16,12 +16,12 @@ MonoBehaviour:
   <Description>k__BackingField: Elite enemy unit
   <Sprite>k__BackingField: {fileID: 8846507863177730235, guid: d4b8e6c6ff40e1e489798458f4a74fd1, type: 3}
   <MaxHealth>k__BackingField:
-    value: 150
+    <BaseValue>k__BackingField: 150
   <MoveSpeed>k__BackingField:
-    value: 3
+    <BaseValue>k__BackingField: 3
   <DamageBonus>k__BackingField:
-    value: 1
+    <BaseValue>k__BackingField: 1
   <FireRateBonus>k__BackingField:
-    value: 1
+    <BaseValue>k__BackingField: 1
   <XpReward>k__BackingField: 20
   <AttackInterval>k__BackingField: 0.8

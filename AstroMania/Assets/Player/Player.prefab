@@ -171,7 +171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d349ad2a516e764cb76bbec6542d1c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  character: {fileID: 0}
+  character: {fileID: -8443603974079047522}
   rb: {fileID: 3754005871900104070}
   dashSpeed: 20
   dashDuration: 0.2
@@ -196,6 +196,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 01b8919dd28e39f4990ca9c7c439781b, type: 2}
   - {fileID: 11400000, guid: d3195f463d7d98f4c9f12b0641d70026, type: 2}
   energyManager: {fileID: 211932211201157776}
+  character: {fileID: -8443603974079047522}
 --- !u!114 &1557464832560917483
 MonoBehaviour:
   m_ObjectHideFlags: 0

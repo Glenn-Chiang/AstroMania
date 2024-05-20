@@ -1,3 +1,5 @@
+using UnityEngine;
+
 public class CharacterStats
 {
     public readonly Stat maxHealth;
@@ -7,9 +9,9 @@ public class CharacterStats
 
     public CharacterStats(CharacterData data)
     {
-        maxHealth = new Stat(data.MaxHealth.Value);
-        moveSpeed = new Stat(data.MoveSpeed.Value);
-        damageBonus = new Stat(data.DamageBonus.Value);
-        fireRateBonus = new Stat(data.FireRateBonus.Value);
+        maxHealth = new Stat(data.MaxHealth.BaseValue);
+        moveSpeed = new Stat(data.MoveSpeed.BaseValue);
+        damageBonus = new Stat(data.DamageBonus.BaseValue);
+        fireRateBonus = new Stat(data.FireRateBonus.BaseValue);
     }
 }

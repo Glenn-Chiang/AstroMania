@@ -6,13 +6,14 @@ using UnityEngine;
 [Serializable]
 public class Stat
 {
-    [SerializeField] private float value;
-    private List<float> multipliers = new();
-    public float Value => multipliers.Aggregate(value, (current, multiplier) => current * multiplier);  
+    [field: SerializeField] public float BaseValue { get; private set; }
+    private readonly List<float> multipliers = new();
+    public float Value => multipliers.Aggregate(BaseValue, (current, multiplier) => current * multiplier);
 
     public Stat(float baseValue)
     {
-        value = baseValue;
+        Debug.Log(baseValue);
+        BaseValue = baseValue;
     }
     
     public int ApplyMultiplier(float multiplier)
