@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class AdrenalineEffect : MonoBehaviour
 {
-    public PlayerController player;
+    public Player player;
     public float healthThreshold;
     public float multiplier;
 
@@ -25,17 +25,17 @@ public class AdrenalineEffect : MonoBehaviour
 
         if (!effectIsActive && health < healthThreshold * player.HealthManager.MaxHealth)
         {
-            player.Stats.damageBonus.ApplyMultiplier(multiplier);
-            player.Stats.fireRateBonus.ApplyMultiplier(multiplier);
-            player.Stats.moveSpeed.ApplyMultiplier(multiplier);
+            player.PlayerStats.damageBonus.ApplyMultiplier(multiplier);
+            player.PlayerStats.fireRateBonus.ApplyMultiplier(multiplier);
+            player.PlayerStats.moveSpeed.ApplyMultiplier(multiplier);
             effectIsActive = true;
         }
         
         if (effectIsActive && health >= healthThreshold * player.HealthManager.MaxHealth)
         {
-            player.Stats.damageBonus.ApplyMultiplier(1 / multiplier);
-            player.Stats.fireRateBonus.ApplyMultiplier(1 / multiplier);
-            player.Stats.moveSpeed.ApplyMultiplier(1 / multiplier);
+            player.PlayerStats.damageBonus.ApplyMultiplier(1 / multiplier);
+            player.PlayerStats.fireRateBonus.ApplyMultiplier(1 / multiplier);
+            player.PlayerStats.moveSpeed.ApplyMultiplier(1 / multiplier);
             effectIsActive = false;
         }
         

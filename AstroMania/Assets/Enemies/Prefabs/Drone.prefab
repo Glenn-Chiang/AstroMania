@@ -46,10 +46,10 @@ GameObject:
   - component: {fileID: 3334555284455806673}
   - component: {fileID: 4130686693555329234}
   - component: {fileID: 4372755983408478146}
-  - component: {fileID: 4656005358509597324}
   - component: {fileID: 4098429489217318975}
-  - component: {fileID: -2900200193066986458}
   - component: {fileID: 5729967489606833652}
+  - component: {fileID: 4656005358509597324}
+  - component: {fileID: -2900200193066986458}
   m_Layer: 6
   m_Name: Drone
   m_TagString: Enemy
@@ -211,6 +211,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23be5bcca65e7494fbd1c3dd9bd6eb06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  character: {fileID: 4656005358509597324}
   rb: {fileID: -6639659225725800936}
 --- !u!114 &4130686693555329234
 MonoBehaviour:
@@ -243,6 +244,33 @@ MonoBehaviour:
   weapons:
   - {fileID: 11400000, guid: 087b739ab12b9ba4eb10decda0374966, type: 2}
   energyManager: {fileID: 0}
+  character: {fileID: 4656005358509597324}
+--- !u!114 &4098429489217318975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8920851708171242474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7a982003282ec64b8663b2369c88a14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  character: {fileID: 4656005358509597324}
+  damageMultiplier: 1
+--- !u!114 &5729967489606833652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8920851708171242474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3032c2d9e505c5499e887035e0e491f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &4656005358509597324
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -261,19 +289,6 @@ MonoBehaviour:
   weaponManager: {fileID: 4372755983408478146}
   healthManager: {fileID: 4098429489217318975}
   minDistance: 5
---- !u!114 &4098429489217318975
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8920851708171242474}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7a982003282ec64b8663b2369c88a14, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damageMultiplier: 1
 --- !u!114 &-2900200193066986458
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -288,18 +303,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthManager: {fileID: 4098429489217318975}
   explosion: {fileID: 1113693568401335511, guid: 889ff4b69713ca144ab7579ab1f45125, type: 3}
---- !u!114 &5729967489606833652
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8920851708171242474}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3032c2d9e505c5499e887035e0e491f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &9129804258386740636
 GameObject:
   m_ObjectHideFlags: 0

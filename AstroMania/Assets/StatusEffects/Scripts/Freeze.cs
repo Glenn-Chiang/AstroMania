@@ -9,7 +9,7 @@ public class Freeze : StatusEffect
 
     public override void ApplyEffect()
     {
-        stats = GetComponent<ICharacter>().Stats;
+        stats = GetComponent<Character>().Stats;
         moveSpeedMultiplierIndex = stats.moveSpeed.ApplyMultiplier(0);
         fireRateBonusMultiplierIndex = stats.fireRateBonus.ApplyMultiplier(0);
     }

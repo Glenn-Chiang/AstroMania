@@ -7,7 +7,7 @@ public class PowerManager : MonoBehaviour
 {
     [SerializeField] private List<PowerStack> powers;
     public IReadOnlyList<PowerStack> Powers => powers;
-    [SerializeField] private PlayerController player;
+    [SerializeField] private Player player;
 
     public event EventHandler<PowerStack> PowerAdded;
     public event EventHandler<Power> PowerRemoved;

@@ -6,7 +6,7 @@ public abstract class StatBoost : Power
     protected abstract Stat GetStat(PlayerStats playerStats);
     public override void Activate()
     {
-        var stat = GetStat(player.Stats);
+        var stat = GetStat(player.PlayerStats);
         stat.ApplyMultiplier(multiplier);
     }
 }

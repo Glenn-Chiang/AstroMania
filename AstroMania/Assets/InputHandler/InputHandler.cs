@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class InputHandler : MonoBehaviour
 {
-    private PlayerController player;
+    private Player player;
 
     [SerializeField] private MenuDisplayer pauseMenuDisplayer;
     [SerializeField] private MenuDisplayer powerListDisplayer;
@@ -12,7 +12,7 @@ public class InputHandler : MonoBehaviour
 
     private void Start()
     {
-        player = PlayerController.Instance;
+        player = Player.Instance;
         player.PlayerDied += HandleGameOver;
     }
 

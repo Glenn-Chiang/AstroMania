@@ -9,7 +9,7 @@ public class TimerDisplay : MonoBehaviour
 
     private void Start()
     {
-        PlayerController.Instance.PlayerDied += OnPlayerDeath;
+        Player.Instance.PlayerDied += OnPlayerDeath;
     }
 
     private void OnPlayerDeath(object sender, EventArgs e)

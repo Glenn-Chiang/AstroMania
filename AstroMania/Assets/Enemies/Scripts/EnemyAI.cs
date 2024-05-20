@@ -1,11 +1,13 @@
 using System;
 using UnityEngine;
 
-public class EnemyAI : MonoBehaviour, ICharacter
+public class EnemyAI : Character
 {
     [SerializeField] private EnemyData enemyData;
-    CharacterData ICharacter.CharacterData => enemyData;
-    public CharacterStats Stats {  get; private set; }  
+    public override CharacterData CharacterData => enemyData;
+
+    public EnemyStats EnemyStats { get; private set; }
+    public override CharacterStats Stats => EnemyStats;
 
     [SerializeField] private Movement movement;
     [SerializeField] private Roaming roaming;
@@ -27,9 +29,9 @@ public class EnemyAI : MonoBehaviour, ICharacter
     private GameObject target;
     private Vector2 TargetPos => target.GetComponent<Rigidbody2D>().position;
 
-    private void Awake()
+    protected override void InitializeStats()
     {
-        Stats = new(enemyData);
+        EnemyStats = new(enemyData);
     }
 
     private void Start()

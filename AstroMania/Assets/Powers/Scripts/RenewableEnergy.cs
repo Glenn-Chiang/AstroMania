@@ -11,6 +11,6 @@ public class RenewableEnergy : Power
 
     private void EnemyDeathEventHandler(object sender, EnemyDeathEventArgs e)
     {
-        player.EnergyManager.AddEnergy(player.Stats.maxEnergy.Value * proportion);
+        player.EnergyManager.AddEnergy(player.PlayerStats.maxEnergy.Value * proportion);
     }
 }

@@ -171,6 +171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d349ad2a516e764cb76bbec6542d1c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  character: {fileID: 0}
   rb: {fileID: 3754005871900104070}
   dashSpeed: 20
   dashDuration: 0.2
@@ -207,6 +208,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7a982003282ec64b8663b2369c88a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  character: {fileID: -8443603974079047522}
   damageMultiplier: 1
 --- !u!114 &211932211201157776
 MonoBehaviour:
@@ -220,7 +222,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0285d252c366ff348a99077b53816644, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: -8443603974079047522}
   consumptionMultiplier: 1
 --- !u!114 &5794111128145611694
 MonoBehaviour:
@@ -269,10 +271,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 753743145778282374}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34e69e1df36a8ea4e8af87c179f4bc82, type: 3}
+  m_Script: {fileID: 11500000, guid: 7e01a9f8d7e79cc43b3b06cd0289f7c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterData: {fileID: 11400000, guid: d9ca4ed29589c5048928dc139da270ee, type: 2}
+  playerData: {fileID: 11400000, guid: d9ca4ed29589c5048928dc139da270ee, type: 2}
   <Movement>k__BackingField: {fileID: 7419207094389121070}
   <WeaponManager>k__BackingField: {fileID: 3968869921899384567}
   <HealthManager>k__BackingField: {fileID: 1557464832560917483}

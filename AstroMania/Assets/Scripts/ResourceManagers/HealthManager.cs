@@ -3,15 +3,15 @@ using UnityEngine;
 
 public class HealthManager : ResourceManager, IDamageable
 {
-    private ICharacter character;
-    public float MaxHealth
-    {
+    [SerializeField] private Character character;
+    public float MaxHealth 
+    { 
         get
         {
-            if (character == null || character.Stats == null) return 0;
+            if (character.Stats == null) return 0;
             return character.Stats.maxHealth.Value;
         }
-    }
+    } 
     private float health;
 
     public override float MaxValue => MaxHealth;
@@ -26,7 +26,6 @@ public class HealthManager : ResourceManager, IDamageable
 
     private void Start()
     {
-        character = GetComponent<ICharacter>();
         health = MaxHealth;
     }
 

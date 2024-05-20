@@ -7,7 +7,7 @@ public class WorldGenerator : MonoBehaviour
 {
     public static WorldGenerator Instance { get; private set; }
 
-    private PlayerController player;
+    private Player player;
     private Vector2 PlayerPos => player.transform.position;
 
     [SerializeField] private Sector sectorPrefab;
@@ -31,7 +31,7 @@ public class WorldGenerator : MonoBehaviour
 
     private void Start()
     {
-        player = PlayerController.Instance;
+        player = Player.Instance;
         Sector.EnteredSector += OnEnterSector;
         player.PlayerDied += OnPlayerDeath;
         currentSector = GenerateSector(transform.position);

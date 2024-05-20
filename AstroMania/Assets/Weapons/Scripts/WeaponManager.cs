@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;
 
 public class WeaponManager : MonoBehaviour
 {
@@ -16,7 +15,7 @@ public class WeaponManager : MonoBehaviour
     [SerializeField] private EnergyManager energyManager;
     public readonly List<StatusEffectApplier> effectAppliers = new();
 
-    private ICharacter character;
+    [SerializeField] private Character character;
     public Stat DamageBonus => character.Stats.damageBonus;
     public Stat FireRateBonus => character.Stats.fireRateBonus;
 
@@ -24,7 +23,6 @@ public class WeaponManager : MonoBehaviour
 
     private void Start()
     {
-        character = GetComponent<ICharacter>();
         EquipWeapon();
     }
 

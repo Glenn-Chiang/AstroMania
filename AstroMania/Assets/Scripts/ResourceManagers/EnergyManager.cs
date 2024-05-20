@@ -3,16 +3,17 @@ using UnityEngine.TextCore.Text;
 
 public class EnergyManager : ResourceManager
 {
-    [SerializeField] private PlayerController player;
+    [SerializeField] private Player player;
 
     private float MaxEnergy
     {
         get
         {
-            if (player == null || player.Stats == null) return 0;
-            return player.Stats.maxHealth.Value;
+            if (player.PlayerStats == null) return 0;
+            return player.PlayerStats.maxEnergy.Value;
         }
     }
+
     private float energy;
 
     public override float MaxValue => MaxEnergy;
@@ -22,7 +23,6 @@ public class EnergyManager : ResourceManager
 
     private void Start()
     {
-        player = GetComponent<PlayerController>();
         energy = MaxEnergy;
     }
 

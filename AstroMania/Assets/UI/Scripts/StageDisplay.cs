@@ -12,7 +12,7 @@ public class StageDisplay : MonoBehaviour
     private void Start()
     {
         stageManager.StageChanged += OnStageChanged;
-        PlayerController.Instance.PlayerDied += OnPlayerDeath;
+        Player.Instance.PlayerDied += OnPlayerDeath;
         UpdateDisplay();
     }
 

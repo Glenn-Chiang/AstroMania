@@ -4,7 +4,7 @@ using UnityEngine;
 public class Sector : MonoBehaviour
 {
     public Vector2 Origin => transform.position;
-    private PlayerController Player => PlayerController.Instance;
+    private Player Player => Player.Instance;
 
     public float Width => GetComponent<BoxCollider2D>().size.x;
 

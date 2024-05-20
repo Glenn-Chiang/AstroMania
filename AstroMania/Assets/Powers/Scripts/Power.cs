@@ -12,5 +12,5 @@ public abstract class Power : ScriptableObject
     public abstract void Activate();
     public virtual void Deactivate() { }
 
-    [HideInInspector] public PlayerController player;
+    [HideInInspector] public Player player;
 }

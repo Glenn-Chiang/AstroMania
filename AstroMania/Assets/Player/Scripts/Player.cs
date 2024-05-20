@@ -1,14 +1,15 @@
 using System;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour, ICharacter
+public class Player : Character
 {
-    public static PlayerController Instance { get; private set; }
+    public static Player Instance { get; private set; }
 
-    [SerializeField] private PlayerCharacterData characterData;
-    CharacterData  ICharacter.CharacterData => characterData;
-    public PlayerStats Stats { get; private set; }
-    CharacterStats ICharacter.Stats => Stats;
+    [SerializeField] private PlayerData playerData;
+    public override CharacterData CharacterData => playerData;
+
+    public PlayerStats PlayerStats { get; private set; }
+    public override CharacterStats Stats => PlayerStats;
 
     [field: SerializeField] public PlayerMovement Movement { get; private set; }
     [field: SerializeField] public WeaponManager WeaponManager { get; private set; }
@@ -18,16 +19,21 @@ public class PlayerController : MonoBehaviour, ICharacter
 
     public event EventHandler PlayerDied;
 
-    private void Awake()
+    protected override void InitializeStats()
     {
+        PlayerStats = new PlayerStats(playerData);
+    }
+
+    protected override void Awake()
+    {
+        base.Awake();
+
         if (Instance != null && Instance != this)
         {
             Destroy(this);
             return;
         }
         Instance = this;
-
-        Stats = new(characterData);
     }
 
     private void Start()
