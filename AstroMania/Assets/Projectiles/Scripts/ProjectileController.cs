@@ -8,13 +8,13 @@ public class ProjectileController : MonoBehaviour
 
     private void Start()
     {
-        Invoke(nameof(SelfDestruct), 10);
+        Invoke(nameof(SelfDestruct), 10); // Porjectile will destroy itself if it does not collide with anything after 10 seconds
     }
 
     protected virtual void OnCollisionEnter2D(Collision2D collision)
     {
         HitTarget(collision.collider.gameObject);
-        Destroy(gameObject);
+        SelfDestruct();
     }
 
     protected void HitTarget(GameObject target)
