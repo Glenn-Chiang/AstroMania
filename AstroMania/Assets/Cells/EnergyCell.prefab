@@ -144,7 +144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d448f01a7f2ac034597c70ce4218fa95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitPoints: 40
+  hitPoints: 10
   obj: {fileID: 8545005320542161402, guid: 70cf3ce6803fb1c4ca888f8a39efb0e2, type: 3}
   count: 5
 --- !u!50 &383868496729314833

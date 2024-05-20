@@ -6,6 +6,11 @@ public class ProjectileController : MonoBehaviour
     [HideInInspector] public float damage;
     [HideInInspector] public List<StatusEffectApplier> effectAppliers;
 
+    private void Start()
+    {
+        Invoke(nameof(SelfDestruct), 10);
+    }
+
     protected virtual void OnCollisionEnter2D(Collision2D collision)
     {
         HitTarget(collision.collider.gameObject);
@@ -26,5 +31,9 @@ public class ProjectileController : MonoBehaviour
                 effectApplier.Apply(effectManager);
             }
         }
+    }
+    private void SelfDestruct()
+    {
+        Destroy(gameObject);
     }
 }

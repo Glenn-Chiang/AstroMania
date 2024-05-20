@@ -89,8 +89,8 @@ public class EnemyAI : MonoBehaviour, ICharacter
     }
     private void HandleDeath(object sender, EventArgs e)
     {
-        Destroy(gameObject);
         OnEnemyDeath?.Invoke(this, new EnemyDeathEventArgs(enemyData));
+        Destroy(gameObject);
     }
 }
 
